@@ -1,11 +1,13 @@
 import React from 'react'
-import { designWhite } from "./assets";
+import designWhite from './assets/design-white.png';
+import { Nav } from './components';
 
 const App = () => {
     return (
         <main className="relative bg-theme-dark text-base">
             <section className="h-full w-full absolute z-10" id="particles-js"></section>
             <section className="flex relative items-end p-10 h-screen w-full">
+				<Nav />
 				<div className="relative z-20">
 					<p className="text-2xl mb-5 font-light">
 						TOM PENNY
@@ -28,11 +30,6 @@ const App = () => {
 					src={designWhite} 
 					alt="Design"
 				></img>
-				{/* <img
-					className="m-auto absolute top-0 bottom-0 right-0 left-0 z-0 cursor-none select-none"
-					src="/decisive-development/src/assets/design-white.png" 
-					alt="Design"
-				></img> */}
             </section>
         </main>
     )
