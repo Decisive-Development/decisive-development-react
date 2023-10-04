@@ -1,25 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import injectParticles from "./js/injectParticles"
 import designWhite from "./assets/design-white.png";
 import { Nav } from "./components";
 
 const App = () => {
-  const [ready, setReady] = useState(false);
-
-  const inject = async () => {
-    const script = document.createElement("script");
-    script.src =
-      "https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js";
-    document.body.appendChild(script);
-    script.onload = function () {
-      particlesJS.load("particles-js", "src/particles.json", function () {
-        console.log("callback - particles.js config loaded");
-      });
-    };
-  };
-
-  useEffect(() => {
-    inject();
-  }, []);
+	
+	useEffect(() => {
+		injectParticles();
+	}, []);
 
   return (
     <main className="relative bg-theme-dark text-base">
