@@ -11,24 +11,16 @@ const Navbar = () => {
             alt="Decisive Development"
         ></img>
         <ul className="cursor-pointer text-lg pointer-events-auto">
-            <li className="hover:-translate-x-7 hover:text-blue transform duration-150">
-                <a href="">Home</a>
-            </li>
-            <li className="hover:-translate-x-7 hover:text-blue transform duration-150">
-                <a href="">Services</a>
-            </li>
-            <li className="hover:-translate-x-7 hover:text-blue transform duration-150">
-                <a href="">About</a>
-            </li>
-            <li className="hover:-translate-x-7 hover:text-blue transform duration-150">
-                <a href="">Projects</a>
-            </li>
-            <li className="hover:-translate-x-7 hover:text-blue transform duration-150">
-                <a href="">Partners</a>
-            </li>				
-            <li className="hover:-translate-x-7 hover:text-blue transform duration-150">
-                <a href="">Contact</a>
-            </li>
+            {navLinks.map((nav) => (
+                <li 
+                    key={nav.id}
+                    className="hover:-translate-x-7 hover:text-blue transform duration-150"
+                >
+                    <a href={`#${nav.id}`}>
+                        {nav.title}
+                    </a>
+                </li>
+            ))}            
         </ul>
     </nav>
   )
