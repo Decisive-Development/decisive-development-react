@@ -9,6 +9,12 @@ const App = () => {
 		injectParticles();
 	}, []);
 
+    // useEffect(() => {
+    //     if (!document.getElementById("particles-js-script")) {
+    //       inject();
+    //     }
+    //   }, []);
+
 	return (
 		<main className="relative bg-theme-dark text-base">
 			<section
