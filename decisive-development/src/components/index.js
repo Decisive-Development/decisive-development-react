@@ -1,9 +1,11 @@
 import Nav from "./Navbar";
 import Heading from "./Heading";
 import Header from "./Header";
-import Services from "./Services";
-import ServicesLarge from "./ServicesLarge";
-import ServicesSmall from "./ServicesSmall";
+import Services from "./services/Services";
+import ServicesLarge from "./services/ServicesLarge";
+import ServicesSmall from "./services/ServicesSmall";
+import About from "./about/About";
+import TextLine from "./about/TextLine";
 
 export {
     Nav,
@@ -12,4 +14,6 @@ export {
     Services,
     ServicesLarge,
     ServicesSmall,
+    About,
+    TextLine,
 };

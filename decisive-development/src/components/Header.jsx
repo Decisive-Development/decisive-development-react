@@ -1,4 +1,4 @@
-import { Nav, Heading } from "../components";
+import { Nav, Heading } from ".";
 import designWhite from "../assets/design-white.png";
 
 const Header = () => {

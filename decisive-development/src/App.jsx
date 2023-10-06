@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import injectParticles from "./js/injectParticles"
 
-import { Header, Services } from "./components";
+import { Header, Services, About } from "./components";
 
 const App = () => {
 
@@ -23,6 +23,7 @@ const App = () => {
 			></section>
 			<Header />
             <Services />
+            <About />
 		</main>
 	);
 };

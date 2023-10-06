@@ -1,4 +1,4 @@
-import { ServicesLarge, ServicesSmall } from "../components";
+import { ServicesLarge, ServicesSmall } from "..";
 
 const Services = () => {
   return (

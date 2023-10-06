@@ -18,13 +18,14 @@
 
 * {
 	margin: 0;
-	font-family: 'Roboto Flex', sans-serif;
+	
 }
 
 body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	/* cursor: url('images/cursor.png'), auto; */
+    font-family: 'Roboto Flex', sans-serif;
 }
 
 img,
