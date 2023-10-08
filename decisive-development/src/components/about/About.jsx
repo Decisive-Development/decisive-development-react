@@ -12,6 +12,34 @@ const About = () => {
                         <span className="text-blue-50">Author</span> {"= {"} 
                     </p>
                 </TextLine>
+                <TextLine>
+                    <p>
+                        <span className="text-red-100">constructor()</span>{" "}
+                        <span className="text-blue-50">Author</span> {"= {"} 
+                    </p>
+                </TextLine>
+                <TextLine>
+                    <p>
+                        <span className="text-red-100">this</span>.name = 'Tom Penny';{" "}
+                    </p>
+                </TextLine>
+                <TextLine>
+                    <p>
+                    <span className="text-red-100">this</span>.name = 'Tom Penny';{" "}
+                    </p>
+                </TextLine>
+                <TextLine>
+                    <p>
+                        <span className="text-red-100">class</span>{" "}
+                        <span className="text-blue-50">Author</span> {"= {"} 
+                    </p>
+                </TextLine>
+                <TextLine>
+                    <p>
+                        <span className="text-red-100">class</span>{" "}
+                        <span className="text-blue-50">Author</span> {"= {"} 
+                    </p>
+                </TextLine>
             </div>
         </section>
     );

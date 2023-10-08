@@ -1,5 +1,5 @@
 import { Nav, Heading } from ".";
-import designWhite from "../assets/design-white.png";
+import designWhite from "../assets/design-clip.png";
 
 const Header = () => {
   return (
@@ -7,7 +7,7 @@ const Header = () => {
         <Nav />
         <Heading />
         <img
-            className="m-auto absolute top-0 bottom-0 right-0 left-0 z-0 cursor-none select-none"
+            className="m-auto w-[900px] opacity-20 absolute top-0 bottom-0 right-0 left-0 z-0 cursor-none select-none"
             src={designWhite}
             alt="Design"
         ></img>
