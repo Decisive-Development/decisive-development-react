@@ -34,7 +34,7 @@ const ProjectTile = () => {
                     onMouseEnter={() => showElement(index)}
                     onMouseLeave={() => hideElementWithDelay(index)}
                 >
-                    <div className="w-[450px] h-[320px] max-w-full overflow-hidden rounded-2xl relative z-10 mr-20">
+                    <div className="w-[700px] h-[394px] max-w-full overflow-hidden rounded-2xl relative z-10 mr-20">
                         <img
                             className="object-cover w-full h-full hover:scale-110 transition-transform duration-300"
                             src={service.src} 

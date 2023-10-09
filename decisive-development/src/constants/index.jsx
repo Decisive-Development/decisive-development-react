@@ -242,7 +242,7 @@ export const projectTileContent = [
     },
     {
         id: "techWeb",
-        src: "/src/assets/tech-web.jpg",
+        src: "/src/assets/jordan.jpg",
         alt: "JS Martial Arts",
         title: "JS Martial Arts",
         copy: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",

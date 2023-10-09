@@ -105,7 +105,12 @@ const About = () => {
                     </TextLine>
                     <TextLine>
                         <p>
-                        <span className="text-red-500">return</span> <span className="text-purple-400">topTop</span> <span className="font-bold animate-pulse h-full -translate-y-1 cursor scale-125">|</span>
+                            <span className="text-red-500">return</span>{" "}
+                            <a href="">
+{/* to the top */}
+                                <span className="text-purple-400 err ">topTop</span>
+                            </a> 
+                            <span className="font-bold animate-pulse h-full -translate-y-1 cursor scale-125">|</span>
                         </p>
                     </TextLine>
                 </div>
