@@ -1,5 +1,5 @@
 import { Nav, Heading } from ".";
-import designWhite from "../assets/design-clip.png";
+import images from '../assets';
 
 const Header = () => {
   return (
@@ -9,6 +9,11 @@ const Header = () => {
         <img
             className="m-auto w-[900px] opacity-20 absolute top-0 bottom-0 right-0 left-0 z-0 cursor-none select-none"
             src={designWhite}
+            alt="Design"
+        ></img>
+        <img
+            className="m-auto w-[900px] opacity-20 absolute top-0 bottom-0 right-0 left-0 z-0 cursor-none select-none"
+            src={developClip}
             alt="Design"
         ></img>
     </section>

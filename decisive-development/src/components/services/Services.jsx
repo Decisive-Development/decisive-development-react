@@ -9,7 +9,6 @@ const Services = () => {
 				<h2>
 					Services
 				</h2>
-                <ServicesLarge />
 				<ServicesSmall />   
 				<h2>
 					Services

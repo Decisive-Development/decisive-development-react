@@ -228,3 +228,26 @@ export const servicesSmallContent = [
         themeBg: "bg-theme-red",
     },
 ];
+
+export const projectTileContent = [
+    {
+        id: "code",
+        src: "/src/assets/code.jpg",
+        alt: "Code",
+        title: "Jelly & the Goat",
+        copy: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        cta: "More Info",
+        themeText: "text-theme-green font-code font-light",
+        themeBg: "bg-theme-green",
+    },
+    {
+        id: "techWeb",
+        src: "/src/assets/tech-web.jpg",
+        alt: "JS Martial Arts",
+        title: "JS Martial Arts",
+        copy: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        cta: "More Info",
+        themeText: "text-theme-blue font-code, font-light",
+        themeBg: "bg-theme-blue",
+    },
+];

@@ -6,6 +6,9 @@ import ServicesLarge from "./services/ServicesLarge";
 import ServicesSmall from "./services/ServicesSmall";
 import About from "./about/About";
 import TextLine from "./about/TextLine";
+import Dots from "./about/Dots";
+import Projects from "./projects/Projects";
+import ProjectTile from "./projects/ProjectTile";
 
 export {
     Nav,
@@ -16,4 +19,8 @@ export {
     ServicesSmall,
     About,
     TextLine,
+    Dots,
+    Projects,
+    ProjectTile,
+
 };
