@@ -6,8 +6,8 @@
 
 @layer base {
 	html {
-	  @apply text-theme-white;
-	} 
+		@apply text-theme-white;
+	}
 }
 
 *,
@@ -18,14 +18,15 @@
 
 * {
 	margin: 0;
-	
+
 }
 
 body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	/* cursor: url('images/cursor.png'), auto; */
-    font-family: 'Roboto Flex', sans-serif;
+	font-family: 'Roboto Flex', sans-serif;
+	counter-reset: linenumber;
 }
 
 img,
@@ -66,12 +67,73 @@ h6 {
 	padding: 0 35px;
 } */
 
-.link-hover:hover{
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-    background-position: bottom;
-    background-repeat: repeat-x;
-    background-size: 20%;
-    border-bottom: 0;
-    padding-bottom: .3em;
-    text-decoration: none;
+.link-hover:hover {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+	background-position: bottom;
+	background-repeat: repeat-x;
+	background-size: 20%;
+	border-bottom: 0;
+	padding-bottom: .3em;
+	text-decoration: none;
 }
+
+.line-number::after {
+	color: #3b3553;
+	content: counter(linenumber, decimal-leading-zero);
+	font-family: Roboto Mono, Courier New, Courier, monospace !important;
+	font-size: 16px;
+	left: -60px;
+	line-height: 1.6;
+	position: absolute;
+	top: 0;
+	z-index: 3;
+	counter-increment: linenumber;
+}
+
+.line-number:hover::after {
+	color: white; /* Change the color to white on hover */
+  }
+
+@keyframes cursorFadeInOut {
+
+	0%,
+	100% {
+		opacity: 0;
+		/* Cursor is invisible at the beginning and end */
+	}
+
+	50% {
+		opacity: 1;
+		/* Cursor is fully visible in the middle of the animation */
+	}
+}
+
+.cursor {
+	display: inline-block;
+	width: 1px;
+	/* Adjust the width and height to your desired cursor size */
+	height: 16px;
+	/* Adjust the width and height to your desired cursor size */
+	background-color: #000;
+	/* Cursor color */
+	animation: cursorFadeInOut 1s ease-in-out infinite;
+	/* Adjust animation duration as needed */
+}
+
+.row-highlight:hover::before {
+	content: "";
+	width: 300%;
+	background-color: #0d0b12; /* Adjust the background color to your desired highlight color */
+	position: absolute;
+	top: 0;
+	left: -100%; /* Shift the pseudo-element to the left to cover the row */
+	height: 100%;
+	z-index: -1; /* Place it below the row content */
+	opacity: 0.5; /* Adjust the opacity to control the highlight intensity */
+  }
+
+  .background{
+	background: rgb(13,11,18);
+	
+  }
+  

@@ -9,6 +9,8 @@ import TextLine from "./about/TextLine";
 import Dots from "./about/Dots";
 import Projects from "./projects/Projects";
 import ProjectTile from "./projects/ProjectTile";
+import Contact from "./contact/Contact";
+
 
 export {
     Nav,
@@ -22,5 +24,5 @@ export {
     Dots,
     Projects,
     ProjectTile,
-
+    Contact,
 };

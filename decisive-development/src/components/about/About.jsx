@@ -3,9 +3,9 @@ import { TextLine, Dots } from "..";
 
 const About = () => {
     return (
-        <section className="bg-theme-dark-600 bg-opacity-25 font-code">
+        <section className="bg-gradient bg-theme-dark-600 bg-opacity-25 font-code background">
             <div className="container relative h-full">
-                <div className="bg-theme-blue-600 h-full absolute w-[1px] -left-3 "></div>
+                <div className="bg-theme-blue-600 z-50 h-full absolute w-[1px] -left-3 "></div>
                 <div className="py-32">
                     <TextLine>
                         <p>
@@ -84,7 +84,7 @@ const About = () => {
                         <div className="flex">
                             <Dots count={12} />
                             <p className="text-[#00ff00]">
-                                'Audiobooks', 'Business', 'Cooking', 'Gardening', 'Cycling', 'Running', 'Traveling', 'Music', 'Podcasts', 'F1', 'Technology', 'Hiking',
+                                'Audiobooks', 'Business', 'Cooking', 'Gardening', 'Cycling', 'Running', 'Traveling', 'Music', 'Podcasts', 'F1', 'Technology', 'Hiking'
                             </p>
                         </div>
                     </TextLine>
@@ -101,6 +101,11 @@ const About = () => {
                     <TextLine>
                         <p>
                             {"};"}
+                        </p>
+                    </TextLine>
+                    <TextLine>
+                        <p>
+                        <span className="text-red-500">return</span> <span className="text-purple-400">topTop</span> <span className="font-bold animate-pulse h-full -translate-y-1 cursor scale-125">|</span>
                         </p>
                     </TextLine>
                 </div>

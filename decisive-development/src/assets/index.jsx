@@ -4,7 +4,7 @@ import develop from './developClip.png';
 // Export them as an object
 const images = {
     design,
-  develop,
+    develop,
 };
 
 export default images;
