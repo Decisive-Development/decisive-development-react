@@ -20,6 +20,9 @@
 	margin: 0;
 
 }
+html {
+    scroll-behavior:smooth
+}
 
 body {
 	line-height: 1.5;
@@ -124,7 +127,7 @@ h6 {
 .row-highlight:hover::before {
 	content: "";
 	width: 300%;
-	background-color: #0d0b12; /* Adjust the background color to your desired highlight color */
+	background-color: #16131e; /* Adjust the background color to your desired highlight color */
 	position: absolute;
 	top: 0;
 	left: -100%; /* Shift the pseudo-element to the left to cover the row */
