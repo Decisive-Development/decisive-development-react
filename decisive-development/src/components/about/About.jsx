@@ -106,10 +106,9 @@ const About = () => {
                     <TextLine>
                         <p>
                             <span className="text-red-500">return</span>{" "}
-                            <a href="">
-{/* to the top */}
-                                <span className="text-purple-400 err ">topTop</span>
-                            </a> 
+                                <a href="#home">
+                                    <span className="text-purple-400 err">toTop</span>
+                                </a> 
                             <span className="font-bold animate-pulse h-full -translate-y-1 cursor scale-125">|</span>
                         </p>
                     </TextLine>
