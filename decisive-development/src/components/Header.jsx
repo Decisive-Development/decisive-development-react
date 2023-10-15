@@ -49,7 +49,7 @@ const Header = () => {
         alt="Decisive"
       ></img>
       <img
-        className="m-auto h-[110px] absolute top-0 bottom-0 right-0 left-0 z-0 cursor-none select-none image-2 opacity-0"
+        className="m-auto h-[100px] absolute top-0 bottom-0 right-0 left-0 z-0 cursor-none select-none image-2 opacity-0"
         src={images.develop}
         alt="Develop"
       ></img>
@@ -60,7 +60,7 @@ const Header = () => {
         alt="Decisive"
       ></img>
       <img
-        className="m-auto h-[110px] absolute top-0 bottom-0 right-0 left-0 z-0 cursor-none select-none image-4 opacity-0"
+        className="m-auto h-[100px] absolute top-0 bottom-0 right-0 left-0 z-0 cursor-none select-none image-4 opacity-0"
         src={images.design}
         alt="Design"
       ></img>

@@ -40,8 +40,17 @@ const Heading = () => {
             achieve greater revenue. My services include bespoke design,
             reliable development, effective SEO, and valuable advice.
         </p>
-        <a href="projects" className="link-hover border-b-2 border-blue">
-            SEE PROJECTS
+        <a href="projects" className="link-hover border-b-2 border-blue mr-5 uppercase">
+            Services
+        </a>
+        <a href="projects" className="link-hover border-b-2 border-blue mr-5 uppercase">
+            About
+        </a>
+        <a href="projects" className="link-hover border-b-2 border-blue mr-5 uppercase">
+            Projects
+        </a>
+        <a href="projects" className="link-hover border-b-2 border-blue mr-5 uppercase">
+            Contact
         </a>
     </div>
   )

@@ -36,12 +36,11 @@ const ProjectTile = () => {
                 >
                     <div className="w-[700px] h-[394px] max-w-full overflow-hidden rounded-2xl relative z-10 mr-20">
                         <img
-                            className="object-cover w-full h-full hover:scale-110 transition-transform duration-300"
+                            className="object-cover w-full h-full hover:scale-110 transition-transform duration-300 opacity-70"
                             src={service.src} 
                             alt={service.alt}
                         />
-                    </div>
-                    
+                    </div>                    
                     <div
                         className={`${
                             isHiddenVisible[index] ? 'opacity-100' : 'opacity-0'
