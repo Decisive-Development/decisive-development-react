@@ -11,12 +11,12 @@ const About = () => {
                     <TextLine>
                         <p>
                             <span className="text-purple-400">class</span>{" "}
-                            <span className="text-red-500">Author</span> {"= {"} 
+                            <span className="text-red-500">Author</span> {"= {"}
                         </p>
                     </TextLine>
                     <TextLine>
                         <p>
-                            <Dots count={4} /><span className="text-red-500">constructor</span>() {"{"} 
+                            <Dots count={4} /><span className="text-red-500">constructor</span>() {"{"}
                         </p>
                     </TextLine>
                     <TextLine>
@@ -107,9 +107,9 @@ const About = () => {
                     <TextLine>
                         <p>
                             <span className="text-red-500">return</span>{" "}
-                                <a href="#home">
-                                    <span className="text-purple-400 err">toTop</span>
-                                </a> 
+                            <a href="#home">
+                                <span className="text-purple-400 err">toTop</span>
+                            </a>
                             <span className="font-bold animate-pulse h-full -translate-y-1 cursor scale-125">|</span>
                         </p>
                     </TextLine>

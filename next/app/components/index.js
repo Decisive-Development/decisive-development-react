@@ -1,6 +1,6 @@
-import Nav from "./Navbar";
-import Heading from "./Heading";
-import Header from "./Header";
+import Nav from "./head/Navbar";
+import Heading from "./head/Heading";
+import Header from "./head/Header";
 import Services from "./services/Services";
 import ServicesLarge from "./services/ServicesLarge";
 import ServicesSmall from "./services/ServicesSmall";
@@ -9,8 +9,8 @@ import TextLine from "./about/TextLine";
 import Dots from "./about/Dots";
 import Projects from "./projects/Projects";
 import ProjectTile from "./projects/ProjectTile";
+import Partners from "./partners/Partners";
 import Contact from "./contact/Contact";
-
 
 export {
     Nav,
@@ -25,4 +25,5 @@ export {
     Projects,
     ProjectTile,
     Contact,
+    Partners
 };

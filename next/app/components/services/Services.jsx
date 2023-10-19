@@ -1,4 +1,4 @@
-import { ServicesLarge, ServicesSmall } from "..";
+import ServicesSmall from "./ServicesSmall";
 
 const Services = () => {
   return (

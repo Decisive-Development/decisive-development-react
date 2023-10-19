@@ -5,31 +5,32 @@
 @tailwind utilities;
 
 @layer base {
-	html {
-		@apply text-theme-white;
-	}
+    html {
+        @apply text-theme-white;
+    }
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 * {
-	margin: 0;
+    margin: 0;
 
 }
+
 html {
-    scroll-behavior:smooth
+    scroll-behavior: smooth
 }
 
 body {
-	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
-	/* cursor: url('images/cursor.png'), auto; */
-	font-family: 'Roboto Flex', sans-serif;
-	counter-reset: linenumber;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* cursor: url('images/cursor.png'), auto; */
+    font-family: 'Roboto Flex', sans-serif;
+    counter-reset: linenumber;
 }
 
 img,
@@ -37,15 +38,15 @@ picture,
 video,
 canvas,
 svg {
-	display: block;
-	max-width: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 input,
 button,
 textarea,
 select {
-	font: inherit;
+    font: inherit;
 }
 
 p,
@@ -55,12 +56,12 @@ h3,
 h4,
 h5,
 h6 {
-	overflow-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 #root,
 #__next {
-	isolation: isolate;
+    isolation: isolate;
 }
 
 /* .container {
@@ -82,81 +83,86 @@ h6 {
 
 
 .line-number::after {
-	color: #3b3553;
-	content: counter(linenumber, decimal-leading-zero);
-	font-family: Roboto Mono, Courier New, Courier, monospace !important;
-	font-size: 16px;
-	left: -60px;
-	line-height: 1.6;
-	position: absolute;
-	top: 0;
-	z-index: 3;
-	counter-increment: linenumber;
+    color: #3b3553;
+    content: counter(linenumber, decimal-leading-zero);
+    font-family: Roboto Mono, Courier New, Courier, monospace !important;
+    font-size: 16px;
+    left: -60px;
+    line-height: 1.6;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    counter-increment: linenumber;
 }
 
 .line-number:hover::after {
-	color: white; /* Change the color to white on hover */
-  }
+    color: white;
+    /* Change the color to white on hover */
+}
 
 @keyframes cursorFadeInOut {
 
-	0%,
-	100% {
-		opacity: 0;
-		/* Cursor is invisible at the beginning and end */
-	}
+    0%,
+    100% {
+        opacity: 0;
+        /* Cursor is invisible at the beginning and end */
+    }
 
-	50% {
-		opacity: 1;
-		/* Cursor is fully visible in the middle of the animation */
-	}
+    50% {
+        opacity: 1;
+        /* Cursor is fully visible in the middle of the animation */
+    }
 }
 
 .cursor {
-	display: inline-block;
-	width: 1px;
-	/* Adjust the width and height to your desired cursor size */
-	height: 16px;
-	/* Adjust the width and height to your desired cursor size */
-	background-color: #000;
-	/* Cursor color */
-	animation: cursorFadeInOut 1s ease-in-out infinite;
-	/* Adjust animation duration as needed */
+    display: inline-block;
+    width: 1px;
+    /* Adjust the width and height to your desired cursor size */
+    height: 16px;
+    /* Adjust the width and height to your desired cursor size */
+    background-color: #000;
+    /* Cursor color */
+    animation: cursorFadeInOut 1s ease-in-out infinite;
+    /* Adjust animation duration as needed */
 }
 
 .row-highlight:hover::before {
-	content: "";
-	width: 300%;
-	background-color: #16131e; /* Adjust the background color to your desired highlight color */
-	position: absolute;
-	top: 0;
-	left: -100%; /* Shift the pseudo-element to the left to cover the row */
-	height: 100%;
-	z-index: -1; /* Place it below the row content */
-	opacity: 0.5; /* Adjust the opacity to control the highlight intensity */
-  }
+    content: "";
+    width: 300%;
+    background-color: #16131e;
+    /* Adjust the background color to your desired highlight color */
+    position: absolute;
+    top: 0;
+    left: -100%;
+    /* Shift the pseudo-element to the left to cover the row */
+    height: 100%;
+    z-index: -1;
+    /* Place it below the row content */
+    opacity: 0.5;
+    /* Adjust the opacity to control the highlight intensity */
+}
 
-  .background{
-	background: rgb(13,11,18);
-	
-  }
-  
-  .err {
-	display: inline-block;
-	position: relative;
-  
-  }
-  
-  .err:after {
-	content: '';
-	width: 100%;
-	border-bottom: 2px dotted red;
-	position: absolute;
-	font-size: 18px;
-	top: 25px;
-	left: 0px;
-	display: block;
-	height: 4px;
-  
-	
-	}
+.background {
+    background: rgb(13, 11, 18);
+
+}
+
+.err {
+    display: inline-block;
+    position: relative;
+
+}
+
+.err:after {
+    content: '';
+    width: 100%;
+    border-bottom: 2px dotted red;
+    position: absolute;
+    font-size: 18px;
+    top: 25px;
+    left: 0px;
+    display: block;
+    height: 4px;
+
+
+}

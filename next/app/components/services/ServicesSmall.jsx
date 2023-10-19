@@ -4,7 +4,7 @@ const ServicesSmall = () => {
     return (
         <section>
             {servicesSmallContent.map((service) => (
-                <div className="relative z-10 mb-16"  key={service.id}>
+                <div className="relative z-10 mb-16" key={service.id}>
                     <h2 className={`text-4xl mb-5 ${service.themeText}`}>
                         {service.title}
                     </h2>

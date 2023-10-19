@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import Logo from '../../public/logo-white.svg';
-import { navLinks } from "../constants";
+import images from "../../../public/index";
+import { navLinks } from "../../constants";
 
 const Navbar = () => {
     return (
         <nav className="p-10 z-30 fixed left-0 top-0 flex flex-row justify-between w-full items-start pointer-events-none">
-           <Image 
-                src={Logo}
+            <Image
+                src={images.logo}
                 alt="Decisive Development"
                 className="w-52 max-w-full pointer-events-auto"
             />

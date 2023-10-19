@@ -1,4 +1,4 @@
-const Contact = () => {
+const Partners = () => {
     return (
         <section className="">
             <div className="container relative h-full">
@@ -8,4 +8,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default Partners;

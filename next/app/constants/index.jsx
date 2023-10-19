@@ -65,7 +65,7 @@ export const servicesSmallContent = [
         subTitle: "Built to outperform and outlast your competitors",
         copy: "Beauty is only skin deep and it’s important that your website performs as well as it looks. I build clean websites that perform brilliantly, are fast, smooth and fluid making for a better user experience and a greater ROI.",
         subCopy: "As a freelance web designer in London I pride myself in writing scalable and highly efficient code, and my websites are fast… really, really, fast. This is important as Google now takes site loading times into account when ranking your site so making sure it goes like the clappers should be a top priority.",
-        listOne:{
+        listOne: {
             listTitle: "Including but not limited to",
             listItems: [
                 "Full websites",
@@ -74,8 +74,8 @@ export const servicesSmallContent = [
                 "UX / UI upgrades",
                 "Animation and interactivity",
             ],
-        },        
-        listTwo:{
+        },
+        listTwo: {
             listTitle: "What you can expect",
             listItems: [
                 "Responsive design",
@@ -85,7 +85,7 @@ export const servicesSmallContent = [
                 "Scalable and future-proof",
                 "Highly secure",
             ],
-        },       
+        },
         themeText: "text-theme-green font-code font-light",
         themeBg: "bg-theme-green",
     },
@@ -95,7 +95,7 @@ export const servicesSmallContent = [
         subTitle: "Built to outperform and outlast your competitors",
         copy: "Beauty is only skin deep and it’s important that your website performs as well as it looks. I build clean websites that perform brilliantly, are fast, smooth and fluid making for a better user experience and a greater ROI.",
         subCopy: "As a freelance web designer in London I pride myself in writing scalable and highly efficient code, and my websites are fast… really, really, fast. This is important as Google now takes site loading times into account when ranking your site so making sure it goes like the clappers should be a top priority.",
-        listOne:{
+        listOne: {
             listTitle: "Including but not limited to",
             listItems: [
                 "Full websites",
@@ -104,8 +104,8 @@ export const servicesSmallContent = [
                 "UX / UI upgrades",
                 "Animation and interactivity",
             ],
-        },        
-        listTwo:{
+        },
+        listTwo: {
             listTitle: "What you can expect",
             listItems: [
                 "Responsive design",
@@ -115,7 +115,7 @@ export const servicesSmallContent = [
                 "Scalable and future-proof",
                 "Highly secure",
             ],
-        },       
+        },
         themeText: "text-theme-green font-code font-light",
         themeBg: "bg-theme-green",
     },
@@ -124,7 +124,7 @@ export const servicesSmallContent = [
         title: "Email Development",
         subTitle: "Built to outperform and outlast your competitors",
         copy: "Beauty is only skin deep and it’s important that your website performs as well as it looks. I build clean websites that perform brilliantly, are fast, smooth and fluid making for a better user experience and a greater ROI.",
-        listOne:{
+        listOne: {
             listTitle: "Including but not limited to",
             listItems: [
                 "Full websites",
@@ -133,7 +133,7 @@ export const servicesSmallContent = [
                 "UX / UI upgrades",
                 "Animation and interactivity",
             ],
-        },     
+        },
         themeText: "text-theme-green font-code font-light",
         themeBg: "bg-theme-green",
     },
@@ -142,7 +142,7 @@ export const servicesSmallContent = [
         title: "SEO",
         subTitle: "Built to outperform and outlast your competitors",
         copy: "Beauty is only skin deep and it’s important that your website performs as well as it looks. I build clean websites that perform brilliantly, are fast, smooth and fluid making for a better user experience and a greater ROI.",
-        listOne:{
+        listOne: {
             listTitle: "Including but not limited to",
             listItems: [
                 "Full websites",
@@ -151,7 +151,7 @@ export const servicesSmallContent = [
                 "UX / UI upgrades",
                 "Animation and interactivity",
             ],
-        },     
+        },
         themeText: "text-theme-blue",
         themeBg: "bg-theme-blue",
     },
@@ -160,7 +160,7 @@ export const servicesSmallContent = [
         title: "Hosting",
         subTitle: "Built to outperform and outlast your competitors",
         copy: "Beauty is only skin deep and it’s important that your website performs as well as it looks. I build clean websites that perform brilliantly, are fast, smooth and fluid making for a better user experience and a greater ROI.",
-        listOne:{
+        listOne: {
             listTitle: "Including but not limited to",
             listItems: [
                 "Full websites",
@@ -169,7 +169,7 @@ export const servicesSmallContent = [
                 "UX / UI upgrades",
                 "Animation and interactivity",
             ],
-        },     
+        },
         themeText: "text-theme-blue",
         themeBg: "bg-theme-blue",
     },
@@ -178,7 +178,7 @@ export const servicesSmallContent = [
         title: "UX / UI Overhaul",
         subTitle: "Built to outperform and outlast your competitors",
         copy: "Beauty is only skin deep and it’s important that your website performs as well as it looks. I build clean websites that perform brilliantly, are fast, smooth and fluid making for a better user experience and a greater ROI.",
-        listOne:{
+        listOne: {
             listTitle: "Including but not limited to",
             listItems: [
                 "Full websites",
@@ -187,7 +187,7 @@ export const servicesSmallContent = [
                 "UX / UI upgrades",
                 "Animation and interactivity",
             ],
-        },     
+        },
         themeText: "text-theme-blue",
         themeBg: "bg-theme-blue",
     },
@@ -196,7 +196,7 @@ export const servicesSmallContent = [
         title: "Web / Email Design",
         subTitle: "Built to outperform and outlast your competitors",
         copy: "Beauty is only skin deep and it’s important that your website performs as well as it looks. I build clean websites that perform brilliantly, are fast, smooth and fluid making for a better user experience and a greater ROI.",
-        listOne:{
+        listOne: {
             listTitle: "Including but not limited to",
             listItems: [
                 "Full websites",
@@ -205,7 +205,7 @@ export const servicesSmallContent = [
                 "UX / UI upgrades",
                 "Animation and interactivity",
             ],
-        },     
+        },
         themeText: "text-theme-red font-['Shadows_Into_Light']",
         themeBg: "bg-theme-red",
     },
@@ -214,7 +214,7 @@ export const servicesSmallContent = [
         title: "Logo Design",
         subTitle: "Built to outperform and outlast your competitors",
         copy: "Beauty is only skin deep and it’s important that your website performs as well as it looks. I build clean websites that perform brilliantly, are fast, smooth and fluid making for a better user experience and a greater ROI.",
-        listOne:{
+        listOne: {
             listTitle: "Including but not limited to",
             listItems: [
                 "Full websites",
@@ -223,7 +223,7 @@ export const servicesSmallContent = [
                 "UX / UI upgrades",
                 "Animation and interactivity",
             ],
-        },     
+        },
         themeText: "text-theme-red font-['Shadows_Into_Light']",
         themeBg: "bg-theme-red",
     },
