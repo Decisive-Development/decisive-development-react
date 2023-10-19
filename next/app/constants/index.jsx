@@ -28,7 +28,7 @@ export const navLinks = [
 export const servicesLargeContent = [
     {
         id: "code",
-        src: "/src/assets/code.jpg",
+        src: "/next/public/code.jpg",
         alt: "Code",
         title: "Development",
         copy: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
@@ -38,7 +38,7 @@ export const servicesLargeContent = [
     },
     {
         id: "techWeb",
-        src: "/src/assets/tech-web.jpg",
+        src: "/next/public/tech-web.jpg",
         alt: "Tech Web",
         title: "Advice",
         copy: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
@@ -48,7 +48,7 @@ export const servicesLargeContent = [
     },
     {
         id: "design",
-        src: "/src/assets/design.jpg",
+        src: "/next/public/design.jpg",
         alt: "Design",
         title: "Design",
         copy: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
@@ -232,7 +232,7 @@ export const servicesSmallContent = [
 export const projectTileContent = [
     {
         id: "code",
-        src: "/src/assets/code.jpg",
+        src: "../../public/code.jpg",
         alt: "Code",
         title: "Jelly & the Goat",
         copy: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
@@ -242,7 +242,7 @@ export const projectTileContent = [
     },
     {
         id: "techWeb",
-        src: "/src/assets/jordan.jpg",
+        src: "/next/public/jordan.jpg",
         alt: "JS Martial Arts",
         title: "JS Martial Arts",
         copy: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",

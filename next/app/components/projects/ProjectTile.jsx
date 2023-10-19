@@ -1,33 +1,34 @@
+"use client";
 import { projectTileContent } from "../../constants";
-// import { useState } from "react";
+import { useState } from "react";
 
 const ProjectTile = () => {
-    // const [isHiddenVisible, setHiddenVisible] = useState(new Array(projectTileContent.length).fill(false));
-    // const [timeoutId, setTimeoutId] = useState(null);
+    const [isHiddenVisible, setHiddenVisible] = useState(new Array(projectTileContent.length).fill(false));
+    const [timeoutId, setTimeoutId] = useState(null);
 
-    // const showElement = (index) => {
-    //     if (timeoutId) {
-    //         clearTimeout(timeoutId);
-    //     }
+    const showElement = (index) => {
+        if (timeoutId) {
+            clearTimeout(timeoutId);
+        }
 
-    //     const newVisibility = new Array(projectTileContent.length).fill(false);
-    //     newVisibility[index] = true;
-    //     setHiddenVisible(newVisibility);
-    // };
+        const newVisibility = new Array(projectTileContent.length).fill(false);
+        newVisibility[index] = true;
+        setHiddenVisible(newVisibility);
+    };
 
-    // const hideElementWithDelay = (index) => {
-    //     const newTimeoutId = setTimeout(() => {
-    //         const newVisibility = [...isHiddenVisible];
-    //         newVisibility[index] = false;
-    //         setHiddenVisible(newVisibility);
-    //     }, 2000);
+    const hideElementWithDelay = (index) => {
+        const newTimeoutId = setTimeout(() => {
+            const newVisibility = [...isHiddenVisible];
+            newVisibility[index] = false;
+            setHiddenVisible(newVisibility);
+        }, 2000);
 
-    //     setTimeoutId(newTimeoutId);
-    // };
+        setTimeoutId(newTimeoutId);
+    };
 
     return (
         <section className="py-32">
-            {/* {projectTileContent.map((service, index) => (
+            {projectTileContent.map((service, index) => (
                 <div 
                     className="w-full flex items-center mb-32 relative" 
                     key={service.id}
@@ -60,7 +61,7 @@ const ProjectTile = () => {
                         </a>
                     </div>
                 </div>
-            ))} */}
+            ))}
         </section>
     );
 }
