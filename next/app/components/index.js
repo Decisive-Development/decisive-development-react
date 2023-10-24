@@ -11,19 +11,21 @@ import Projects from "./projects/Projects";
 import ProjectTile from "./projects/ProjectTile";
 import Partners from "./partners/Partners";
 import Contact from "./contact/Contact";
+import ParticlesComp from "./head/ParticlesComp";
 
 export {
-    Nav,
-    Heading,
-    Header,
-    Services,
-    ServicesLarge,
-    ServicesSmall,
-    About,
-    TextLine,
-    Dots,
-    Projects,
-    ProjectTile,
-    Contact,
-    Partners
+  Nav,
+  Heading,
+  Header,
+  Services,
+  ServicesLarge,
+  ServicesSmall,
+  About,
+  TextLine,
+  Dots,
+  Projects,
+  ProjectTile,
+  Contact,
+  Partners,
+  ParticlesComp,
 };
