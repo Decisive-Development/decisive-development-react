@@ -77,8 +77,13 @@ h6 {
     width: 100%;
     height: 100%;
     z-index: 10;
-  }
+}
 
+
+.nav-fade{
+    background: rgb(13,22,29);
+    background: linear-gradient(180deg, rgba(13,22,29,1) 0%, rgba(13,22,29,0.7987570028011204) 20%, rgba(13,22,29,0.6026785714285714) 40%, rgba(13,22,29,0.4009978991596639) 60%, rgba(13,22,29,0.19931722689075626) 80%, rgba(13,22,29,0) 100%);
+}
 
 .link-hover:hover {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%2300a2f9' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");

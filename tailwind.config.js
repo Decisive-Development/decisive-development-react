@@ -22,7 +22,7 @@ module.exports = {
                 code: ['Roboto Mono, monospace'],
             },
             fontSize: {
-                base: '18px',
+                base: '16px',
             },
             colors:
             {

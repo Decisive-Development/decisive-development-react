@@ -1,11 +1,13 @@
 import {
-    Services,
+    ParticlesComp,
     Header,
+    Journey,
+    Pricing,
+    Services,
     About,
     Projects,
     Partners,
     Contact,
-    ParticlesComp,
     Footer
 
 } from "./components";
@@ -15,8 +17,10 @@ export default function Home() {
         <main className="relative bg-theme-primary text-base ">
             <ParticlesComp />
             <Header />
-            <Services />
-            <About />
+            <Journey />
+            <Pricing />
+            {/* <Services /> */}
+            {/* <About /> */}
             <Projects />
             <Partners />
             <Contact />
