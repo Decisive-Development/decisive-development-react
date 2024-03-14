@@ -5,7 +5,7 @@ const About = () => {
     return (
         <section className="bg-gradient bg-theme-primary-600 bg-opacity-25 font-code background overflow-hidden">
             <div className="container relative h-full">
-                <div className="bg-theme-blue-600 z-50 h-full absolute w-[1px] -left-3 "></div>
+                <div className="bg-theme-blue z-50 h-full absolute w-[1px] -left-3 "></div>
                 <div className="bg-gradient-to-b from-theme-blue-600 via-white to-theme-blue-600 z-50 h-full absolute w-[1px] -left-3 "></div>
                 <div className="py-32">
                     <TextLine>

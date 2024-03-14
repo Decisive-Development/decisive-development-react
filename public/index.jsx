@@ -1,14 +1,16 @@
 import design from './designWhite.png';
 import develop from './developClip.png';
 import decisive from './decisiveClip.png';
-import logo from './logo-white.svg';
+import logoWhite from './logo-white.svg';
+import logoBlack from './logo-black.svg';
 
 // Export them as an object
 const images = {
     design,
     develop,
     decisive,
-    logo
+    logoWhite,
+    logoBlack,
 };
 
 export default images;

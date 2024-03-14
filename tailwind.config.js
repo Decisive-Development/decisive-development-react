@@ -47,9 +47,6 @@ module.exports = {
                 'theme-green': {
                     DEFAULT: '#A9DC73',
                 },
-                'theme-white': {
-                    DEFAULT: '#d7dadc',
-                }
             }
 
             // colors: {
