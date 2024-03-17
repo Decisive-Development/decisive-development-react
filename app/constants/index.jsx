@@ -12,7 +12,7 @@ export const navLinks = [
         title: "About",
     },
     {
-        id: "projects",
+        id: "555",
         title: "Projects",
     },
     {
@@ -20,7 +20,7 @@ export const navLinks = [
         title: "Partners",
     },
     {
-        id: "contact",
+        id: "55",
         title: "Contact",
     },
 ];
@@ -260,7 +260,7 @@ export const companyLinks = [
         title: "About",
     },
     {
-        id: "projects",
+        id: "123",
         title: "Projects",
     },
     {
@@ -268,7 +268,7 @@ export const companyLinks = [
         title: "Partners",
     },
     {
-        id: "contact",
+        id: "11",
         title: "Contact",
     },
 ];
@@ -282,7 +282,7 @@ export const footerLinks = [
         title: "Web Development",
     },
     {
-        id: "projects",
+        id: "1245",
         title: "Web Hosting",
     },
     {
@@ -290,15 +290,15 @@ export const footerLinks = [
         title: "Web Management",
     },
     {
-        id: "contact",
+        id: "22",
         title: "Search Engine Optimisation (SEO)",
     },
     {
-        id: "contact",
+        id: "33",
         title: "Email Marketing",
     },
     {
-        id: "contact",
+        id: "44",
         title: "Project Support Services",
     },
 
@@ -313,11 +313,11 @@ export const legalLinks = [
         title: "Terms of Use",
     },
     {
-        id: "projects",
+        id: "2211",
         title: "Copyright",
     },
     {
-        id: "projects",
+        id: "123444",
         title: "Sitemap",
     },
 

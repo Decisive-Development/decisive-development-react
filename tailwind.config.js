@@ -47,6 +47,15 @@ module.exports = {
                 'theme-green': {
                     DEFAULT: '#A9DC73',
                 },
+                'theme-turquoise': {
+                    DEFAULT: '#56D7D7',
+                },
+                'theme-orange': {
+                    DEFAULT: '#EE9859',
+                },
+                'theme-purple': {
+                    DEFAULT: '#DC7AE1',
+                },
             }
 
             // colors: {

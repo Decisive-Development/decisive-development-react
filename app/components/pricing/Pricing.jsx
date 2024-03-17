@@ -6,15 +6,15 @@ const tiers = [
         name: 'Basic',
         id: 'tier-basic',
         href: '#',
-        priceMonthly: '$9',
+        priceMonthly: '£50',
         description: 'Quis suspendisse ut fermentum neque vivamus non tellus.',
         mostPopular: false,
     },
     {
-        name: 'Essential',
+        name: 'Standard',
         id: 'tier-essential',
         href: '#',
-        priceMonthly: '$29',
+        priceMonthly: '£100',
         description: 'Quis eleifend a tincidunt pellentesque. A tempor in sed.',
         mostPopular: true,
     },
@@ -22,7 +22,7 @@ const tiers = [
         name: 'Premium',
         id: 'tier-premium',
         href: '#',
-        priceMonthly: '$59',
+        priceMonthly: '£150',
         description: 'Orci volutpat ut sed sed neque, dui eget. Quis tristique non.',
         mostPopular: false,
     },
@@ -30,7 +30,7 @@ const tiers = [
         name: 'Enterprise',
         id: 'tier-enterprise',
         href: '#',
-        priceMonthly: '$99',
+        priceMonthly: '£200+',
         description: 'Providing advanced features and support for your enterprise needs.',
         mostPopular: false,
     },
@@ -72,17 +72,16 @@ function classNames(...classes) {
 
 export default function Pricing() {
     return (
-        <div className="bg-gray-900 py-24 sm:py-32 ">
+        <div className="bg-theme-primary py-24 sm:py-64 ">
             <div className="mx-auto container px-6 lg:px-8 relative z-30">
                 <div className="mx-auto max-w-4xl text-center">
-                    <h2 className="text-base font-semibold leading-7 text-indigo-400">Pricing</h2>
+                    <h2 className="text-base font-semibold leading-7 text-theme-purple">Pricing</h2>
                     <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
-                        Plans for teams of&nbsp;all&nbsp;sizes
+                        Plans for all projects
                     </p>
                 </div>
                 <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">
-                    Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in.
-                    Explicabo id ut laborum.
+                    Our foundational pricing plans are designed for flexibility and transparency, accommodating any special requirements your project might have—from advanced applications and complex animations to additional content. We ensure every enhancement is clearly communicated, aligning our services with your unique vision and budget, guaranteeing no surprises.
                 </p>
 
                 {/* xs to lg */}
@@ -107,7 +106,7 @@ export default function Pricing() {
                                 aria-describedby={tier.id}
                                 className={classNames(
                                     tier.mostPopular
-                                        ? 'bg-indigo-500 text-white hover:bg-indigo-400 focus-visible:outline-indigo-500'
+                                        ? 'bg-theme-purple text-white hover:bg-theme-purple focus-visible:outline-theme-purple'
                                         : 'bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white',
                                     'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
                                 )}
@@ -121,7 +120,7 @@ export default function Pricing() {
                                             {section.features.map((feature) =>
                                                 feature.tiers[tier.name] ? (
                                                     <li key={feature.name} className="flex gap-x-3">
-                                                        <CheckIcon className="h-6 w-5 flex-none text-indigo-400" aria-hidden="true" />
+                                                        <CheckIcon className="h-6 w-5 flex-none text-theme-purple" aria-hidden="true" />
                                                         <span>
                                                             {feature.name}{' '}
                                                             {typeof feature.tiers[tier.name] === 'string' ? (
@@ -167,7 +166,7 @@ export default function Pricing() {
                                     <td />
                                     {tiers.map((tier) => (
                                         <th key={tier.id} scope="col" className="px-6 pt-6 xl:px-8 xl:pt-8">
-                                            <div className="text-sm font-semibold leading-7 text-white">{tier.name}</div>
+                                            <div className="text-sm font-semibold leading-7 text-th">{tier.name}</div>
                                         </th>
                                     ))}
                                 </tr>
@@ -187,7 +186,7 @@ export default function Pricing() {
                                                 href={tier.href}
                                                 className={classNames(
                                                     tier.mostPopular
-                                                        ? 'bg-indigo-500 hover:bg-indigo-400 focus-visible:outline-indigo-600'
+                                                        ? 'bg-theme-purple hover:bg-indigo-400 focus-visible:outline-indigo-600'
                                                         : 'bg-white/10 hover:bg-white/20 focus-visible:outline-white',
                                                     'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
                                                 )}
@@ -227,7 +226,7 @@ export default function Pricing() {
                                                         ) : (
                                                             <>
                                                                 {feature.tiers[tier.name] === true ? (
-                                                                    <CheckIcon className="mx-auto h-5 w-5 text-indigo-400" aria-hidden="true" />
+                                                                    <CheckIcon className="mx-auto h-5 w-5 text-theme-purple" aria-hidden="true" />
                                                                 ) : (
                                                                     <MinusIcon className="mx-auto h-5 w-5 text-gray-500" aria-hidden="true" />
                                                                 )}

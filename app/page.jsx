@@ -21,9 +21,9 @@ export default function Home() {
             <Pricing />
             {/* <Services /> */}
             {/* <About /> */}
-            <Projects />
+            {/* <Projects /> */}
             <Partners />
-            <Contact />
+            {/* <Contact /> */}
             <Footer />
         </main>
     );

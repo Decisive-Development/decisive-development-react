@@ -8,7 +8,7 @@ const JourneyCTA = () => {
                 <p className="text-lg font-bold mb-3">
                     Discover why Decisive Development outpaces template builders like Wix, Squarespace or GoDaddy. 
                 </p>
-                <p>
+                <p className="text-theme-complementary">
                     Unveil the advantages of choosing custom-crafted solutions tailored to your business's unique needs.
                 </p>
             </div>
