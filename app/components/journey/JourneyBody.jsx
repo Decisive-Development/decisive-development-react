@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 const JourneyBody = () => {
     // cant apply the animation twice to different elements
     const [ref, inView ] = useInView({
-        threshold: 0.3
+        threshold: 0.4
     })
     const [ref2, inView2 ] = useInView({
         threshold: 0.4
