@@ -5,8 +5,7 @@ import images from "../../../public/index";
 import { footerLinks, companyLinks, legalLinks } from "../../constants";
 
 const Footer = () => {
-    const gradients = ['blue', 'red', 'green', 'turquoise', 'orange', 'purple'];
-    const colorClasses = ['text-theme-blue', 'text-theme-red', 'text-theme-green', 'text-theme-turquoise', 'text-theme-orange', 'text-theme-purple'];
+    const colorClasses = ['text-theme-blue', 'text-theme-red', 'text-theme-green', 'text-theme-yellow', 'text-theme-purple'];
 
     // Function to get a random color class
     const getRandomColorClass = (currentClass) => {
@@ -17,52 +16,24 @@ const Footer = () => {
             return newColorClass;
         };
     return (
-        <>
-            <style jsx>{`
-                .animate-slide-in {
-                    display: flex;
-                    width: 250%;
-                    animation: slideIn 15s linear infinite;
-                }
-                .animate-slide-out {
-                    display: flex;
-                    width: 250%;
-                    animation: slideOut 15s linear infinite;
-                }
-                @keyframes slideIn {
-                    from {
-                        transform: translateX(0);
-                    }
-                    to {
-                        transform: translateX(-50%);
-                    }
-                }
-                
-                @keyframes slideOut {
-                    from {
-                        transform: translateX(-50%);
-                    }
-                    to {
-                        transform: translateX(0);
-                    }
-                }
-
-                .slide-content span {
-                    width: 20vw;
-                }
-            `}</style>
-            <footer className="overflow-x-hidden">
-                <section className="bg-theme-secondary bg-opacity-25 z-30 relative mt-32 py-32">
-                    
-                    <div className="animate-slide-out absolute w-full bottom-0 left-0">
-                        {[...Array(1)].flatMap((_, idx) => (
-                            gradients.map((color, index) => (
-                                <span 
-                                    key={`slide-out-${color}-${idx}-${index}`}
-                                    className={`slide-content h-[1px] w-full bg-gradient-to-r from-transparent via-theme-${color} to-transparent`}></span>
-                            ))
-                        ))}
+        <footer className="overflow-x-hidden">
+            <section className="bg-theme-secondary bg-opacity-25 z-30 relative mt-32 py-32">
+                <div className="absolute bottom-0 left-0 w-full">
+                    <div className="animate-slide ">
+                        {/* First set of lines */}
+                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-blue to-transparent"></span>
+                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-red to-transparent"></span>
+                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-green to-transparent"></span>
+                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-turquoise to-transparent"></span>
+                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-orange to-transparent"></span>
+                        {/* Duplicate set of lines for seamless looping */}
+                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-blue to-transparent"></span>
+                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-red to-transparent"></span>
+                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-green to-transparent"></span>
+                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-turquoise to-transparent"></span>
+                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-orange to-transparent"></span>
                     </div>
+                </div>
                 {/* <span className="bg-theme-primary h-5 mt-10 w-full block absolute -top-5"></span> */}
                 <div className="container relative">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 h-full gap-10">
@@ -181,7 +152,6 @@ const Footer = () => {
                 </div>
             </section>
         </footer>
-        </>
     );
 };
 
