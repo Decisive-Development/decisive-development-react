@@ -5,7 +5,7 @@ import images from "../../../public/index";
 import { footerLinks, companyLinks, legalLinks } from "../../constants";
 
 const Footer = () => {
-    const gradients = ['blue', 'red', 'green', 'turquoise', 'orange', 'purple'];
+    const gradients = ['theme-blue', 'theme-red', 'theme-green', 'theme-turquoise', 'theme-orange', 'theme-purple'];
     const colorClasses = ['text-theme-blue', 'text-theme-red', 'text-theme-green', 'text-theme-turquoise', 'text-theme-orange', 'text-theme-purple'];
 
     // Function to get a random color class
@@ -59,7 +59,7 @@ const Footer = () => {
                             gradients.map((color, index) => (
                                 <span 
                                     key={`slide-out-${color}-${idx}-${index}`}
-                                    className={`slide-content h-[1px] w-full bg-gradient-to-r from-transparent via-theme-${color} to-transparent`}></span>
+                                    className={`slide-content h-[1px] w-full bg-gradient-to-r from-transparent via-${color} to-transparent`}></span>
                             ))
                         ))}
                     </div>
