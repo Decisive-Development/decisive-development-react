@@ -7,24 +7,24 @@ import { useInView } from "react-intersection-observer";
 const JourneyBody = () => {
     // cant apply the animation twice to different elements
     const [ref, inView ] = useInView({
-        threshold: 0.4
+        threshold: 0.6
     })
     const [ref2, inView2 ] = useInView({
-        threshold: 0.4
+        threshold: 0.6
     })
     const [ref3, inView3 ] = useInView({
-        threshold: 0.4
+        threshold: 0.6
     })
     const [ref4, inView4 ] = useInView({
-        threshold: 0.4
+        threshold: 0.6
     })
     return (
 // Convert sections into components
 // Add images
 // Add page CTAs
-        <section>
+        <section className='mr-12 -ml-12'>
 {/* red */}
-            <div className="grid grid-cols-12 h-full">                
+            <div className="grid grid-cols-12 h-full ">                
                 <div 
                     className="col-span-3 h-full relative py-32 pr-14 text-right "
                     ref={ref}

@@ -39,22 +39,22 @@ module.exports = {
                     DEFAULT: '#FFFFFC',
                 },
                 'theme-blue': {
-                    DEFAULT: '#52BBF6',
+                    DEFAULT: '#3E9FFF',
                 },
                 'theme-red': {
-                    DEFAULT: '#F65E5E',
+                    DEFAULT: '#FF4848',
                 },
                 'theme-green': {
-                    DEFAULT: '#A9DC73',
+                    DEFAULT: '#B9FF33',
                 },
                 'theme-turquoise': {
-                    DEFAULT: '#56D7D7',
+                    DEFAULT: '#48EDE8',
                 },
                 'theme-orange': {
-                    DEFAULT: '#EE9859',
+                    DEFAULT: '#FF8400',
                 },
                 'theme-purple': {
-                    DEFAULT: '#DC7AE1',
+                    DEFAULT: '#E46EED',
                 },
             }
 
