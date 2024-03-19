@@ -6,7 +6,7 @@ import { footerLinks, companyLinks, legalLinks } from "../../constants";
 
 const Footer = () => {
     const gradients = ['blue', 'red', 'green', 'turquoise', 'orange', 'purple'];
-    const colorClasses = ['text-theme-blue', 'text-theme-red', 'text-theme-green', 'text-theme-yellow', 'text-theme-purple'];
+    const colorClasses = ['text-theme-blue', 'text-theme-red', 'text-theme-green', 'text-theme-turquoise', 'text-theme-orange', 'text-theme-purple'];
 
     // Function to get a random color class
     const getRandomColorClass = (currentClass) => {
@@ -53,15 +53,7 @@ const Footer = () => {
             `}</style>
             <footer className="overflow-x-hidden">
                 <section className="bg-theme-secondary bg-opacity-25 z-30 relative mt-32 py-32">
-                    {/* <div className="animate-slide-in absolute w-full top-0 left-0">
-                        {[...Array(2)].flatMap((_, idx) => (
-                            gradients.map((color, index) => (
-                                <span 
-                                    key={`slide-in-${color}-${idx}-${index}`}
-                                    className={`slide-content h-[1px] w-full bg-gradient-to-r from-transparent via-theme-${color} to-transparent`}></span>
-                            ))
-                        ))}
-                    </div> */}
+                    
                     <div className="animate-slide-out absolute w-full bottom-0 left-0">
                         {[...Array(2)].flatMap((_, idx) => (
                             gradients.map((color, index) => (
