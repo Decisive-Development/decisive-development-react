@@ -5,7 +5,7 @@ import images from "../../../public/index";
 import { footerLinks, companyLinks, legalLinks } from "../../constants";
 
 const Footer = () => {
-    const gradients = ['blue', 'red', 'green', 'turquoise', 'orange'];
+    const gradients = ['blue', 'red', 'green', 'turquoise', 'orange', 'purple'];
     const colorClasses = ['text-theme-blue', 'text-theme-red', 'text-theme-green', 'text-theme-yellow', 'text-theme-purple'];
 
     // Function to get a random color class
