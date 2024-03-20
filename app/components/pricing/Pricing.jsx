@@ -12,7 +12,7 @@ const tiers = [
     },
     {
         name: 'Standard',
-        id: 'tier-essential',
+        id: 'tier-standard',
         href: '#',
         priceMonthly: '£100',
         description: 'Quis eleifend a tincidunt pellentesque. A tempor in sed.',
@@ -40,31 +40,52 @@ const sections = [
     {
         name: 'Features',
         features: [
-            { name: 'Integrations', tiers: { Basic: true, Essential: true, Premium: true } },
-            { name: 'Shared links', tiers: { Basic: true, Essential: true, Premium: true } },
-            { name: 'Importing and exporting', tiers: { Essential: true, Premium: true } },
-            { name: 'Team members', tiers: { Essential: 'Up to 20 users', Premium: 'Up to 50 users' } },
+            { name: 'Total Pages', tiers: { Basic: '1 Page', Standard: '3 Pages', Premium: '5 Pages', Enterprise: '5 + Pages' } },
+            { name: 'Bespoke Design', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'Custom Code', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'Mobile Responsive', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'Search Engine Optimisation (SEO)', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'Animations', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'Bespoke Animations', tiers: { Basic: false, Standard: false, Premium: true, Enterprise: true } },
+            { name: 'Site Hosting', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'Domain Hosting', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: true } },
+            { name: 'Custom Applications', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: true } },
+            { name: 'Copywriting', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'Google Analytics', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'SSL Certificate', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
         ],
     },
     {
-        name: 'Reporting',
+        name: 'Design',
         features: [
-            { name: 'Advanced analytics', tiers: { Basic: true, Essential: true, Premium: true } },
-            { name: 'Basic reports', tiers: { Essential: true, Premium: true } },
-            { name: 'Professional reports', tiers: { Premium: true } },
-            { name: 'Custom report builder', tiers: { Premium: true } },
+            { name: 'Wireframe', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'XD Prototype', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'Colour Scheme', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'Typography', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'Media (Photo / Video)', tiers: { Basic: false, Standard: false, Premium: true, Enterprise: true } },
+            { name: 'Logo Design', tiers: { Basic: false, Standard: false, Premium: true, Enterprise: true } },
+            { name: 'Full Brand Suite', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: true } },
         ],
     },
     {
         name: 'Support',
         features: [
-            { name: '24/7 online support', tiers: { Basic: true, Essential: true, Premium: true } },
-            { name: 'Quarterly product workshops', tiers: { Essential: true, Premium: true } },
-            { name: 'Priority phone support', tiers: { Essential: true, Premium: true } },
-            { name: '1:1 onboarding tour', tiers: { Premium: true } },
+            { name: '24/7 Online Support', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'Unlimited Small Edits', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'Quarterly Analytical Reports', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } }
         ],
     },
-]
+    {
+        name: 'Optionals',
+        features: [
+            { name: 'HTML Emails', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: '1 Per Month' } },
+            { name: 'Social Media Marketing', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: false } },
+            { name: 'CMS Integration', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: false } },
+            { name: 'Bespoke Photos / Videos', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: true } }
+        ],
+    },
+];
+
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -72,7 +93,7 @@ function classNames(...classes) {
 
 export default function Pricing() {
     return (
-        <div className="bg-theme-primary py-24 sm:py-64 ">
+        <div className="bg-theme-secondary bg-opacity-10 py-24 sm:py-64 ">
             <div className="mx-auto container px-6 lg:px-8 relative z-30">
                 <div className="mx-auto max-w-4xl text-center">
                     <h2 className="text-base font-semibold leading-7 text-theme-purple">Pricing</h2>
@@ -80,7 +101,7 @@ export default function Pricing() {
                         Plans for all projects
                     </p>
                 </div>
-                <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-300">
+                <p className="mx-auto mt-6 text-center text-lg leading-8 text-gray-300">
                     Our foundational pricing plans are designed for flexibility and transparency, accommodating any special requirements your project might have—from advanced applications and complex animations to additional content. We ensure every enhancement is clearly communicated, aligning our services with your unique vision and budget, guaranteeing no surprises.
                 </p>
 
@@ -148,7 +169,7 @@ export default function Pricing() {
                                     aria-hidden="true"
                                     style={{ marginLeft: `${(tiers.findIndex((tier) => tier.mostPopular) + 1) * 20}%` }}
                                 >
-                                    <div className="w-full rounded-t-xl border-x border-t border-white/10 bg-white/5" />
+                                    <div className="w-full rounded-t-xl border-x border-t border-theme-complementary/10 bg-theme-complementary/5" />
                                 </div>
                             </div>
                         ) : null}
@@ -178,7 +199,7 @@ export default function Pricing() {
                                     </th>
                                     {tiers.map((tier) => (
                                         <td key={tier.id} className="px-6 pt-2 xl:px-8">
-                                            <div className="flex items-baseline gap-x-1 text-white">
+                                            <div className="flex items-baseline gap-x-1 text-theme-neutral">
                                                 <span className="text-4xl font-bold">{tier.priceMonthly}</span>
                                                 <span className="text-sm font-semibold leading-6">/month</span>
                                             </div>
@@ -187,8 +208,8 @@ export default function Pricing() {
                                                 className={classNames(
                                                     tier.mostPopular
                                                         ? 'bg-theme-purple hover:bg-indigo-400 focus-visible:outline-indigo-600'
-                                                        : 'bg-white/10 hover:bg-white/20 focus-visible:outline-white',
-                                                    'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
+                                                        : 'bg-theme-complementary/10 hover:bg-white/20 focus-visible:outline-white',
+                                                    'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-theme-neutral focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
                                                 )}
                                             >
                                                 Buy plan
@@ -204,31 +225,31 @@ export default function Pricing() {
                                                 colSpan={5}
                                                 className={classNames(
                                                     sectionIdx === 0 ? 'pt-8' : 'pt-16',
-                                                    'pb-4 text-sm font-semibold leading-6 text-white'
+                                                    'pb-4 text-sm font-semibold leading-6 text-theme-purple'
                                                 )}
                                             >
                                                 {section.name}
-                                                <div className="absolute inset-x-8 mt-4 h-px bg-white/10" />
+                                                <div className="absolute inset-x-8 mt-4 h-px bg-theme-complementary/10" />
                                             </th>
                                         </tr>
                                         {section.features.map((feature) => (
                                             <tr key={feature.name}>
-                                                <th scope="row" className="py-4 text-sm font-normal leading-6 text-white">
+                                                <th scope="row" className="py-2 text-sm font-normal leading-6 text-theme-neutral">
                                                     {feature.name}
-                                                    <div className="absolute inset-x-8 mt-4 h-px bg-white/5" />
+                                                    <div className="absolute inset-x-8 mt-2 h-px bg-theme-complementary/5" />
                                                 </th>
                                                 {tiers.map((tier) => (
-                                                    <td key={tier.id} className="px-6 py-4 xl:px-8">
+                                                    <td key={tier.id} className="px-6 py-2 xl:px-8">
                                                         {typeof feature.tiers[tier.name] === 'string' ? (
-                                                            <div className="text-center text-sm leading-6 text-gray-300">
+                                                            <div className="text-center text-sm leading-6 text-theme-complementary">
                                                                 {feature.tiers[tier.name]}
                                                             </div>
                                                         ) : (
                                                             <>
                                                                 {feature.tiers[tier.name] === true ? (
-                                                                    <CheckIcon className="mx-auto h-5 w-5 text-theme-purple" aria-hidden="true" />
+                                                                    <CheckIcon className="mx-auto h-5 w-5 text-theme-blue" aria-hidden="true" />
                                                                 ) : (
-                                                                    <MinusIcon className="mx-auto h-5 w-5 text-gray-500" aria-hidden="true" />
+                                                                    <MinusIcon className="mx-auto h-5 w-5 text-theme-red" aria-hidden="true" />
                                                                 )}
 
                                                                 <span className="sr-only">
