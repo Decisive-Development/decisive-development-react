@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import { CheckIcon, MinusIcon } from '@heroicons/react/20/solid'
+import { ColouredLine } from "../../components";
 
 const tiers = [
     {
@@ -30,7 +31,7 @@ const tiers = [
         name: 'Enterprise',
         id: 'tier-enterprise',
         href: '#',
-        priceMonthly: '£200+',
+        priceEnterprise: 'Quote Pricing',
         description: 'Providing advanced features and support for your enterprise needs.',
         mostPopular: false,
     },
@@ -43,23 +44,24 @@ const sections = [
             { name: 'Total Pages', tiers: { Basic: '1 Page', Standard: '3 Pages', Premium: '5 Pages', Enterprise: '5 + Pages' } },
             { name: 'Bespoke Design', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
             { name: 'Custom Code', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
-            { name: 'Mobile Responsive', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
             { name: 'Search Engine Optimisation (SEO)', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
             { name: 'Animations', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
             { name: 'Bespoke Animations', tiers: { Basic: false, Standard: false, Premium: true, Enterprise: true } },
             { name: 'Site Hosting', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
             { name: 'Domain Hosting', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: true } },
             { name: 'Custom Applications', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: true } },
-            { name: 'Copywriting', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            
             { name: 'Google Analytics', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
             { name: 'SSL Certificate', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
         ],
     },
     {
-        name: 'Design',
+        name: 'Design & Development',
         features: [
-            { name: 'Wireframe', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            
+            { name: 'Mobile Responsive', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
             { name: 'XD Prototype', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
+            { name: 'Copywriting', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
             { name: 'Colour Scheme', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
             { name: 'Typography', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
             { name: 'Media (Photo / Video)', tiers: { Basic: false, Standard: false, Premium: true, Enterprise: true } },
@@ -79,6 +81,7 @@ const sections = [
         name: 'Optionals',
         features: [
             { name: 'HTML Emails', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: '1 Per Month' } },
+            { name: 'Landing Pages', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: false } },
             { name: 'Social Media Marketing', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: false } },
             { name: 'CMS Integration', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: false } },
             { name: 'Bespoke Photos / Videos', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: true } }
@@ -93,10 +96,13 @@ function classNames(...classes) {
 
 export default function Pricing() {
     return (
-        <div className="bg-theme-secondary bg-opacity-10 py-24 sm:py-64 ">
+        <div className="bg-theme-secondary bg-opacity-10 py-24 sm:py-64 relative overflow-x-hidden">
+            <ColouredLine position="top-0" />
             <div className="mx-auto container px-6 lg:px-8 relative z-30">
                 <div className="mx-auto max-w-4xl text-center">
-                    <h2 className="text-base font-semibold leading-7 text-theme-purple">Pricing</h2>
+                    <h2 className="text-base font-semibold leading-7 text-theme-purple">
+                        Pricing
+                        </h2>
                     <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
                         Plans for all projects
                     </p>
@@ -104,7 +110,6 @@ export default function Pricing() {
                 <p className="mx-auto mt-6 text-center text-lg leading-8 text-gray-300">
                     Our foundational pricing plans are designed for flexibility and transparency, accommodating any special requirements your project might have—from advanced applications and complex animations to additional content. We ensure every enhancement is clearly communicated, aligning our services with your unique vision and budget, guaranteeing no surprises.
                 </p>
-
                 {/* xs to lg */}
                 <div className="mx-auto mt-12 max-w-md space-y-8 sm:mt-16 lg:hidden">
                     {tiers.map((tier) => (
@@ -118,10 +123,18 @@ export default function Pricing() {
                             <h3 id={tier.id} className="text-sm font-semibold leading-6 text-white">
                                 {tier.name}
                             </h3>
-                            <p className="mt-2 flex items-baseline gap-x-1">
-                                <span className="text-4xl font-bold text-white">{tier.priceMonthly}</span>
-                                <span className="text-sm font-semibold text-gray-300">/month</span>
-                            </p>
+                            
+                                {tier.priceMonthly && (
+                                    <p className="mt-2 flex items-baseline gap-x-1">
+                                        <span className="text-3xl font-bold">{tier.priceMonthly}</span>
+                                        <span className="text-sm font-semibold leading-6">/month</span>
+                                    </p>
+                                )}
+                                {tier.priceEnterprise && (
+                                    <p className="mt-2 flex items-baseline gap-x-1">
+                                        <span className="text-2xl font-bold">{tier.priceEnterprise}</span>
+                                    </p>
+                                )}
                             <a
                                 href={tier.href}
                                 aria-describedby={tier.id}
@@ -160,7 +173,7 @@ export default function Pricing() {
                 </div>
 
                 {/* lg+ */}
-                <div className="isolate mt-20 hidden lg:block">
+                <div className="isolate mt-20 hidden lg:block relative z-20 bg-theme-secondary-background -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30">
                     <div className="relative -mx-8">
                         {tiers.some((tier) => tier.mostPopular) ? (
                             <div className="absolute inset-x-4 inset-y-0 -z-10 flex">
@@ -187,7 +200,7 @@ export default function Pricing() {
                                     <td />
                                     {tiers.map((tier) => (
                                         <th key={tier.id} scope="col" className="px-6 pt-6 xl:px-8 xl:pt-8">
-                                            <div className="text-sm font-semibold leading-7 text-th">{tier.name}</div>
+                                            <div className="text-sm font-semibold leading-7 text-theme-purple text-th">{tier.name}</div>
                                         </th>
                                     ))}
                                 </tr>
@@ -199,23 +212,32 @@ export default function Pricing() {
                                     </th>
                                     {tiers.map((tier) => (
                                         <td key={tier.id} className="px-6 pt-2 xl:px-8">
-                                            <div className="flex items-baseline gap-x-1 text-theme-neutral">
-                                                <span className="text-4xl font-bold">{tier.priceMonthly}</span>
-                                                <span className="text-sm font-semibold leading-6">/month</span>
-                                            </div>
+                                            {tier.priceMonthly && (
+                                                <div className="flex items-baseline gap-x-1 text-theme-neutral">
+                                                    <span className="text-3xl font-bold">{tier.priceMonthly}</span>
+                                                    <span className="text-sm font-semibold leading-6">/month</span>
+                                                </div>
+                                            )}
+                                            {tier.priceEnterprise && (
+                                                <div className="flex items-baseline gap-x-1 text-theme-neutral">
+                                                    <span className="text-2xl font-bold">{tier.priceEnterprise}</span>
+                                                </div>
+                                            )}
                                             <a
                                                 href={tier.href}
                                                 className={classNames(
                                                     tier.mostPopular
-                                                        ? 'bg-theme-purple hover:bg-indigo-400 focus-visible:outline-indigo-600'
+                                                        ? 'bg-theme-green text-theme-primary focus-visible:theme-purple'
                                                         : 'bg-theme-complementary/10 hover:bg-white/20 focus-visible:outline-white',
-                                                    'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-theme-neutral focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
+                                                    'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-theme-neutral focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
+                                                    {'hidden': !tier.priceMonthly}
                                                 )}
                                             >
-                                                Buy plan
+                                                Get Started
                                             </a>
                                         </td>
                                     ))}
+
                                 </tr>
                                 {sections.map((section, sectionIdx) => (
                                     <Fragment key={section.name}>
@@ -247,7 +269,7 @@ export default function Pricing() {
                                                         ) : (
                                                             <>
                                                                 {feature.tiers[tier.name] === true ? (
-                                                                    <CheckIcon className="mx-auto h-5 w-5 text-theme-blue" aria-hidden="true" />
+                                                                    <CheckIcon className="mx-auto h-5 w-5 text-theme-green" aria-hidden="true" />
                                                                 ) : (
                                                                     <MinusIcon className="mx-auto h-5 w-5 text-theme-red" aria-hidden="true" />
                                                                 )}

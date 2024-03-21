@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from 'react'; // Correct import of useState
 import images from "../../../public/index";
+import { ColouredLine } from "../../components";
 import { footerLinks, companyLinks, legalLinks } from "../../constants";
 
 const Footer = () => {
@@ -17,24 +18,8 @@ const Footer = () => {
         };
     return (
         <footer className="overflow-x-hidden">
-            <section className="bg-theme-secondary bg-opacity-25 z-30 relative mt-32 py-32">
-                <div className="absolute bottom-0 left-0 w-full">
-                    <div className="animate-slide ">
-                        {/* First set of lines */}
-                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-blue to-transparent"></span>
-                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-red to-transparent"></span>
-                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-green to-transparent"></span>
-                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-turquoise to-transparent"></span>
-                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-orange to-transparent"></span>
-                        {/* Duplicate set of lines for seamless looping */}
-                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-blue to-transparent"></span>
-                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-red to-transparent"></span>
-                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-green to-transparent"></span>
-                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-turquoise to-transparent"></span>
-                        <span className="h-[1px] w-1/6 bg-gradient-to-r from-transparent via-theme-orange to-transparent"></span>
-                    </div>
-                </div>
-                {/* <span className="bg-theme-primary h-5 mt-10 w-full block absolute -top-5"></span> */}
+            <section className="bg-theme-secondary bg-opacity-25 z-30 relative py-32">
+                <ColouredLine />
                 <div className="container relative">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 h-full gap-10">
                         <div className="flex flex-col col-span-1 sm:col-span-2 lg:col-span-1">
@@ -135,7 +120,6 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                {/* <span className="bg-theme-primary h-5 mt-10 w-full block absolute bottom-5"></span> */}
             </section>
             <section className="container relative">
                 <div className="bg-theme-primary text-theme-complementary font-light text-center py-10">

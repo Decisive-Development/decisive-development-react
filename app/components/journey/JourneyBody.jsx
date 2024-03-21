@@ -22,7 +22,7 @@ const JourneyBody = () => {
 // Convert sections into components
 // Add images
 // Add page CTAs
-        <section className='mr-12 -ml-12'>
+        <section className='mr-12 -ml-12 pb-64'>
 {/* red */}
             <div className="grid grid-cols-12 h-full ">                
                 <div 
@@ -52,7 +52,7 @@ const JourneyBody = () => {
                 </div>
                 <div className="col-span-9 w-full ml-20 py-32 relative z-20">
                     <Tilt 
-                        className="relative z-20 bg-theme-secondary bg-opacity-25 -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30" 
+                        className="relative z-20 bg-theme-secondary-background -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30" 
                         glareEnable={true} 
                         glareMaxOpacity={0.2} 
                         glareColor="#e27868" 
@@ -122,7 +122,7 @@ const JourneyBody = () => {
                 </div>
                 <div className="col-span-9 w-full ml-20 py-32">
                     <Tilt 
-                        className="relative z-20 bg-theme-secondary bg-opacity-25 -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30" 
+                        className="relative z-20 bg-theme-secondary-background -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30" 
                         glareEnable={true} 
                         glareMaxOpacity={0.2} 
                         glareColor="#52BBF6" 
@@ -225,7 +225,7 @@ const JourneyBody = () => {
                 </div>
                 <div className="col-span-9 w-full ml-20 py-32">
                     <Tilt 
-                        className="relative z-20 bg-theme-secondary bg-opacity-25 -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30" 
+                        className="relative z-20 bg-theme-secondary-background -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30" 
                         glareEnable={true} 
                         glareMaxOpacity={0.2} 
                         glareColor="#A9DC73" 
@@ -253,7 +253,7 @@ const JourneyBody = () => {
                                                 Graphics, Media, and Copywriting agreed upon.
                                             </li>
                                             <li className="mb-1">
-                                                Wire-frame presented for approval.
+                                                XD prototype presented for approval.
                                             </li>
                                             <li className="mb-1">
                                                 Hand-coded development of the website.
@@ -326,7 +326,7 @@ const JourneyBody = () => {
                 </div>
                 <div className="col-span-9 w-full ml-20 py-32">
                     <Tilt 
-                        className="relative z-20 bg-theme-secondary bg-opacity-25 -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30" 
+                        className="relative z-20 bg-theme-secondary-background -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30" 
                         glareEnable={true} 
                         glareMaxOpacity={0.2} 
                         glareColor="#EE9859" 

@@ -30,7 +30,8 @@ module.exports = {
                     DEFAULT: '#0D161D',
                 },
                 'theme-secondary': {
-                    DEFAULT: '#525B66',                    
+                    DEFAULT: '#525B66',    
+                    background: '#232d34',                
                 },
                 'theme-complementary': {
                     DEFAULT: '#CFD4D7',
