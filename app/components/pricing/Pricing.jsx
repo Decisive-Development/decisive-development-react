@@ -108,7 +108,7 @@ export default function Pricing() {
                     </p>
                 </div>
                 <p className="mx-auto mt-6 text-center text-lg leading-8 text-gray-300">
-                    Our foundational pricing plans are designed for flexibility and transparency, accommodating any special requirements your project might have—from advanced applications and complex animations to additional content. We ensure every enhancement is clearly communicated, aligning our services with your unique vision and budget, guaranteeing no surprises.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veniam inventore deserunt nostrum consequuntur repudiandae non enim quis molestiae laborum minus culpa exercitationem repellat, aspernatur necessitatibus sit praesentium nam reprehenderit!
                 </p>
                 {/* xs to lg */}
                 <div className="mx-auto mt-12 max-w-md space-y-8 sm:mt-16 lg:hidden">

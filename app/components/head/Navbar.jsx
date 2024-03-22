@@ -9,7 +9,7 @@ const Navbar = () => {
                 <Image
                     src={images.logoWhite}
                     alt="Decisive Development"
-                    className="w-52 max-w-full pointer-events-auto "
+                    className="w-52 max-w-full pointer-events-auto select-none"
                 />
                 <div className="absolute left-0 bottom-0 h-12 w-full translate-y-full nav-fade"></div>
             </div>

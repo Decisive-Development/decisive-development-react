@@ -15,7 +15,16 @@ import {
 export default function Home() {
     return (
         <main className="relative bg-theme-primary text-base ">
-            <ParticlesComp />
+            <ParticlesComp 
+            options={
+                {
+                    fullScreen: {
+                        enable: false,
+                        zIndex: -1
+                    }
+                }
+            }
+            />
             <Header />
             <Journey />
             <Pricing />

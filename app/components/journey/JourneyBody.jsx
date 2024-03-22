@@ -63,7 +63,7 @@ const JourneyBody = () => {
                     >
                         <div >
                         <h3 className="font-bold text-3xl text-theme-red mb-3">
-                            Why Choose Decisive Development
+                            Avoid Cookie Cutter Platforms
                         </h3>
                         <h4 className="font-medium text-xl mb-10">
                             Escape the Ordinary, Embrace the Exceptional

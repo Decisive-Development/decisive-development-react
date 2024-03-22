@@ -59,19 +59,10 @@ h6 {
     overflow-wrap: break-word;
 }
 
-#root,
-#__next {
-    isolation: isolate;
-}
-
-/* .container {
-	max-width: 100%;
-	width: 1500px;
-	margin: 0 auto;
-	padding: 0 35px;
-} */
-#tsparticles-custom {
-    position: relative !important;
+#tsparticles{
+    position: absolute;
+    left: 0;
+    top: 0;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -79,6 +70,10 @@ h6 {
     z-index: 10;
 }
 
+#root,
+#__next {
+    isolation: isolate;
+}
 
 .nav-fade{
     background: rgb(13,22,29);
