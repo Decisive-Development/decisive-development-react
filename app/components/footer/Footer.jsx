@@ -11,11 +11,11 @@ const Footer = () => {
     // Function to get a random color class
     const getRandomColorClass = (currentClass) => {
         let newColorClass;
-            do {
-                newColorClass = colorClasses[Math.floor(Math.random() * colorClasses.length)];
-            } while (newColorClass === currentClass);
-            return newColorClass;
-        };
+        do {
+            newColorClass = colorClasses[Math.floor(Math.random() * colorClasses.length)];
+        } while (newColorClass === currentClass);
+        return newColorClass;
+    };
     return (
         <footer className="overflow-x-hidden">
             <section className="bg-theme-secondary bg-opacity-25 z-30 relative py-32">
@@ -28,17 +28,17 @@ const Footer = () => {
                                 alt="Decisive Development"
                                 className="w-52 mb-5 max-w-full pointer-events-auto"
                             />
-                            <a 
+                            <a
                                 className="mb-2"
                                 href="mailto:tom@decisive.development.com"
                             >
-                                <span className="font-bold">Email:</span>&nbsp;<span className="text-theme-complementary">tom@decisive.development.com</span> 
+                                <span className="font-bold">Email:</span>&nbsp;<span className="text-theme-complementary">tom@decisive.development.com</span>
                             </a>
-                            <a 
+                            <a
                                 href="tel:+447708754503"
                                 className="mb-5"
                             >
-                                <span className="font-bold">Phone:</span>&nbsp;<span className="text-theme-complementary">+44 (0) 77 087 545 03</span>  
+                                <span className="font-bold">Phone:</span>&nbsp;<span className="text-theme-complementary">+44 (0) 77 087 545 03</span>
                             </a>
                             <div>
                                 <ul className="cursor-pointer grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 font-light pointer-events-auto">
@@ -124,7 +124,7 @@ const Footer = () => {
             <section className="container relative">
                 <div className="bg-theme-primary text-theme-complementary font-light text-center py-10">
                     <p className="mb-2">
-                        © 2021 - 2024 Decisive Development Ltd. All rights reserved.                        
+                        © 2021 - 2024 Decisive Development Ltd. All rights reserved.
                     </p>
                     <p className="mb-2">
                         Global Freelance Web Design, Development, Management, Maintenance and Support.

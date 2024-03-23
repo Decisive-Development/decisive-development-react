@@ -20,9 +20,9 @@ const ParticlesComp = () => {
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                fullScreen: { 
-                    enable: false, 
-                    zIndex: 0 
+                fullScreen: {
+                    enable: false,
+                    zIndex: 0
                 },
                 particles: {
                     number: {

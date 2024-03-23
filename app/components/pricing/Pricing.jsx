@@ -50,7 +50,7 @@ const sections = [
             { name: 'Site Hosting', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
             { name: 'Domain Hosting', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: true } },
             { name: 'Custom Applications', tiers: { Basic: false, Standard: false, Premium: false, Enterprise: true } },
-            
+
             { name: 'Google Analytics', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
             { name: 'SSL Certificate', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
         ],
@@ -58,7 +58,7 @@ const sections = [
     {
         name: 'Design & Development',
         features: [
-            
+
             { name: 'Mobile Responsive', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
             { name: 'XD Prototype', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
             { name: 'Copywriting', tiers: { Basic: true, Standard: true, Premium: true, Enterprise: true } },
@@ -102,7 +102,7 @@ export default function Pricing() {
                 <div className="mx-auto max-w-4xl text-center">
                     <h2 className="text-base font-semibold leading-7 text-theme-purple">
                         Pricing
-                        </h2>
+                    </h2>
                     <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
                         Plans for all projects
                     </p>
@@ -123,18 +123,18 @@ export default function Pricing() {
                             <h3 id={tier.id} className="text-sm font-semibold leading-6 text-white">
                                 {tier.name}
                             </h3>
-                            
-                                {tier.priceMonthly && (
-                                    <p className="mt-2 flex items-baseline gap-x-1">
-                                        <span className="text-3xl font-bold">{tier.priceMonthly}</span>
-                                        <span className="text-sm font-semibold leading-6">/month</span>
-                                    </p>
-                                )}
-                                {tier.priceEnterprise && (
-                                    <p className="mt-2 flex items-baseline gap-x-1">
-                                        <span className="text-2xl font-bold">{tier.priceEnterprise}</span>
-                                    </p>
-                                )}
+
+                            {tier.priceMonthly && (
+                                <p className="mt-2 flex items-baseline gap-x-1">
+                                    <span className="text-3xl font-bold">{tier.priceMonthly}</span>
+                                    <span className="text-sm font-semibold leading-6">/month</span>
+                                </p>
+                            )}
+                            {tier.priceEnterprise && (
+                                <p className="mt-2 flex items-baseline gap-x-1">
+                                    <span className="text-2xl font-bold">{tier.priceEnterprise}</span>
+                                </p>
+                            )}
                             <a
                                 href={tier.href}
                                 aria-describedby={tier.id}
@@ -230,7 +230,7 @@ export default function Pricing() {
                                                         ? 'bg-theme-green text-theme-primary focus-visible:theme-purple'
                                                         : 'bg-theme-complementary/10 hover:bg-white/20 focus-visible:outline-white',
                                                     'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-theme-neutral focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
-                                                    {'hidden': !tier.priceMonthly}
+                                                    { 'hidden': !tier.priceMonthly }
                                                 )}
                                             >
                                                 Get Started

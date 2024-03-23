@@ -30,8 +30,8 @@ module.exports = {
                     DEFAULT: '#0D161D',
                 },
                 'theme-secondary': {
-                    DEFAULT: '#525B66',    
-                    background: '#232d34',                
+                    DEFAULT: '#525B66',
+                    background: '#232d34',
                 },
                 'theme-complementary': {
                     DEFAULT: '#CFD4D7',
@@ -58,27 +58,6 @@ module.exports = {
                     DEFAULT: '#E46EED',
                 },
             }
-
-            // colors: {
-            // 	blue: {
-            // 		light: '#004F8F',
-            // 		DEFAULT: '#003566',
-            // 		dark: '#00223D',
-            // 	},
-            // 	gray: {
-            // 		DEFAULT: '#7A8B99',
-            // 		dark: '#23292E',
-            // 	},
-            // 	yellow: {
-            // 		DEFAULT: '#FCBA04',
-            // 	},
-            // 	red: {
-            // 		DEFAULT: '#C20114',
-            // 	},
-            // 	green: {
-            // 		DEFAULT: '#248232',
-            // 	}
-            // },
         },
     },
     plugins: [],

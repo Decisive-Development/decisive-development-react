@@ -4,7 +4,7 @@ import { navLinks } from "../../constants";
 
 const Navbar = () => {
     return (
-       <div>
+        <div>
             <div className="pt-10 pb-5 px-10 z-30 fixed left-0 top-0 w-full bg-theme-primary ">
                 <Image
                     src={images.logoWhite}
@@ -25,7 +25,7 @@ const Navbar = () => {
                     ))}
                 </ul>
             </nav>
-       </div>
+        </div>
     );
 };
 

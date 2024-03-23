@@ -15,13 +15,13 @@ const Heading = () => {
                 We tailor our services to your needs, ensuring your website is unique and thriving above your competition. Perfect for small companies, sole traders and start-ups.
             </p>
             <p className="w-[700px] mb-5 text-lg text-theme-complementary">
-                Starting at £50/mo. 
+                Starting at £50/mo.
             </p>
             <p className="w-[700px] font-light mb-5 italic">
-                No page builders. 
+                No page builders.
             </p>
             {/* Turn these into CTAs  "Get Started" + "Find out more"*/}
-           <div className="flex flex-row justify-between w-[550px]">
+            <div className="flex flex-row justify-between w-[550px]">
                 <ButtonCTA href="/" theme="turquoise" className="">
                     Journey
                 </ButtonCTA>
@@ -31,7 +31,7 @@ const Heading = () => {
                 <ButtonCTA href="/" theme="orange" className="">
                     Contact
                 </ButtonCTA>
-           </div>
+            </div>
         </div>
     );
 };
