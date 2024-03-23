@@ -568,13 +568,6 @@ react-parallax-tilt@^1.7.215:
   resolved "https://registry.npmjs.org/react-parallax-tilt/-/react-parallax-tilt-1.7.215.tgz"
   integrity sha512-uIIYccEHyaWjedqaYOETjhHHNej+O85cATUOXtMPgdk4rCYjfpFP9FSPfVc4ezD/qUkBD8bzbFH5BKsrbfLZYA==
 
-react-particles@^2.12.2:
-  version "2.12.2"
-  resolved "https://registry.npmjs.org/react-particles/-/react-particles-2.12.2.tgz"
-  integrity sha512-Bo9DdrBRPFy8uiT7BA8P36Rdmz6GhB/RG9kkWUyZGIsS8AxWyuUjpVxw9Lr23K0LVE2aenAJ0vnqEbbLDpBgQw==
-  dependencies:
-    tsparticles-engine "^2.12.0"
-
 react-tsparticles@^2.12.2:
   version "2.12.2"
   resolved "https://registry.npmjs.org/react-tsparticles/-/react-tsparticles-2.12.2.tgz"
