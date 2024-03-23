@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Shadows+Into+Light&display=swap&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -29,7 +29,7 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     /* cursor: url('images/cursor.png'), auto; */
-    font-family: 'Roboto Flex', sans-serif;
+    
     counter-reset: linenumber;
 }
 
@@ -58,6 +58,47 @@ h5,
 h6 {
     overflow-wrap: break-word;
 }
+p {
+    font-family: 'Roboto Flex', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    letter-spacing: -2px;
+}
+
+.turquoise:hover {
+    box-shadow: 0 0 10px 5px #48ede780;
+}
+.purple:hover {
+    box-shadow: 0 0 10px 5px #e46eed80;
+}
+.orange:hover {
+    box-shadow: 0 0 10px 5px #FF840080;
+}
+.red:hover {
+    box-shadow: 0 0 10px 5px #FF484880;
+}
+.green:hover {
+    box-shadow: 0 0 10px 5px #B9FF3380;
+}
+.blue:hover {
+    box-shadow: 0 0 10px 5px #3E9FFF80;
+}
+
+.ws-10 {
+    word-spacing: -10px;
+}
+
+.ws-15{
+    word-spacing: -15px;
+}
+
+.ws-20{
+    word-spacing: -20px;
+}
+
+
 
 #tsparticles{
     position: absolute;

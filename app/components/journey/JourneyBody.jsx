@@ -24,16 +24,16 @@ const JourneyBody = () => {
         // Add images
         // Add page CTAs
         <section className='mr-12 -ml-12 pb-64'>
-            {/* red */}
+{/* red */}
             <div className="grid grid-cols-12 h-full ">
                 <div
                     className="col-span-3 h-full relative py-32 pr-14 text-right "
                     ref={ref}
                 >
                     <div className="sticky top-2/4 z-20">
-                        <h3 className="mb-5 relative z-20 text-theme-complementary">
+                        <p className="mb-5 relative z-20 text-theme-complementary">
                             Your website reflects your business. Make a <span className="text-theme-neutral font-medium">lasting impression</span>.
-                        </h3>
+                        </p>
                         <ButtonCTA href="/" theme="red" className="ml-auto">
                             Get Started
                         </ButtonCTA>
@@ -65,9 +65,9 @@ const JourneyBody = () => {
                             <h3 className="font-bold text-3xl text-theme-red mb-3">
                                 Avoid Cookie Cutter Platforms
                             </h3>
-                            <h4 className="font-medium text-xl mb-10">
+                            <p className="font-medium text-xl mb-10">
                                 Escape the Ordinary, Embrace the Exceptional
-                            </h4>
+                            </p>
                             <p className="mb-5 text-theme-complementary">
                                 The Problem with Website Builder Platforms:
                             </p>
@@ -99,16 +99,16 @@ const JourneyBody = () => {
                     </Tilt>
                 </div>
             </div>
-            {/* blue */}
+{/* blue */}
             <div className="grid grid-cols-12 h-full relative">
                 <div className="col-span-3 h-full py-32 pr-14 text-right relative" ref={ref2}>
                     <div className="sticky top-2/4 z-20" >
-                        <h3 className="relative z-20 text-theme-complementary">
+                        <p className="relative z-20 text-theme-complementary">
                             Partner with us.
-                        </h3>
-                        <h3 className="mb-5 relative z-20 text-theme-complementary">
+                        </p>
+                        <p className="mb-5 relative z-20 text-theme-complementary">
                             <span className="text-theme-neutral font-medium">Your growth</span> is <span className="text-theme-neutral font-medium">our business</span>.
-                        </h3>
+                        </p>
                         <ButtonCTA href="/" theme="blue" className="ml-auto">
                             Get Started
                         </ButtonCTA>
@@ -118,6 +118,12 @@ const JourneyBody = () => {
                             } origin-top`}
                     >
                     </div>
+                    <Image
+                        className="w-10 absolute -right-5 -top-5 animate-pulse"
+                        src={images.lightBulb}
+                        priority={false}
+                        alt="circle"
+                    />
                 </div>
                 <div className="col-span-9 w-full ml-20 py-32">
                     <Tilt
@@ -134,9 +140,9 @@ const JourneyBody = () => {
                             <h3 className="font-bold text-3xl text-theme-blue mb-3">
                                 Our Process
                             </h3>
-                            <h4 className="font-medium text-xl mb-10">
+                            <p className="font-medium text-xl mb-10">
                                 Understanding Your Vision
-                            </h4>
+                            </p>
                             <p className="mb-10 text-theme-complementary">
                                 We begin every project with a deep dive into your world. We want to understand every facet of your business, brand, and goals to ensure the website we create resonates with your identity and ambitions. This initial phase involves detailed discussions to capture your vision, preferences, and expectations, ensuring our design aligns perfectly with your business strategy.
                             </p>
@@ -201,16 +207,16 @@ const JourneyBody = () => {
 
                 </div>
             </div>
-            {/* green */}
+{/* green */}
             <div className="grid grid-cols-12 h-full relative">
                 <div className="col-span-3 h-full py-32 pr-14 text-right relative" ref={ref3}>
                     <div className="sticky top-2/4 z-20" >
-                        <h3 className="relative z-20 text-theme-complementary">
+                        <p className="relative z-20 text-theme-complementary">
                             No stone left unturned.
-                        </h3>
-                        <h3 className="mb-5 relative z-20 text-theme-complementary">
+                        </p>
+                        <p className="mb-5 relative z-20 text-theme-complementary">
                             Bring <span className="text-theme-neutral font-medium">your vision</span> to <span className="text-theme-neutral font-medium">life</span>.
-                        </h3>
+                        </p>
                         <ButtonCTA href="/" theme="green" className="ml-auto">
                             Get Started
                         </ButtonCTA>
@@ -220,6 +226,12 @@ const JourneyBody = () => {
                             } origin-top`}
                     >
                     </div>
+                    <Image
+                        className="w-10 absolute opacity-100 -right-5 -top-5 animate-pulse"
+                        src={images.code}
+                        priority={false}
+                        alt="circle"
+                    />
                 </div>
                 <div className="col-span-9 w-full ml-20 py-32">
                     <Tilt
@@ -236,9 +248,9 @@ const JourneyBody = () => {
                             <h3 className="font-bold text-3xl text-theme-green mb-3">
                                 Our Process
                             </h3>
-                            <h4 className="font-medium text-xl mb-10">
+                            <p className="font-medium text-xl mb-10">
                                 Bringing Your Vision To Life
-                            </h4>
+                            </p>
                             <p className="mb-10 text-theme-complementary">
                                 We begin every project with a deep dive into your world. We want to understand every facet of your business, brand, and goals to ensure the website we create resonates with your identity and ambitions. This initial phase involves detailed discussions to capture your vision, preferences, and expectations, ensuring our design aligns perfectly with your business strategy.
                             </p>
@@ -301,16 +313,16 @@ const JourneyBody = () => {
                     </Tilt>
                 </div>
             </div>
-            {/* yellow */}
+{/* yellow */}
             <div className="grid grid-cols-12 h-full relative">
                 <div className="col-span-3 h-full py-32 pr-14 text-right relative" ref={ref4}>
                     <div className="sticky top-2/4 z-20" >
-                        <h3 className="relative z-20 text-theme-complementary">
+                        <p className="relative z-20 text-theme-complementary">
                             <span className="text-theme-neutral font-medium">Here</span> to <span className="text-theme-neutral font-medium">help.</span>
-                        </h3>
-                        <h3 className="mb-5 relative z-20 text-theme-complementary">
+                        </p>
+                        <p className="mb-5 relative z-20 text-theme-complementary">
                             Your <span className="text-theme-neutral font-medium">personal</span> web developer.
-                        </h3>
+                        </p>
                         <ButtonCTA href="/" theme="orange" className="ml-auto">
                             Get Started
                         </ButtonCTA>
@@ -320,6 +332,18 @@ const JourneyBody = () => {
                             } origin-top`}
                     >
                     </div>
+                    <Image
+                        className="w-10 absolute opacity-100 -right-5 -top-5 animate-pulse"
+                        src={images.vision}
+                        priority={false}
+                        alt="circle"
+                    />
+                    <Image
+                        className="w-10 absolute opacity-100 -right-5 -bottom-28 animate-pulse"
+                        src={images.heart}
+                        priority={false}
+                        alt="circle"
+                    />
                 </div>
                 <div className="col-span-9 w-full ml-20 py-32">
                     <Tilt
@@ -336,9 +360,9 @@ const JourneyBody = () => {
                             <h3 className="font-bold text-3xl text-theme-orange mb-3">
                                 Our Process
                             </h3>
-                            <h4 className="font-medium text-xl mb-10">
+                            <p className="font-medium text-xl mb-10">
                                 Sustaining Your Success
-                            </h4>
+                            </p>
                             <p className="mb-10 text-theme-complementary">
                                 We begin every project with a deep dive into your world. We want to understand every facet of your business, brand, and goals to ensure the website we create resonates with your identity and ambitions. This initial phase involves detailed discussions to capture your vision, preferences, and expectations, ensuring our design aligns perfectly with your business strategy.
                             </p>

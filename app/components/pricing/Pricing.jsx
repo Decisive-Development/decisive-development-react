@@ -103,9 +103,9 @@ export default function Pricing() {
                     <h2 className="text-base font-semibold leading-7 text-theme-purple">
                         Pricing
                     </h2>
-                    <p className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                    <h className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
                         Plans for all projects
-                    </p>
+                    </h>
                 </div>
                 <p className="mx-auto mt-6 text-center text-lg leading-8 text-gray-300">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam veniam inventore deserunt nostrum consequuntur repudiandae non enim quis molestiae laborum minus culpa exercitationem repellat, aspernatur necessitatibus sit praesentium nam reprehenderit!
@@ -174,7 +174,7 @@ export default function Pricing() {
 
                 {/* lg+ */}
                 <div className="isolate mt-20 hidden lg:block relative z-20 bg-theme-secondary-background -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30">
-                    <div className="relative -mx-8">
+                    <div className="relative -mx-8 ">
                         {tiers.some((tier) => tier.mostPopular) ? (
                             <div className="absolute inset-x-4 inset-y-0 -z-10 flex">
                                 <div
@@ -200,20 +200,20 @@ export default function Pricing() {
                                     <td />
                                     {tiers.map((tier) => (
                                         <th key={tier.id} scope="col" className="px-6 pt-6 xl:px-8 xl:pt-8">
-                                            <div className="text-sm font-semibold leading-7 text-theme-purple text-th">{tier.name}</div>
+                                            <div className="text-sm font-code font-semibold leading-7 text-theme-purple text-th">{tier.name}</div>
                                         </th>
                                     ))}
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">
+                                    <th scope="row font-code">
                                         <span className="sr-only">Price</span>
                                     </th>
                                     {tiers.map((tier) => (
                                         <td key={tier.id} className="px-6 pt-2 xl:px-8">
                                             {tier.priceMonthly && (
-                                                <div className="flex items-baseline gap-x-1 text-theme-neutral">
+                                                <div className="flex font-code items-baseline gap-x-1 text-theme-neutral">
                                                     <span className="text-3xl font-bold">{tier.priceMonthly}</span>
                                                     <span className="text-sm font-semibold leading-6">/month</span>
                                                 </div>
@@ -229,7 +229,7 @@ export default function Pricing() {
                                                     tier.mostPopular
                                                         ? 'bg-theme-green text-theme-primary focus-visible:theme-purple'
                                                         : 'bg-theme-complementary/10 hover:bg-white/20 focus-visible:outline-white',
-                                                    'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-theme-neutral focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
+                                                    'mt-8 font-code uppercase block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-theme-neutral focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
                                                     { 'hidden': !tier.priceMonthly }
                                                 )}
                                             >
@@ -247,7 +247,7 @@ export default function Pricing() {
                                                 colSpan={5}
                                                 className={classNames(
                                                     sectionIdx === 0 ? 'pt-8' : 'pt-16',
-                                                    'pb-4 text-sm font-semibold leading-6 text-theme-purple'
+                                                    'pb-4 text-sm font-code font-semibold leading-6 text-theme-purple'
                                                 )}
                                             >
                                                 {section.name}

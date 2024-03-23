@@ -5,7 +5,7 @@ const Heading = () => {
             <h1 className="text-3xl block uppercase text-theme-complementary font-medium">
                 Bespoke
             </h1>
-            <h1 className="text-6xl mb-5 font-medium flex h-20 up">
+            <h1 className="text-6xl mb-5 font-medium flex h-20 ws-20" >
                 <span className="text-theme-complementary">Web</span>&nbsp;Design&nbsp;<span className="text-theme-complementary">&</span> &nbsp;Development
             </h1>
             <p className="w-[700px] text-lg text-theme-complementary">
