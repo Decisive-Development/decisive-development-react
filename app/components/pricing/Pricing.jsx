@@ -96,7 +96,7 @@ function classNames(...classes) {
 
 export default function Pricing() {
     return (
-        <div className="bg-theme-secondary bg-opacity-10 py-24 sm:py-64 relative overflow-x-hidden">
+        <div className="bg-theme-secondary bg-opacity-10 py-24 sm:py-64 relative overflow-x-hidden" id="pricing">
             <ColouredLine position="top-0" />
             <div className="mx-auto container px-6 lg:px-8 relative z-30">
                 <div className="mx-auto max-w-4xl text-center">
@@ -229,7 +229,7 @@ export default function Pricing() {
                                                     tier.mostPopular
                                                         ? 'bg-theme-green text-theme-primary focus-visible:theme-purple'
                                                         : 'bg-theme-complementary/10 hover:bg-white/20 focus-visible:outline-white',
-                                                    'mt-8 font-code uppercase block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-theme-neutral focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
+                                                    'mt-8 font-code uppercase block rounded-md py-2 px-3 text-center text-base font-semibold leading-6 text-theme-neutral focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2',
                                                     { 'hidden': !tier.priceMonthly }
                                                 )}
                                             >

@@ -5,7 +5,7 @@ const Heading = () => {
             <h1 className="text-3xl block uppercase text-theme-complementary font-medium">
                 Bespoke
             </h1>
-            <h1 className="text-6xl mb-5 font-medium flex h-20 ws-20" >
+            <h1 className="text-6xl mb-5 font-medium flex h-20 ws-15" >
                 <span className="text-theme-complementary">Web</span>&nbsp;Design&nbsp;<span className="text-theme-complementary">&</span> &nbsp;Development
             </h1>
             <p className="w-[700px] text-lg text-theme-complementary">
@@ -22,10 +22,10 @@ const Heading = () => {
             </p>
             {/* Turn these into CTAs  "Get Started" + "Find out more"*/}
             <div className="flex flex-row justify-between w-[550px]">
-                <ButtonCTA href="/" theme="turquoise" className="">
+                <ButtonCTA href="#journey" theme="turquoise" className="">
                     Journey
                 </ButtonCTA>
-                <ButtonCTA href="/" theme="purple" className="">
+                <ButtonCTA href="#pricing" theme="purple" className="">
                     Pricing
                 </ButtonCTA>
                 <ButtonCTA href="/" theme="orange" className="">

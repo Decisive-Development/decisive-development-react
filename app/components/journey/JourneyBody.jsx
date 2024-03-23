@@ -23,7 +23,7 @@ const JourneyBody = () => {
         // Convert sections into components
         // Add images
         // Add page CTAs
-        <section className='mr-12 -ml-12 pb-64'>
+        <section className='mr-12 -ml-12 pb-64' >
 {/* red */}
             <div className="grid grid-cols-12 h-full ">
                 <div

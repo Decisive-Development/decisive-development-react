@@ -22,7 +22,7 @@
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 body {
@@ -62,7 +62,7 @@ p {
     font-family: 'Roboto Flex', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Roboto Mono", monospace;
+    font-family: "Space Code Pro", monospace;
     font-optical-sizing: auto;
     letter-spacing: -2px;
 }
