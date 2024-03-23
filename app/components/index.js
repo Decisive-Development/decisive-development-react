@@ -1,4 +1,5 @@
 import Nav from "./head/Navbar";
+import ButtonCTA from "./button/ButtonCTA";
 import Heading from "./head/Heading";
 import Header from "./head/Header";
 import Journey from "./journey/Journey";
@@ -21,6 +22,7 @@ import Footer from "./footer/Footer";
 
 export {
     Nav,
+    ButtonCTA,
     Heading,
     Header,
     Journey,

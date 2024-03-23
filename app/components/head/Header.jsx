@@ -1,47 +1,10 @@
 import Image from "next/image";
 import { Nav, Heading } from "..";
 import images from "../../../public/index";
-import injectParticles from "@/app/js/injectParticles";
-import ParticlesComp from "./ParticlesComp";
-// import { ParticlesContainer } from "./Particles";
 
 const Header = () => {
-  // const [activeImageIndex, setActiveImageIndex] = useState(1);
-
-  // useEffect(() => {
-  //   if (inject) return;
-  //   console.log("running", inject);
-  //   injectParticles();
-  //   setInject(true);
-  // }, []);
-
-  // useEffect(() => {
-  //     const interval = setInterval(() => {
-  //         const nextImageIndex = (activeImageIndex % 4) + 1;
-
-  //         const currentImage = document.querySelector(`.image-${activeImageIndex}`);
-  //         const nextImage = document.querySelector(`.image-${nextImageIndex}`);
-
-  //         currentImage.style.transition = "opacity 1s ease-in-out";
-  //         nextImage.style.transition = "opacity 1s ease-in-out";
-
-  //         setTimeout(() => {
-  //             currentImage.style.opacity = 0;
-  //         }, 1000);
-
-  //         setTimeout(() => {
-  //             nextImage.style.opacity = 0.3;
-  //         }, 1000);
-
-  //         setActiveImageIndex(nextImageIndex);
-  //     }, 3000);
-
-  //     return () => clearInterval(interval);
-  // }, [activeImageIndex]);
-
   return (
     <section className="flex relative items-end p-10 h-screen w-full" id="home">
-      {/* <ParticlesContainer /> */}
       <Nav />
       <Heading />
       <Image

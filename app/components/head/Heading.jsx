@@ -1,13 +1,5 @@
-// import React, { useEffect } from "react";
-// import textType from "../js/textType"
-
-// import { TypeAnimation } from 'react-type-animation';
-
+import ButtonCTA from "../button/ButtonCTA";
 const Heading = () => {
-    // useEffect(() => {
-    //     textType();
-    // }, []);
-
     return (
         <div className="relative z-20">
             <h1 className="text-3xl block uppercase text-theme-complementary font-medium">
@@ -29,30 +21,17 @@ const Heading = () => {
                 No page builders. 
             </p>
             {/* Turn these into CTAs  "Get Started" + "Find out more"*/}
-            <a
-                href="projects"
-                className="link-hover border-b-2 border-blue mr-5 uppercase"
-            >
-                Services
-            </a>
-            <a
-                href="projects"
-                className="link-hover border-b-2 border-blue mr-5 uppercase"
-            >
-                About
-            </a>
-            <a
-                href="projects"
-                className="link-hover border-b-2 border-blue mr-5 uppercase"
-            >
-                Projects
-            </a>
-            <a
-                href="projects"
-                className="link-hover border-b-2 border-blue mr-5 uppercase"
-            >
-                Contact
-            </a>
+           <div className="flex flex-row justify-between w-[550px]">
+                <ButtonCTA href="/" theme="turquoise" className="">
+                    Journey
+                </ButtonCTA>
+                <ButtonCTA href="/" theme="purple" className="">
+                    Pricing
+                </ButtonCTA>
+                <ButtonCTA href="/" theme="orange" className="">
+                    Contact
+                </ButtonCTA>
+           </div>
         </div>
     );
 };

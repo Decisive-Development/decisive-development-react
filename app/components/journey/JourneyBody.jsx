@@ -1,5 +1,6 @@
 "use client";
 import Tilt from 'react-parallax-tilt';
+import ButtonCTA from "../button/ButtonCTA";
 import Image from "next/image";
 import images from "../../../public/index";
 import { useInView } from "react-intersection-observer";
@@ -33,9 +34,9 @@ const JourneyBody = () => {
                         <h3 className="mb-5 relative z-20 text-theme-complementary">
                             Your website reflects your business. Make a <span className="text-theme-neutral font-medium">lasting impression</span>.
                         </h3>
-                        <a href="" className="bg-theme-primary hover:bg-theme-red text-white hover:text-theme-primary font-semibold py-2 px-4 border border-theme-red hover:border-transparent rounded transition ease-in-out duration-300 relative z-20">
-                           Get Started
-                        </a>
+                        <ButtonCTA href="/" theme="red" className="ml-auto">
+                            Get Started
+                        </ButtonCTA>
                     </div>
                     <div 
                         className={`bg-gradient-to-b from-transparent via-theme-red to-transparent h-full absolute w-[2px] right-0 top-0  ease-in-out duration-700 transform ${
@@ -109,9 +110,9 @@ const JourneyBody = () => {
                         <h3 className="mb-5 relative z-20 text-theme-complementary">
                         <span className="text-theme-neutral font-medium">Your growth</span> is <span className="text-theme-neutral font-medium">our business</span>.
                         </h3>
-                        <a href="" className="bg-theme-primary hover:bg-theme-blue text-white hover:text-theme-primary font-semibold py-2 px-4 border border-theme-blue hover:border-transparent rounded transition ease-in-out duration-300 relative z-20">
-                           Get Started
-                        </a>
+                        <ButtonCTA href="/" theme="blue" className="ml-auto">
+                            Get Started
+                        </ButtonCTA>
                     </div>
                     <div 
                         className={`bg-gradient-to-b from-transparent via-theme-blue to-transparent h-full absolute w-[2px] right-0 top-0  ease-in-out duration-700 transform ${
@@ -207,14 +208,14 @@ const JourneyBody = () => {
                 <div className="col-span-3 h-full py-32 pr-14 text-right relative" ref={ref3}>
                     <div className="sticky top-2/4 z-20" >
                         <h3 className="relative z-20 text-theme-complementary">
-                            Partner with us.
+                            No stone left unturned.
                         </h3>
                         <h3 className="mb-5 relative z-20 text-theme-complementary">
-                        <span className="text-theme-neutral font-medium">Your growth</span> is <span className="text-theme-neutral font-medium">our business</span>.
+                        Bring <span className="text-theme-neutral font-medium">your vision</span> to <span className="text-theme-neutral font-medium">life</span>.
                         </h3>
-                        <a href="" className="bg-theme-primary hover:bg-theme-green text-white hover:text-theme-primary font-semibold py-2 px-4 border border-theme-green hover:border-transparent rounded transition ease-in-out duration-300 relative z-20">
-                           Get Started
-                        </a>
+                        <ButtonCTA href="/" theme="green" className="ml-auto">
+                            Get Started
+                        </ButtonCTA>
                     </div>
                     <div 
                         className={`bg-gradient-to-b from-transparent via-theme-green to-transparent h-full absolute w-[2px] right-0 top-0  ease-in-out duration-700 transform ${
@@ -308,14 +309,14 @@ const JourneyBody = () => {
                 <div className="col-span-3 h-full py-32 pr-14 text-right relative" ref={ref4}>
                     <div className="sticky top-2/4 z-20" >
                         <h3 className="relative z-20 text-theme-complementary">
-                            Partner with us.
+                        <span className="text-theme-neutral font-medium">Here</span> to <span className="text-theme-neutral font-medium">help.</span>
                         </h3>
                         <h3 className="mb-5 relative z-20 text-theme-complementary">
-                        <span className="text-theme-neutral font-medium">Your growth</span> is <span className="text-theme-neutral font-medium">our business</span>.
+                        Your <span className="text-theme-neutral font-medium">personal</span> web developer.
                         </h3>
-                        <a href="" className="bg-theme-primary hover:bg-theme-orange text-white hover:text-theme-primary font-semibold py-2 px-4 border border-theme-orange hover:border-transparent rounded transition ease-in-out duration-300 relative z-20">
-                           Get Started
-                        </a>
+                        <ButtonCTA href="/" theme="orange" className="ml-auto">
+                            Get Started
+                        </ButtonCTA>
                     </div>
                     <div 
                         className={`bg-gradient-to-b from-transparent via-theme-orange to-transparent h-full absolute w-[2px] right-0 top-0  ease-in-out duration-700 transform ${
