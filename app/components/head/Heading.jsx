@@ -20,7 +20,6 @@ const Heading = () => {
             <p className="w-[700px] font-light mb-5 italic">
                 No page builders.
             </p>
-            {/* Turn these into CTAs  "Get Started" + "Find out more"*/}
             <div className="flex flex-row justify-between w-[550px]">
                 <ButtonCTA href="#journey" theme="turquoise" className="">
                     Journey
