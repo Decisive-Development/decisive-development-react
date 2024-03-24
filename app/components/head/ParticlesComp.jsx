@@ -26,7 +26,6 @@ const ParticlesComp = (props) => {
                 enable: false,
                 zIndex: 0
             },
-            fpsLimit: 144,
             particles: {
                 number: {
                     density: {
@@ -50,7 +49,7 @@ const ParticlesComp = (props) => {
                 opacity: {
                     animation: {
                         enable: true,
-                        minimumValue: 0.3,
+                        minimumValue: 1,
                         speed: 1,
                         sync: false,
                     },
@@ -73,7 +72,7 @@ const ParticlesComp = (props) => {
                     consent: false,
                     distance: 150,
                     enable: true,
-                    opacity: 0.3,
+                    opacity: 1,
                     width: 1,
                 },
                 move: {
@@ -124,7 +123,7 @@ const ParticlesComp = (props) => {
                     bubble: {
                         distance: 400,
                         duration: 2,
-                        opacity: 0.8,
+                        opacity: 1,
                         size: 40,
                     },
                     grab: {
