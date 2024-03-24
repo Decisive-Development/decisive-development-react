@@ -4,12 +4,12 @@ import { navLinks } from "../../constants";
 
 const Navbar = () => {
     return (
-        <div>
+        <div className="w-full">
             <div className="pt-10 pb-5 px-10 z-30 fixed left-0 top-0 w-full bg-theme-primary ">
                 <Image
                     src={images.logoWhite}
                     alt="Decisive Development"
-                    className="w-52 max-w-full pointer-events-auto select-none"
+                    className="w-40 sm:w-52 max-w-full pointer-events-auto select-none mt-2 md:mt-0"
                 />
                 <div className="absolute left-0 bottom-0 h-12 w-full translate-y-full nav-fade"></div>
             </div>

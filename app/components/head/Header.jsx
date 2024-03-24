@@ -1,13 +1,12 @@
 import Image from "next/image";
-import { Nav, Heading } from "..";
+import { Heading } from "..";
 import images from "../../../public/index";
 
 const Header = () => {
     return (
-        <section className="flex relative items-end p-10 h-screen w-full" id="home">
-            <Nav />
+        <section className="flex relative items-end p-10 h-[850px] sm:h-screen w-full" id="home">
             <Heading />
-            <Image
+            {/* <Image
                 className="m-auto h-[110px] w-auto absolute top-0 bottom-0 right-0 left-0 z-0 cursor-none select-none image-1 opacity-10"
                 src={images.decisive}
                 alt="Decisive"
@@ -26,7 +25,7 @@ const Header = () => {
                 className="m-auto h-[100px] w-auto absolute top-0 bottom-0 right-0 left-0 z-0 cursor-none select-none image-4 opacity-10"
                 src={images.design}
                 alt="Design"
-            />
+            /> */}
         </section>
     );
 };

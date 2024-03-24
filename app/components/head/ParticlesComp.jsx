@@ -3,7 +3,6 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
 
-
 const ParticlesComp = (props) => {
 
     const [init, setInit] = useState(false);
@@ -19,7 +18,6 @@ const ParticlesComp = (props) => {
         console.log(container);
     };
 
-
     const options = useMemo(
         () => ({
             fullScreen: {
@@ -30,10 +28,10 @@ const ParticlesComp = (props) => {
                 number: {
                     density: {
                         enable: false,
-                        area: 2000,
+                        area: 1000,
                     },
                     limit: 0,
-                    value: 100,
+                    value: 80,
                 },
                 color: {
                     value: "#CFD4D7",
@@ -147,8 +145,6 @@ const ParticlesComp = (props) => {
         }),
         [],
     );
-
-
     return <Particles id="tsparticles" init={particlesLoaded} options={options} />;
 };
 

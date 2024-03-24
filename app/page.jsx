@@ -1,5 +1,6 @@
 import {
     ParticlesComp,
+    Nav,
     Header,
     Journey,
     Pricing,
@@ -14,15 +15,16 @@ import {
 
 export default function Home() {
     return (
-        <main className="relative bg-theme-primary text-base ">
+        <main className="relative bg-theme-primary text-base overflow-x-hidden">
             <ParticlesComp id="particles"/>
+            <Nav />
             <Header />
             <Journey />
             <Pricing />
             {/* <Services /> */}
             {/* <About /> */}
             {/* <Projects /> */}
-            <Partners />
+            {/* <Partners /> */}
             {/* <Contact /> */}
             <Footer />
         </main>

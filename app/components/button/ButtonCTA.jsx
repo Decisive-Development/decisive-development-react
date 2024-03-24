@@ -16,7 +16,7 @@ const ButtonCTA = ({ href, children, theme, className }) => {
     const combinedClass = `${baseClass} ${themeClass} ${className || ''}`.trim();
 
     return (
-        <a href={href} passHref className={combinedClass}>
+        <a href={href} className={combinedClass}>
             {children}
         </a>
     );
