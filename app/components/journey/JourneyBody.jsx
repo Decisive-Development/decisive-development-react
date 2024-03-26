@@ -30,7 +30,7 @@ const JourneyBody = () => {
                     className="col-span-12 lg:col-span-3 h-full relative py-32 pr-10 text-left lg:text-right "
                     ref={ref}
                 >
-                    <div className="sticky top-2/4 z-20 pl-5 lg:pl-5">
+                    <div className="sticky top-2/4 z-20 pl-5 lg:pl-0">
                         <p className="mb-5 relative z-20 text-theme-complementary">
                             Your website reflects your business. Make a <span className="text-theme-neutral font-medium">lasting impression</span>.
                         </p>
@@ -105,7 +105,7 @@ const JourneyBody = () => {
                     className="col-span-12 lg:col-span-3 h-full relative py-32 pr-10 text-left lg:text-right "
                     ref={ref2}
                 >
-                    <div className="sticky top-2/4 z-20 pl-5 lg:pl-5">
+                    <div className="sticky top-2/4 z-20 pl-5 lg:pl-0">
                         <p className="relative z-20 text-theme-complementary">
                             Partner with us.
                         </p>
@@ -216,7 +216,7 @@ const JourneyBody = () => {
                     className="col-span-12 lg:col-span-3 h-full relative py-32 pr-10 text-left lg:text-right "
                     ref={ref3}
                 >
-                    <div className="sticky top-2/4 z-20 pl-5 lg:pl-5">
+                    <div className="sticky top-2/4 z-20 pl-5 lg:pl-0">
                         <p className="relative z-20 text-theme-complementary">
                             No stone left unturned.
                         </p>
@@ -325,7 +325,7 @@ const JourneyBody = () => {
                     className="col-span-12 lg:col-span-3 h-full relative py-32 pr-10 text-left lg:text-right "
                     ref={ref4}
                 >
-                    <div className="sticky top-2/4 z-20 pl-5 lg:pl-5">
+                    <div className="sticky top-2/4 z-20 pl-5 lg:pl-0">
                         <p className="relative z-20 text-theme-complementary">
                             <span className="text-theme-neutral font-medium">Here</span> to <span className="text-theme-neutral font-medium">help.</span>
                         </p>
