@@ -23,6 +23,7 @@ const Footer = () => {
     } while (newColorClass === currentClass);
     return newColorClass;
   };
+
   return (
     <footer className="overflow-x-hidden">
       <section className="bg-theme-secondary bg-opacity-25 z-30 relative py-32">
