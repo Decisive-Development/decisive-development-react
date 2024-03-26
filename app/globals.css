@@ -102,8 +102,6 @@ h1, h2, h3, h4, h5, h6 {
     word-spacing: -20px;
 }
 
-
-
 #tsparticles{
     position: absolute;
     left: 0;
@@ -230,3 +228,12 @@ h1, h2, h3, h4, h5, h6 {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
 }
+
+.journey-move{
+    margin-right: -4em;
+}
+@media screen and (max-width: 1660px){
+    .journey-move{
+        margin-right: 0em;
+    }
+}    

@@ -9,11 +9,11 @@ module.exports = {
         extend: {
             container: {
                 center: true,
-                padding: '25px',
+                padding: '35px',
                 screens: {
-                    sm: '600px',
+                    sm: '',
                     md: '728px',
-                    lg: '984px',
+                    lg: '1024px',
                     xl: '1350px',
                 },
             },

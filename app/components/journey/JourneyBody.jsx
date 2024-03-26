@@ -23,36 +23,36 @@ const JourneyBody = () => {
         // Convert sections into components
         // Add images
         // Add page CTAs
-        <section className='mr-12 -ml-12 pb-64' >
+        <section className='pb-16 md:pb-64 journey-move' >
 {/* red */}
-            <div className="grid grid-cols-12 h-full ">
+            <div className="grid grid-cols-12 gap-0 sm:gap-x-10 h-full relative">
                 <div
-                    className="col-span-3 h-full relative py-32 pr-14 text-right "
+                    className="col-span-12 lg:col-span-3 h-full relative py-32 pr-10 text-left lg:text-right "
                     ref={ref}
                 >
-                    <div className="sticky top-2/4 z-20">
+                    <div className="sticky top-2/4 z-20 pl-5 lg:pl-5">
                         <p className="mb-5 relative z-20 text-theme-complementary">
                             Your website reflects your business. Make a <span className="text-theme-neutral font-medium">lasting impression</span>.
                         </p>
-                        <ButtonCTA href="/" theme="red" className="ml-auto">
+                        <ButtonCTA href="/" theme="red" className="mr-auto lg:mr-[unset] lg:ml-auto">
                             Get Started
                         </ButtonCTA>
                     </div>
                     <div
-                        className={`bg-gradient-to-b from-transparent via-theme-red to-transparent h-full absolute w-[2px] right-0 top-0  ease-in-out duration-700 transform ${inView ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
+                        className={`bg-gradient-to-b from-transparent via-theme-red to-transparent h-full absolute w-[2px] left-0 lg:left-[unset] lg:right-0 top-0  ease-in-out duration-700 transform ${inView ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
                             } origin-top`}
                     >
                     </div>
                     <Image
-                        className="w-5 absolute opacity-30 -right-[9px] -top-5 animate-pulse"
+                        className="w-5 absolute opacity-30 -left-[9px] lg:left-[unset] lg:-right-[9px] -top-5 animate-pulse"
                         src={images.circle}
                         priority={false}
                         alt="circle"
                     />
                 </div>
-                <div className="col-span-9 w-full ml-20 py-32 relative z-20">
+                <div className="col-span-12 lg:col-span-9 w-full pt-0 pb-32 lg:py-32 relative z-20">
                     <Tilt
-                        className="relative z-20 bg-theme-secondary-background -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30"
+                        className="relative z-20 bg-theme-secondary-background py-10 px-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30"
                         glareEnable={true}
                         glareMaxOpacity={0.2}
                         glareColor="#e27868"
@@ -71,23 +71,23 @@ const JourneyBody = () => {
                             <p className="mb-5 text-theme-complementary">
                                 The Problem with Website Builder Platforms:
                             </p>
-                            <div className="grid grid-cols-2 gap-10">
+                            <div className="grid grid-cols-1 md:grid-cols-2 ml-5 gap-0 md:gap-10">
                                 <ul className="list-disc list-outside ">
-                                    <li className="mb-5 ml-5 text-theme-complementary">
+                                    <li className="mb-5 text-theme-complementary">
                                         <span className="font-bold text-theme-neutral block">Not Custom-Designed</span> Rely on templates and your website might just disappear into the crowd, missing the chance to highlight what makes your brand special.
                                     </li>
-                                    <li className="mb-5 ml-5 text-theme-complementary">
+                                    <li className="mb-5 text-theme-complementary">
                                         <span className="font-bold text-theme-neutral block">Poor Google Rankings & SEO</span> Lacking control over SEO details like speed and metadata can leave your site lagging behind in search results.
                                     </li>
-                                    <li className="mb-5 ml-5 text-theme-complementary">
+                                    <li className="mb-5 text-theme-complementary">
                                         <span className="font-bold text-theme-neutral block">Lack of Customer Support</span> With builder platforms, you're often on your own, without the dedicated support to guide you through issues or updates.
                                     </li>
                                 </ul>
                                 <ul className="list-disc list-outside ">
-                                    <li className="mb-5 ml-5 text-theme-complementary">
+                                    <li className="mb-5 text-theme-complementary">
                                         <span className="font-bold text-theme-neutral block">Limited Mobile Experience</span> Even with 'responsive' designs, many builders fall short in truly optimising for mobile, a critical flaw in today's smartphone-centric world.
                                     </li>
-                                    <li className="mb-5 ml-5 text-theme-complementary">
+                                    <li className="mb-5 text-theme-complementary">
                                         <span className="font-bold text-theme-neutral block">Price</span> While website builders might seem cost-effective at first glance, fee's for add-ons, plugins, features and support can quickly add up. Not to mention the cost of your time.
                                     </li>
                                 </ul>
@@ -100,34 +100,37 @@ const JourneyBody = () => {
                 </div>
             </div>
 {/* blue */}
-            <div className="grid grid-cols-12 h-full relative">
-                <div className="col-span-3 h-full py-32 pr-14 text-right relative" ref={ref2}>
-                    <div className="sticky top-2/4 z-20" >
+            <div className="grid grid-cols-12 gap-0 sm:gap-x-10 h-full relative">
+                <div
+                    className="col-span-12 lg:col-span-3 h-full relative py-32 pr-10 text-left lg:text-right "
+                    ref={ref2}
+                >
+                    <div className="sticky top-2/4 z-20 pl-5 lg:pl-5">
                         <p className="relative z-20 text-theme-complementary">
                             Partner with us.
                         </p>
                         <p className="mb-5 relative z-20 text-theme-complementary">
                             <span className="text-theme-neutral font-medium">Your growth</span> is <span className="text-theme-neutral font-medium">our business</span>.
                         </p>
-                        <ButtonCTA href="/" theme="blue" className="ml-auto">
+                        <ButtonCTA href="/" theme="blue" className="mr-auto lg:mr-[unset] lg:ml-auto">
                             Get Started
                         </ButtonCTA>
                     </div>
                     <div
-                        className={`bg-gradient-to-b from-transparent via-theme-blue to-transparent h-full absolute w-[2px] right-0 top-0  ease-in-out duration-700 transform ${inView2 ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
+                        className={`bg-gradient-to-b from-transparent via-theme-blue to-transparent h-full absolute w-[2px] left-0 lg:left-[unset] right-0 top-0  ease-in-out duration-700 transform ${inView2 ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
                             } origin-top`}
                     >
                     </div>
                     <Image
-                        className="w-10 absolute -right-5 -top-5 animate-pulse"
+                        className="w-10 absolute -left-5 lg:left-[unset] -right-5 -top-5 animate-pulse"
                         src={images.lightBulb}
                         priority={false}
                         alt="circle"
                     />
                 </div>
-                <div className="col-span-9 w-full ml-20 py-32">
+                <div className="col-span-12 lg:col-span-9 w-full pt-0 pb-32 lg:py-32 relative z-20">
                     <Tilt
-                        className="relative z-20 bg-theme-secondary-background -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30"
+                        className="relative z-20 bg-theme-secondary-background py-10 px-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30"
                         glareEnable={true}
                         glareMaxOpacity={0.2}
                         glareColor="#52BBF6"
@@ -147,9 +150,9 @@ const JourneyBody = () => {
                                 We begin every project with a deep dive into your world. We want to understand every facet of your business, brand, and goals to ensure the website we create resonates with your identity and ambitions. This initial phase involves detailed discussions to capture your vision, preferences, and expectations, ensuring our design aligns perfectly with your business strategy.
                             </p>
                             <ul className="list-outside">
-                                <li className="mb-10 ml-5">
+                                <li className="mb-10 ml-0 sm:ml-5">
                                     <span className="font-bold text-xl"><span className='text-theme-blue'>1.</span> Initial Consultation</span>
-                                    <div className="grid grid-cols-2 gap-5 text-theme-complementary">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10 text-theme-complementary">
                                         <ul className="list-disc ml-10 mt-2 ">
                                             <li className="mb-1">
                                                 Get to know one another and discuss your vision.
@@ -162,7 +165,7 @@ const JourneyBody = () => {
                                             </li>
 
                                         </ul>
-                                        <ul className="list-disc ml-10 mt-2">
+                                        <ul className="list-disc ml-10 mt-0 md:mt-2">
                                             <li className="mb-1">
                                                 Consider applications or features you want to include.
                                             </li>
@@ -174,9 +177,9 @@ const JourneyBody = () => {
                                 </li>
                             </ul>
                             <ul className="list-outside">
-                                <li className="mb-10 ml-5">
+                                <li className="mb-10 ml-0 sm:ml-5">
                                     <span className="font-bold text-xl"><span className='text-theme-blue'>2.</span> Proposal & Contract</span>
-                                    <div className="grid grid-cols-2 gap-5 text-theme-complementary">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10 text-theme-complementary">
                                         <ul className="list-disc ml-10 mt-2 ">
                                             <li className="mb-1">
                                                 Breakdown of agreements and costs.
@@ -188,7 +191,7 @@ const JourneyBody = () => {
                                                 Outlines goals, deliverables, and expectations for both parties.
                                             </li>
                                         </ul>
-                                        <ul className="list-disc ml-10 mt-2">
+                                        <ul className="list-disc ml-10 mt-0 md:mt-2">
                                             <li className="mb-1">
                                                 Helps identify potential challenges and risks.
                                             </li>
@@ -208,34 +211,37 @@ const JourneyBody = () => {
                 </div>
             </div>
 {/* green */}
-            <div className="grid grid-cols-12 h-full relative">
-                <div className="col-span-3 h-full py-32 pr-14 text-right relative" ref={ref3}>
-                    <div className="sticky top-2/4 z-20" >
+            <div className="grid grid-cols-12 gap-0 sm:gap-x-10 h-full relative">
+                <div
+                    className="col-span-12 lg:col-span-3 h-full relative py-32 pr-10 text-left lg:text-right "
+                    ref={ref3}
+                >
+                    <div className="sticky top-2/4 z-20 pl-5 lg:pl-5">
                         <p className="relative z-20 text-theme-complementary">
                             No stone left unturned.
                         </p>
                         <p className="mb-5 relative z-20 text-theme-complementary">
                             Bring <span className="text-theme-neutral font-medium">your vision</span> to <span className="text-theme-neutral font-medium">life</span>.
                         </p>
-                        <ButtonCTA href="/" theme="green" className="ml-auto">
+                        <ButtonCTA href="/" theme="green" className="mr-auto lg:mr-[unset] lg:ml-auto">
                             Get Started
                         </ButtonCTA>
                     </div>
                     <div
-                        className={`bg-gradient-to-b from-transparent via-theme-green to-transparent h-full absolute w-[2px] right-0 top-0  ease-in-out duration-700 transform ${inView3 ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
+                        className={`bg-gradient-to-b from-transparent via-theme-green to-transparent h-full absolute left-0 lg:left-[unset] w-[2px] right-0 top-0  ease-in-out duration-700 transform ${inView3 ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
                             } origin-top`}
                     >
                     </div>
                     <Image
-                        className="w-10 absolute opacity-100 -right-5 -top-5 animate-pulse"
+                        className="w-10 absolute opacity-100 -left-5 lg:left-[unset] -right-5 -top-5 animate-pulse"
                         src={images.code}
                         priority={false}
                         alt="circle"
                     />
                 </div>
-                <div className="col-span-9 w-full ml-20 py-32">
+                <div className="col-span-12 lg:col-span-9 w-full pt-0 pb-32 lg:py-32 relative z-20">
                     <Tilt
-                        className="relative z-20 bg-theme-secondary-background -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30"
+                        className="relative z-20 bg-theme-secondary-background py-10 px-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30"
                         glareEnable={true}
                         glareMaxOpacity={0.2}
                         glareColor="#A9DC73"
@@ -255,9 +261,9 @@ const JourneyBody = () => {
                                 We begin every project with a deep dive into your world. We want to understand every facet of your business, brand, and goals to ensure the website we create resonates with your identity and ambitions. This initial phase involves detailed discussions to capture your vision, preferences, and expectations, ensuring our design aligns perfectly with your business strategy.
                             </p>
                             <ul className="list-outside">
-                                <li className="mb-10 ml-5">
+                                <li className="mb-10 ml-0 sm:ml-5">
                                     <span className="font-bold text-xl"><span className='text-theme-green'>3.</span> Design & Development</span>
-                                    <div className="grid grid-cols-2 gap-5 text-theme-complementary">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-5 text-theme-complementary">
                                         <ul className="list-disc ml-10 mt-2 ">
                                             <li className="mb-1">
                                                 Graphics, Media, and Copywriting agreed upon.
@@ -269,7 +275,7 @@ const JourneyBody = () => {
                                                 Hand-coded development of the website.
                                             </li>
                                         </ul>
-                                        <ul className="list-disc ml-10 mt-2">
+                                        <ul className="list-disc ml-10 mt-0 md:mt-2">
                                             <li className="mb-1">
                                                 Ongoing feedback and adjustments between parties.
                                             </li>
@@ -281,9 +287,9 @@ const JourneyBody = () => {
                                 </li>
                             </ul>
                             <ul className="list-outside">
-                                <li className="mb-10 ml-5">
+                                <li className="mb-10 ml-0 sm:ml-5">
                                     <span className="font-bold text-xl"><span className='text-theme-green'>4.</span> Review & Launch</span>
-                                    <div className="grid grid-cols-2 gap-5 text-theme-complementary">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-5 text-theme-complementary">
                                         <ul className="list-disc ml-10 mt-2 ">
                                             <li className="mb-1">
                                                 Pre-launch checklist.
@@ -295,7 +301,7 @@ const JourneyBody = () => {
                                                 Google Analytics loaded.
                                             </li>
                                         </ul>
-                                        <ul className="list-disc ml-10 mt-2">
+                                        <ul className="list-disc ml-10 mt-0 md:mt-2">
                                             <li className="mb-1">
                                                 Domain, Hosting, and SSL setup.
                                             </li>
@@ -314,26 +320,29 @@ const JourneyBody = () => {
                 </div>
             </div>
 {/* yellow */}
-            <div className="grid grid-cols-12 h-full relative">
-                <div className="col-span-3 h-full py-32 pr-14 text-right relative" ref={ref4}>
-                    <div className="sticky top-2/4 z-20" >
+            <div className="grid grid-cols-12 gap-0 sm:gap-x-10 h-full relative">
+                <div
+                    className="col-span-12 lg:col-span-3 h-full relative py-32 pr-10 text-left lg:text-right "
+                    ref={ref4}
+                >
+                    <div className="sticky top-2/4 z-20 pl-5 lg:pl-5">
                         <p className="relative z-20 text-theme-complementary">
                             <span className="text-theme-neutral font-medium">Here</span> to <span className="text-theme-neutral font-medium">help.</span>
                         </p>
                         <p className="mb-5 relative z-20 text-theme-complementary">
                             Your <span className="text-theme-neutral font-medium">personal</span> web developer.
                         </p>
-                        <ButtonCTA href="/" theme="orange" className="ml-auto">
+                        <ButtonCTA href="/" theme="orange" className="mr-auto lg:mr-[unset] lg:ml-auto">
                             Get Started
                         </ButtonCTA>
                     </div>
                     <div
-                        className={`bg-gradient-to-b from-transparent via-theme-orange to-transparent h-full absolute w-[2px] right-0 top-0  ease-in-out duration-700 transform ${inView4 ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
+                        className={`bg-gradient-to-b from-transparent via-theme-orange to-transparent h-full absolute w-[2px] left-0 lg:left-[unset] right-0 top-0  ease-in-out duration-700 transform ${inView4 ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0"
                             } origin-top`}
                     >
                     </div>
                     <Image
-                        className="w-10 absolute opacity-100 -right-5 -top-5 animate-pulse"
+                        className="w-10 absolute opacity-100 -left-5 lg:left-[unset] -right-5 -top-5 animate-pulse"
                         src={images.vision}
                         priority={false}
                         alt="circle"
@@ -345,9 +354,9 @@ const JourneyBody = () => {
                         alt="circle"
                     />
                 </div>
-                <div className="col-span-9 w-full ml-20 py-32">
+                <div className="col-span-12 lg:col-span-9 w-full pt-0 pb-32 lg:py-32 relative z-20">
                     <Tilt
-                        className="relative z-20 bg-theme-secondary-background -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30"
+                        className="relative z-20 bg-theme-secondary-background py-10 px-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30"
                         glareEnable={true}
                         glareMaxOpacity={0.2}
                         glareColor="#EE9859"
@@ -367,9 +376,9 @@ const JourneyBody = () => {
                                 We begin every project with a deep dive into your world. We want to understand every facet of your business, brand, and goals to ensure the website we create resonates with your identity and ambitions. This initial phase involves detailed discussions to capture your vision, preferences, and expectations, ensuring our design aligns perfectly with your business strategy.
                             </p>
                             <ul className="list-outside">
-                                <li className="mb-10 ml-5">
+                                <li className="mb-10 ml-0 sm:ml-5">
                                     <span className="font-bold text-xl"><span className='text-theme-orange'>5.</span> Ongoing Support</span>
-                                    <div className="grid grid-cols-2 gap-5 text-theme-complementary">
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-5 text-theme-complementary">
                                         <ul className="list-disc ml-10 mt-2 ">
                                             <li className="mb-1">
                                                 24/7 Assistance.
@@ -381,7 +390,7 @@ const JourneyBody = () => {
                                                 Analytical feedback and advice.
                                             </li>
                                         </ul>
-                                        <ul className="list-disc ml-10 mt-2">
+                                        <ul className="list-disc ml-10 mt-0 md:mt-2">
                                             <li className="mb-1">
                                                 Bi-monthly SEO review and suggestions.
                                             </li>
