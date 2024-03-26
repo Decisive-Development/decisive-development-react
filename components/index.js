@@ -1,5 +1,6 @@
 import Nav from './head/Navbar';
 import ButtonCTA from './button/ButtonCTA';
+import ColouredLinks from './colouredLink/ColouredLink';
 import Heading from './head/Heading';
 import Header from './head/Header';
 import Journey from './journey/Journey';
@@ -41,5 +42,6 @@ export {
   Partners,
   ParticlesComp,
   ColouredLine,
-  Footer
+  Footer,
+  ColouredLinks
 };
