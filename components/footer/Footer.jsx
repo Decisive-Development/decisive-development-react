@@ -1,4 +1,5 @@
 'use client';
+import { useState } from 'react';
 import Image from 'next/image';
 import images from '../../public/index';
 import { ColouredLine } from '..';
@@ -6,6 +7,9 @@ import { footerLinks, companyLinks, legalLinks } from '../../constants';
 import { ColouredLinks } from '../index';
 
 const Footer = () => {
+  // state for last color class in link
+  const [lastLinkColour, setLastLinkColour] = useState('');
+
   return (
     <footer className="overflow-x-hidden">
       <section className="bg-theme-secondary bg-opacity-25 z-30 relative py-32">
@@ -37,6 +41,8 @@ const Footer = () => {
                       key={companyLink.id}
                       id={companyLink.id}
                       title={companyLink.title}
+                      lastLinkColour={lastLinkColour}
+                      setLastLinkColour={setLastLinkColour}
                     />
                   ))}
                 </ul>
@@ -51,6 +57,8 @@ const Footer = () => {
                       key={footerLink.id}
                       id={footerLink.id}
                       title={footerLink.title}
+                      lastLinkColour={lastLinkColour}
+                      setLastLinkColour={setLastLinkColour}
                     />
                   ))}
                 </ul>
@@ -65,6 +73,8 @@ const Footer = () => {
                       key={legalLink.id}
                       id={legalLink.id}
                       title={legalLink.title}
+                      lastLinkColour={lastLinkColour}
+                      setLastLinkColour={setLastLinkColour}
                     />
                   ))}
                 </ul>

@@ -1,32 +1,42 @@
 'use client';
-import { useState } from 'react'; // Correct import of useState
+import { useState } from 'react';
 
 const colorClasses = [
   'text-theme-blue',
   'text-theme-red',
   'text-theme-green',
-  'text-theme-yellow',
+  // 'text-theme-yellow', // this colour is broken
   'text-theme-purple'
 ];
 
 // Function to get a random color class
-const getRandomColorClass = (currentClass) => {
-  let newColorClass;
-  do {
-    newColorClass =
-      colorClasses[Math.floor(Math.random() * colorClasses.length)];
-  } while (newColorClass === currentClass);
-  return newColorClass;
-};
 
-const ColouredLinks = ({ id, title }) => {
+const ColouredLinks = ({ id, title, lastLinkColour, setLastLinkColour }) => {
   // Initialize state with an empty string or a default value
   const [hoverColorClass, setHoverColorClass] = useState('');
+  const [lastNoneBlankColour, setLastNoneBlankColour] = useState('');
+
+  // Function to get a random color class
+  const getRandomColorClass = () => {
+    const otherClasses = colorClasses.filter(
+      (colorClass) =>
+        colorClass !== lastLinkColour &&
+        colorClass !== lastNoneBlankColour &&
+        colorClass !== hoverColorClass
+    );
+    const newColorClass =
+      otherClasses[Math.floor(Math.random() * otherClasses.length)];
+    return newColorClass;
+  };
+
   // Enhanced onMouseEnter event handler
   const changeColor = () => {
     const newColorClass = getRandomColorClass();
     setHoverColorClass(newColorClass);
+    setLastLinkColour(newColorClass);
+    setLastNoneBlankColour(newColorClass);
   };
+
   return (
     <li
       key={id}
