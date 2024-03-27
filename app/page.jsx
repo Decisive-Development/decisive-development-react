@@ -25,7 +25,7 @@ export default function Home() {
             {/* <About /> */}
             {/* <Projects /> */}
             {/* <Partners /> */}
-            {/* <Contact /> */}
+            <Contact />
             <Footer />
         </main>
     );

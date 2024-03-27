@@ -1,8 +1,57 @@
+import { ColouredLine } from "../../components";
+import Image from "next/image";
+import images from "../../../public/index";
 const Contact = () => {
     return (
-        <section className="">
-            <div className="container relative h-full">
-                <div className="bg-theme-blue h-full absolute w-[1px] -left-3 "></div>
+        <section className="py-32 relative overflow-x-hidden" id="contact">
+            <ColouredLine position="top-0" />
+            <div className="container relative">
+                <div className=" h-full z-20 bg-theme-secondary-background p-10 rounded-3xl border border-theme-complementary border-opacity-30">
+                    <div>
+                        <h2 className="text-4xl font-bold text-theme-orange mb-10">
+                            Contact
+                        </h2>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                            <div>
+                                <p className="mb-3">
+                                    Please get in touch for any enquiries, a simple question or a scheduled meeting! 
+                                </p>
+                                <p className="mb-3">
+                                    I aim to reply to all enquiries within 24 hours. Leave me either an email or a text message (WhatsApp is fine!). If you want an urgent response, its best to call me.
+                                </p>
+                                <p>
+                                    I look forward to hearing from you! 
+                                </p>
+                            </div>
+                           <div>
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center mb-5">
+                                    <div className="p-2 bg-theme-blue mr-5 mb-2 sm:mb-0 w-fit rounded-xl transition-all">
+                                        <Image
+                                            className="w-10 "
+                                            src={images.email}
+                                            alt="email"
+                                        />
+                                    </div>
+                                    <p className="text-theme-complementary">
+                                        <span className="font-bold text-theme-neutral">Email:</span> <a href="mailto:decisive.development1@gmail.com">tom@decisive.development.com</a>
+                                    </p>
+                                </div>
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center">
+                                    <div className="p-2 bg-theme-orange mr-5 mb-2 sm:mb-0 w-fit rounded-xl">
+                                        <Image
+                                            className="w-10 "
+                                            src={images.phone}
+                                            alt="phone"
+                                        />
+                                    </div>
+                                    <p className="text-theme-complementary">
+                                        <span className="font-bold text-theme-neutral">Phone:</span> <a href="tel:+447708754503">+44 (0) 77 087 545 03</a>
+                                    </p>
+                                </div>
+                           </div>
+                        </div>
+                       </div>
+                </div>
             </div>
         </section>
     );

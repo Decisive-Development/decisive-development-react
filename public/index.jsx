@@ -9,6 +9,9 @@ import vision from './vision-icon.svg';
 import code from './code-icon.svg';
 import lightBulb from './lightbulb-icon.svg';
 import heart from './heart-icon.svg';
+import chevron from './chevron.svg';
+import phone from './phone.svg';
+import email from './email.svg';
 
 // Export them as an object
 const images = {
@@ -22,7 +25,10 @@ const images = {
     vision,
     code,
     lightBulb,
-    heart
+    heart,
+    chevron,
+    phone,
+    email,
 };
 
 export default images;

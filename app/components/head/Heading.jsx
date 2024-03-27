@@ -1,4 +1,7 @@
 import ButtonCTA from "../button/ButtonCTA";
+import Image from "next/image";
+import images from "../../../public/index";
+
 const Heading = () => {
     return (
         <div className="relative z-20 w-full">
@@ -6,7 +9,7 @@ const Heading = () => {
                 Bespoke
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl mb-5 font-medium ws-15" >
-                <span className="text-theme-complementary">Web</span>&nbsp;Design&nbsp;<span className="text-theme-complementary">&&nbsp;</span> Development
+                <span className="text-theme-complementary">Web</span>&nbsp;Design&nbsp;<span className="text-theme-complementary">&&nbsp;</span>Development
             </h1>
             <div className="w-full lg:w-[700px] text-base md:text-lg text-theme-complementary">
                 <p>
@@ -29,10 +32,15 @@ const Heading = () => {
                 <ButtonCTA href="#pricing" theme="purple" className="">
                     Pricing
                 </ButtonCTA>
-                <ButtonCTA href="/" theme="orange" className="">
+                <ButtonCTA href="#contact" theme="orange" className="">
                     Contact
                 </ButtonCTA>
             </div>
+            <Image
+                className="absolute -bottom-5 right-1/2 w-11 left-1/2 z-0 cursor-none select-none duration-500 ease-in-out animate-bounce"
+                src={images.chevron}
+                alt="chevron"
+            />
         </div>
     );
 };

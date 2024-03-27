@@ -14,7 +14,7 @@ const JourneyCTA = () => {
                     Unveil the advantages of choosing custom-crafted solutions tailored to your business's unique needs.
                 </p>
             </div>
-            <ButtonCTA href="/" theme="turquoise" className="mt-5">
+            <ButtonCTA href="#contact" theme="orange" className="mt-5">
                 Get Started
             </ButtonCTA>
         </section>
