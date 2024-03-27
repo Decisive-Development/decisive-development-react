@@ -19,6 +19,7 @@ import Contact from "./contact/Contact";
 import ParticlesComp from "./head/ParticlesComp";
 import ColouredLine from "./animations/ColouredLine";
 import Footer from "./footer/Footer";
+import ColouredLinks from "./colouredLinks/ColouredLinks";
 
 export {
     Nav,
@@ -41,5 +42,6 @@ export {
     Partners,
     ParticlesComp,
     ColouredLine,
-    Footer
+    Footer,
+    ColouredLinks
 };

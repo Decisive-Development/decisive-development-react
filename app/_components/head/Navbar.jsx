@@ -1,6 +1,6 @@
 import Image from "next/image";
 import images from "../../../public/index";
-import { navLinks } from "../../constants";
+import { navLinks } from "../../_constants";
 
 const Navbar = () => {
     return (

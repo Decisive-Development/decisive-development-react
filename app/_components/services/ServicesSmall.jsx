@@ -1,4 +1,4 @@
-import { servicesSmallContent } from "../../constants";
+import { servicesSmallContent } from "../../_constants";
 
 const ServicesSmall = () => {
     return (
