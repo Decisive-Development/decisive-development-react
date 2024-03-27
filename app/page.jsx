@@ -1,5 +1,5 @@
+import dynamic from 'next/dynamic';
 import {
-  ParticlesComp,
   Nav,
   Header,
   Journey,
@@ -12,10 +12,12 @@ import {
   Footer
 } from './_components';
 
+const ParticlesComp = dynamic(() => import('./_components/head/ParticlesComp'));
+
 export default function Home() {
   return (
     <main className="relative bg-theme-primary text-base">
-      {/* <ParticlesComp /> */}
+      <ParticlesComp />
       <Nav />
       <Header />
       <Journey />
