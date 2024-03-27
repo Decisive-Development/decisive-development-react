@@ -9,8 +9,6 @@ const colorClasses = [
   'text-theme-purple'
 ];
 
-// Function to get a random color class
-
 const ColouredLinks = ({ id, title, lastLinkColour, setLastLinkColour }) => {
   // Initialize state with an empty string or a default value
   const [hoverColorClass, setHoverColorClass] = useState('');

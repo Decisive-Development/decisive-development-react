@@ -7,7 +7,6 @@ import { footerLinks, companyLinks, legalLinks } from '../../_constants';
 import { ColouredLinks } from '../index';
 
 const Footer = () => {
-  // state for last color class in link
   const [lastLinkColour, setLastLinkColour] = useState('');
 
   return (
