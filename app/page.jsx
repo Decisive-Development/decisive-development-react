@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 import {
-  Nav,
   Header,
+  Nav,
   Journey,
   Pricing,
   Services,
@@ -12,12 +12,14 @@ import {
   Footer
 } from './_components';
 
-const ParticlesComp = dynamic(() => import('./_components/head/ParticlesComp'));
+const ParticlesComp = dynamic(
+  () => import('./_components/head/ParticlesComp'),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
     <main className="relative bg-theme-primary text-base">
-      <ParticlesComp />
       <Nav />
       <Header />
       <Journey />
@@ -28,6 +30,7 @@ export default function Home() {
       {/* <Partners /> */}
       <Contact />
       <Footer />
+      <ParticlesComp />
     </main>
   );
 }
