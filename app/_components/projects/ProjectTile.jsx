@@ -1,5 +1,5 @@
 "use client";
-import { projectTileContent } from "../../constants";
+import { projectTileContent } from "../../_constants";
 import { useState } from "react";
 
 const ProjectTile = () => {

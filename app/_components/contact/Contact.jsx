@@ -1,4 +1,4 @@
-import { ColouredLine } from "../../components";
+import { ColouredLine } from "..";
 import Image from "next/image";
 import images from "../../../public/index";
 const Contact = () => {
