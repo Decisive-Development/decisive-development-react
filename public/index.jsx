@@ -15,20 +15,20 @@ import email from './email.svg';
 
 // Export them as an object
 const images = {
-    design,
-    develop,
-    decisive,
-    logoWhite,
-    logoBlack,
-    circle,
-    avoid,
-    vision,
-    code,
-    lightBulb,
-    heart,
-    chevron,
-    phone,
-    email,
+  design,
+  develop,
+  decisive,
+  logoWhite,
+  logoBlack,
+  circle,
+  avoid,
+  vision,
+  code,
+  lightBulb,
+  heart,
+  chevron,
+  phone,
+  email
 };
 
 export default images;
