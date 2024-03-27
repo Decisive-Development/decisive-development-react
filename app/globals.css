@@ -237,3 +237,17 @@ h1, h2, h3, h4, h5, h6 {
         margin-right: 0em;
     }
 }    
+
+::-webkit-scrollbar {
+    width: 0.53vw;
+}
+::-webkit-scrollbar-thumb {
+    background: #CFD4D7;
+    border-radius: 0.2vw;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3E9FFF;
+}
+::-webkit-scrollbar-track {
+    background: #0D161D;
+}

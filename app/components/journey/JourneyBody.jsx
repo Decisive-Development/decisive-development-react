@@ -71,23 +71,23 @@ const JourneyBody = () => {
                             <p className="mb-5 text-theme-complementary">
                                 The Problem with Website Builder Platforms:
                             </p>
-                            <div className="grid grid-cols-1 md:grid-cols-2 ml-5 gap-0 md:gap-10">
+                            <div className="grid grid-cols-1 md:grid-cols-2 ml-5 gap-0 md:gap-10 text-theme-complementary">
                                 <ul className="list-disc list-outside ">
-                                    <li className="mb-5 text-theme-complementary">
+                                    <li className="mb-5 ">
                                         <span className="font-bold text-theme-neutral block">Not Custom-Designed</span> Rely on templates and your website might just disappear into the crowd, missing the chance to highlight what makes your brand special.
                                     </li>
-                                    <li className="mb-5 text-theme-complementary">
+                                    <li className="mb-5 ">
                                         <span className="font-bold text-theme-neutral block">Poor Google Rankings & SEO</span> Lacking control over SEO details like speed and metadata can leave your site lagging behind in search results.
                                     </li>
-                                    <li className="mb-5 text-theme-complementary">
+                                    <li className="mb-5 ">
                                         <span className="font-bold text-theme-neutral block">Lack of Customer Support</span> With builder platforms, you're often on your own, without the dedicated support to guide you through issues or updates.
                                     </li>
                                 </ul>
                                 <ul className="list-disc list-outside ">
-                                    <li className="mb-5 text-theme-complementary">
+                                    <li className="mb-5 ">
                                         <span className="font-bold text-theme-neutral block">Limited Mobile Experience</span> Even with 'responsive' designs, many builders fall short in truly optimising for mobile, a critical flaw in today's smartphone-centric world.
                                     </li>
-                                    <li className="mb-5 text-theme-complementary">
+                                    <li className="mb-5 ">
                                         <span className="font-bold text-theme-neutral block">Price</span> While website builders might seem cost-effective at first glance, fee's for add-ons, plugins, features and support can quickly add up. Not to mention the cost of your time.
                                     </li>
                                 </ul>
