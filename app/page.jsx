@@ -15,7 +15,7 @@ import {
 export default function Home() {
   return (
     <main className="relative bg-theme-primary text-base">
-      <ParticlesComp />
+      {/* <ParticlesComp /> */}
       <Nav />
       <Header />
       <Journey />
