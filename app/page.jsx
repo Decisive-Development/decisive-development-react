@@ -1,3 +1,5 @@
+'use client';
+import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import {
   Header,
@@ -18,6 +20,12 @@ const ParticlesComp = dynamic(
 );
 
 export default function Home() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <main className="relative bg-theme-primary text-base">
       <Nav />
@@ -30,7 +38,7 @@ export default function Home() {
       {/* <Partners /> */}
       <Contact />
       <Footer />
-      <ParticlesComp />
+      {isMounted && <ParticlesComp />}
     </main>
   );
 }
