@@ -5,14 +5,33 @@ import { loadSlim } from "@tsparticles/slim";
 
 const ParticlesComp = () => {
     const [init, setInit] = useState(false);
+    const [isMobile, setIsMobile] = useState(() => typeof window !== 'undefined' ? window.innerWidth < 768 : false);
 
     useEffect(() => {
-        initParticlesEngine(async (engine) => {
-            await loadSlim(engine);
-        }).then(() => {
-            setInit(true);
-        });
+        const handleResize = () => {
+            setIsMobile(typeof window !== 'undefined' ? window.innerWidth < 768 : false);
+        };
+
+        if (typeof window !== 'undefined') {
+            window.addEventListener('resize', handleResize);
+        }
+
+        return () => {
+            if (typeof window !== 'undefined') {
+                window.removeEventListener('resize', handleResize);
+            }
+        };
     }, []);
+
+    useEffect(() => {
+        if (!isMobile) {
+            initParticlesEngine(async (engine) => {
+                await loadSlim(engine);
+            }).then(() => {
+                setInit(true);
+            });
+        }
+    }, [isMobile]);
 
     const particlesLoaded = (container) => {
         console.log(container);
@@ -145,6 +164,9 @@ const ParticlesComp = () => {
         }),
         [],
     );
+    if (isMobile) {
+        return null;
+    }
 
     if (init) {
         return (

@@ -8,9 +8,9 @@ const Heading = () => {
             <p className="text-3xl block uppercase text-theme-complementary font-medium">
                 Bespoke
             </p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl mb-5 font-medium ws-15">
-                <span className="text-theme-complementary">Web</span>&nbsp;Design&nbsp;
-                <span className="text-theme-complementary">&&nbsp;</span>Development
+            <h1 className="text-4xl sm:text-5xl md:text-6xl mb-5 font-medium ws-15 ">
+                <span className="text-theme-complementary inline-block">Web</span>&nbsp;Design&nbsp;
+                <span className="text-theme-complementary inline-block">&&nbsp;</span>Development
             </h1>
             <div className="w-full lg:w-[700px] text-base md:text-lg text-theme-complementary">
                 <p>
