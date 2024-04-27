@@ -21,10 +21,10 @@ const Footer = () => {
                                 alt="Decisive Development"
                                 className="w-52 mb-5 max-w-full pointer-events-auto"
                             />
-                            <a className="mb-2" href="mailto:tom@decisive.development.com">
+                            <a className="mb-2" href="mailto:tom@decisive-development.com">
                                 <span className="font-bold">Email:</span>&nbsp;
                                 <span className="text-theme-complementary">
-                                    tom@decisive.development.com
+                                    tom@decisive-development.com
                                 </span>
                             </a>
                             <a href="tel:+447708754503" className="mb-5">

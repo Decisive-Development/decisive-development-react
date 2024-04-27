@@ -24,7 +24,7 @@ const Contact = () => {
                                 </p>
                             </div>
                            <div>
-                                <a href="mailto:decisive.development1@gmail.com" className="w-fit block">
+                                <a href="mailto:tom@decisive-development.com" className="w-fit block">
                                     <div className="flex flex-col sm:flex-row items-start sm:items-center mb-5 ">
                                         <div className="p-2 bg-theme-blue mr-5 mb-2 sm:mb-0 w-fit rounded-xl transition-all">
                                             <Image
@@ -34,7 +34,7 @@ const Contact = () => {
                                             />
                                         </div>
                                         <p className="text-theme-complementary">
-                                            <span className="font-bold text-theme-neutral">Email:</span> tom@decisive.development.com
+                                            <span className="font-bold text-theme-neutral">Email:</span> tom@decisive-development.com
                                         </p>
                                     </div>
                                 </a>
