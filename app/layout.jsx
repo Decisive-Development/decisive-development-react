@@ -1,8 +1,5 @@
-// import { Inter } from 'next/font/google'
 import './globals.css'
 import { GoogleAnalytics } from '@next/third-parties/google'
-
-// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
     title: 'Decisive Development',
@@ -12,9 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <head>
-                <GoogleAnalytics gaId="G-4F8JF72NNQ" />
-            </head>
+            <GoogleAnalytics gaId="G-4F8JF72NNQ" />
             <body >
                 {children}            
             </body>
