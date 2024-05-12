@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <GoogleAnalytics gaId="G-4F8JF72NNQ" />
-            <body >
+            <body className='bg-theme-primary'>
                 {children}            
             </body>
         </html>
