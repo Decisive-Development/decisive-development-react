@@ -23,10 +23,7 @@ const JourneyBody = () => {
     });
 
     return (
-        // Convert sections into components
-        // Add images
-        // Add page CTAs
-        <section className="pb-16 md:pb-64 journey-move">
+        <section className="pb-8 md:pb-64 journey-move">
             {/* red */}
             <JourneyBoxRed
                 themeClass="red"

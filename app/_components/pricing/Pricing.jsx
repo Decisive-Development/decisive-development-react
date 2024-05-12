@@ -235,7 +235,7 @@ const sections = [
 export default function Pricing() {
     return (
         <div
-            className="bg-theme-secondary bg-opacity-10 py-24 sm:py-64 relative overflow-x-hidden"
+            className="bg-theme-secondary bg-opacity-10 py-16 sm:py-64 relative overflow-x-hidden"
             id="pricing"
         >
             <ColouredLine position="top-0" />
@@ -259,7 +259,7 @@ export default function Pricing() {
                             className={cx(
                                 tier.mostPopular
                                     ? 'rounded-xl bg-white/5 ring-1 ring-inset ring-white/10'
-                                    : '',
+                                    : 'rounded-xl bg-white/5 ring-1 ring-inset ring-white/10',
                                 'p-8'
                             )}
                         >
@@ -293,7 +293,7 @@ export default function Pricing() {
                                 className={cx(
                                     tier.mostPopular
                                         ? 'bg-theme-purple text-white hover:bg-theme-purple focus-visible:outline-theme-purple'
-                                        : 'bg-white/10 text-white hover:bg-white/20 focus-visible:outline-white',
+                                        : 'bg-theme-purple text-white hover:bg-theme-purple focus-visible:outline-theme-purple',
                                     'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2'
                                 )}
                             >

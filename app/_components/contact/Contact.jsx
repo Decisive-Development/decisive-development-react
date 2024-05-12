@@ -3,7 +3,7 @@ import Image from "next/image";
 import images from "../../../public/index";
 const Contact = () => {
     return (
-        <section className="py-32 relative overflow-x-hidden" id="contact">
+        <section className="py-16 md:py-32 relative overflow-x-hidden" id="contact">
             <ColouredLine position="top-0" />
             <div className="container relative">
                 <div className="relative h-full z-20 bg-theme-secondary-background p-10 rounded-3xl border border-theme-complementary border-opacity-30">

@@ -30,11 +30,13 @@ const Heading = () => {
                 <ButtonCTA href="#pricing" theme="purple" buttonText="Pricing" />
                 <ButtonCTA href="#contact" theme="orange" buttonText="Contact" />
             </div>
-            <Image
-                className="absolute -bottom-5 right-1/2 w-11 left-1/2 z-0 cursor-none select-none duration-500 ease-in-out animate-bounce"
-                src={images.chevron}
-                alt="chevron"
-            />
+            <div className='translate-y-5'>
+                <Image
+                    className="hidden lg:block absolute -bottom-5 right-1/2 w-11 left-1/2 z-0 cursor-none select-none duration-500 ease-in-out animate-bounce"
+                    src={images.chevron}
+                    alt="chevron"
+                />
+            </div>
         </div>
     );
 };

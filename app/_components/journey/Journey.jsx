@@ -3,7 +3,7 @@ import JourneyBody from "./JourneyBody";
 
 const Journey = () => {
     return (
-        <section className="pt-32 container relative h-full" id="journey">
+        <section className="pt-16 md:pt-32 container relative h-full" id="journey">
             <div className="">
                 <JourneyCTA />
                 <JourneyBody />

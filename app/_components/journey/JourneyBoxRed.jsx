@@ -12,7 +12,7 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
     return (
         <div className="grid grid-cols-12 gap-0 sm:gap-x-10 h-full relative">
             <div
-                className="col-span-12 lg:col-span-3 h-full relative py-32 pr-10 text-left lg:text-right "
+                className="col-span-12 lg:col-span-3 h-full relative py-16 md:py-32 pr-10 text-left lg:text-right "
                 ref={ref}
             >
                 <div className="sticky top-2/4 z-20 pl-5 lg:pl-0">{leftHandJSX}</div>
@@ -27,7 +27,7 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                     alt="circle"
                 />
             </div>
-            <div className="col-span-12 lg:col-span-9 w-full pt-0 pb-32 lg:py-32 relative z-20">
+            <div className="col-span-12 lg:col-span-9 w-full pt-0 py-16 md:py-32 relative z-20">
                 <Tilt
                     className="relative z-20 bg-theme-secondary-background py-10 px-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30"
                     glareEnable={true}
