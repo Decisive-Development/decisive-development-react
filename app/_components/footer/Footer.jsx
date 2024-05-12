@@ -11,7 +11,7 @@ const Footer = () => {
 
     return (
         <footer className="overflow-x-hidden">
-            <section className="bg-theme-secondary bg-opacity-25 z-30 relative py-32">
+            <section className="bg-theme-secondary bg-opacity-25 z-20 relative py-32">
                 <ColouredLine />
                 <div className="container relative">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 h-full gap-10">

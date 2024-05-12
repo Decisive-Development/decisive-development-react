@@ -25,7 +25,7 @@ export default function Home() {
       {/* <Partners /> */}
       <Contact />
       <Footer />
-      <ParticlesComp />
+      {/* <ParticlesComp /> */}
     </main>
   );
 }

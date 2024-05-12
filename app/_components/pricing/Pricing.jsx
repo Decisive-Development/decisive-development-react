@@ -239,7 +239,7 @@ export default function Pricing() {
             id="pricing"
         >
             <ColouredLine position="top-0" />
-            <div className="mx-auto container px-6 lg:px-8 relative z-30">
+            <div className="mx-auto container px-6 lg:px-8 relative z-20">
                 <div className="mx-auto max-w-4xl text-center">
                     <h2 className="text-base font-semibold leading-7 text-theme-purple">
                         Pricing
