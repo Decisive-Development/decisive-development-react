@@ -8,7 +8,7 @@ const tiers = [
         name: 'Basic',
         id: 'tier-basic',
         href: '#contact',
-        priceMonthly: '£50',
+        priceMonthly: '£30',
         description: 'Quis suspendisse ut fermentum neque vivamus non tellus.',
         mostPopular: false
     },
@@ -16,7 +16,7 @@ const tiers = [
         name: 'Standard',
         id: 'tier-standard',
         href: '#contact',
-        priceMonthly: '£100',
+        priceMonthly: '£70',
         description: 'Quis eleifend a tincidunt pellentesque. A tempor in sed.',
         mostPopular: true
     },
@@ -24,7 +24,7 @@ const tiers = [
         name: 'Premium',
         id: 'tier-premium',
         href: '#contact',
-        priceMonthly: '£150',
+        priceMonthly: '£120',
         description:
             'Orci volutpat ut sed sed neque, dui eget. Quis tristique non.',
         mostPopular: false
@@ -272,6 +272,9 @@ export default function Pricing() {
 
                             {tier.priceMonthly && (
                                 <p className="mt-2 flex items-baseline gap-x-1">
+                                    <span className="text-sm font-semibold leading-6">
+                                        From
+                                    </span>
                                     <span className="text-3xl font-bold">
                                         {tier.priceMonthly}
                                     </span>
@@ -381,8 +384,12 @@ export default function Pricing() {
                                     </th>
                                     {tiers.map((tier) => (
                                         <td key={tier.id} className="px-6 pt-2 xl:px-8">
+                                            <span className="text-sm font-semibold leading-6">
+                                                From
+                                            </span>
                                             {tier.priceMonthly && (
                                                 <div className="flex font-code items-baseline gap-x-1 text-theme-neutral">
+                                                    
                                                     <span className="text-3xl font-bold">
                                                         {tier.priceMonthly}
                                                     </span>

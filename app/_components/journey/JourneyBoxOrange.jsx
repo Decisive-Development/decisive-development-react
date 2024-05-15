@@ -43,7 +43,7 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                     alt="circle"
                 />
                 <Image
-                    className="w-10 absolute opacity-100 -right-5 -bottom-28 animate-pulse"
+                    className="w-10 absolute opacity-100 -right-5 -bottom-28 animate-pulse hidden md:show"
                     src={images.heart}
                     priority={false}
                     alt="circle"
@@ -69,7 +69,7 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                         Our ongoing support ensures your website continues to perform at its best long after launch. With 24/7 assistance, you're never left alone. We provide unlimited small edits and updates, keeping your site fresh and functional. Our team offers analytical feedback and practical advice to enhance your online presence continually. Plus, with bi-monthly SEO reviews and suggestions, we help you stay ahead of the curve. Consider your custom website not just a project, but a lasting investment in your business's future.
                         </p>
                         <ul className="list-outside">
-                            <li className="mb-10 ml-0 sm:ml-5">
+                            <li className="mb-10 ml-0 sm:ml-5">1
                                 <span className="font-bold text-xl">
                                     <span className="text-theme-orange">5.</span> Ongoing Support
                                 </span>

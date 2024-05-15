@@ -17,7 +17,7 @@ const Contact = () => {
                                     Please get in touch for any enquiries, a simple question or a scheduled meeting! 
                                 </p>
                                 <p className="mb-3">
-                                    I aim to reply to all enquiries within 24 hours. Leave me either an email or a text message (WhatsApp is fine!). If you want an urgent response, its best to call me.
+                                    I aim to reply to all enquiries within 24 hours. Leave me either an email or message on WhatsApp. If you need an urgent response, its best to call me.
                                 </p>
                                 <p>
                                     I look forward to hearing from you! 
@@ -40,7 +40,7 @@ const Contact = () => {
                                 </a>
                                 <a href="tel:+447708754503" className="w-fit block">
                                     <div className="flex flex-col sm:flex-row items-start sm:items-center">
-                                        <div className="p-2 bg-theme-orange mr-5 mb-2 sm:mb-0 w-fit rounded-xl">
+                                        <div className="p-2 bg-theme-green mr-5 mb-2 sm:mb-0 w-fit rounded-xl">
                                             <Image
                                                 className="w-10 "
                                                 src={images.phone}
@@ -48,7 +48,7 @@ const Contact = () => {
                                             />
                                         </div>
                                         <p className="text-theme-complementary">
-                                            <span className="font-bold text-theme-neutral">Phone:</span> +44 (0) 77 087 545 03
+                                            <span className="font-bold text-theme-neutral">WhatsApp:</span> +44 (0) 77 087 545 03
                                         </p>
                                     </div>
                                 </a>
