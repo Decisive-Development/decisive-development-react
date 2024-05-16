@@ -9,7 +9,7 @@ import Pricing from "./pricing/Pricing";
 import Services from "./services/Services";
 import ServicesLarge from "./services/ServicesLarge";
 import ServicesSmall from "./services/ServicesSmall";
-import About from "./about/About";
+import AboutInfo from "./about/AboutInfo";
 import TextLine from "./about/TextLine";
 import Dots from "./about/Dots";
 import Projects from "./projects/Projects";
@@ -33,7 +33,7 @@ export {
     Services,
     ServicesLarge,
     ServicesSmall,
-    About,
+    AboutInfo,
     TextLine,
     Dots,
     Projects,

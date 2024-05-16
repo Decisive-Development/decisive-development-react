@@ -4,7 +4,6 @@ import {
   Journey,
   Pricing,
   Services,
-  About,
   Projects,
   Partners,
   Contact,
@@ -20,7 +19,6 @@ export default function Home() {
         <Journey />
         <Pricing />
         {/* <Services /> */}
-        {/* <About /> */}
         {/* <Projects /> */}
         {/* <Partners /> */}
         <Contact />

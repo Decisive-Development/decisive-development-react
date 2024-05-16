@@ -1,7 +1,7 @@
 import React from "react";
 import { TextLine, Dots } from "..";
 
-const About = () => {
+const AboutInfo = () => {
     return (
         <section className="bg-gradient bg-theme-primary-600 bg-opacity-25 font-code background overflow-hidden">
             <div className="container relative h-full">
@@ -48,7 +48,7 @@ const About = () => {
                         <div className="flex">
                             <Dots count={12} />
                             <p className="text-[#00ff00]">
-                                'HTML', 'CSS', 'SCSS', 'Tailwind', 'JavaScript', 'React', 'Alpine.JS', 'Laravel', 'SEO', 'Google Analytics', 'Adobe Creative Cloud', 'UX/UI', 'Wordpress', 'NPM'
+                                'HTML', 'CSS', 'SCSS', 'Tailwind', 'JavaScript', 'Next.js, 'React.js', 'Alpine.js', 'Laravel', 'SEO', 'Google Analytics', 'Adobe Creative Cloud', 'UX/UI', 'Wordpress', 'NPM', 'Netlify'
                             </p>
                         </div>
                     </TextLine>
@@ -66,7 +66,7 @@ const About = () => {
                         <div className="flex">
                             <Dots count={12} />
                             <p className="text-[#00ff00]">
-                                'Powerlifting', 'Bodybuilding', 'Painting', 'Photography', 'Camping', 'Gaming'
+                                'Powerlifting', 'Videography', 'Painting', 'Photography', 'Camping', 'Audiobooks'
                             </p>
                         </div>
                     </TextLine>
@@ -85,7 +85,7 @@ const About = () => {
                         <div className="flex">
                             <Dots count={12} />
                             <p className="text-[#00ff00]">
-                                'Audiobooks', 'Business', 'Cooking', 'Gardening', 'Cycling', 'Running', 'Traveling', 'Music', 'Podcasts', 'F1', 'Technology', 'Hiking'
+                                'Audiobooks', 'Cooking', 'Meditation', 'Traveling', 'Music', 'Podcasts', 'F1', 'Technology', 'Hiking'
                             </p>
                         </div>
                     </TextLine>
@@ -106,9 +106,9 @@ const About = () => {
                     </TextLine>
                     <TextLine>
                         <p>
-                            <span className="text-red-500">return</span>{" "}
+                            <span className="text-red-500">export default</span>{" "}
                             <a href="#home">
-                                <span className="text-purple-400 err">toTop</span>
+                                <span className="text-purple-400 err">ReturnToTop</span>
                             </a>
                             <span className="font-bold animate-pulse h-full -translate-y-1 cursor scale-125">|</span>
                         </p>
@@ -119,4 +119,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default AboutInfo;
