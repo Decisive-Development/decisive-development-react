@@ -1,6 +1,15 @@
 import design from './designWhite.png';
 import develop from './developClip.png';
 import decisive from './decisiveClip.png';
+import ddiconshuttle from './DD-Icon-Shuttle.png';
+import ddiconblue from './DD-Icon-Blue.png';
+import ddiconbunker from './DD-Icon-Bunker.png';
+import ddicongreen from './DD-Icon-Green.png';
+import ddiconorange from './DD-Icon-Orange.png';
+import ddiconred from './DD-Icon-Red.png';
+import ddiconwhite from './DD-Icon-White.png';
+import ddiconturquoise from './DD-Icon-Turquoise.png';
+import ddiconviolet from './DD-Icon-Violet.png';
 import logoWhite from './Decisive_Development_Main_Logo_Turquoise_Inverted.png';
 import logoBlack from './logo-black.svg';
 import circle from './circle.svg';
@@ -18,6 +27,15 @@ const images = {
   design,
   develop,
   decisive,
+  ddiconshuttle,
+  ddiconblue,
+  ddiconbunker,
+  ddicongreen,
+  ddiconorange,
+  ddiconred,
+  ddiconwhite,
+  ddiconturquoise,
+  ddiconviolet,
   logoWhite,
   logoBlack,
   circle,

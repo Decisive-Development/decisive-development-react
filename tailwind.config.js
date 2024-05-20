@@ -21,9 +21,6 @@ module.exports = {
                 default: ['Roboto Flex, sans-serif'],
                 code: ['Roboto Mono, monospace'],
             },
-            fontSize: {
-                base: '16px',
-            },
             colors:
             {
                 'theme-primary': {
