@@ -108,7 +108,7 @@ h6 {
 
 @media screen and (max-width: 768px) {
     .ws-15 {
-        word-spacing: 0px;
+        word-spacing: -10px;
     }
 }
 

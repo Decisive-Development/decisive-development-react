@@ -8,9 +8,17 @@ const Heading = () => {
             <p className="text-3xl block uppercase text-theme-complementary font-medium">
                 Bespoke
             </p>
-            <h1 className="text-4xl xl:text-5xl 2xl:text-6xl mb-5 font-medium ws-15 ">
-                <span className="text-theme-complementary inline-block">Web</span>&nbsp;Design&nbsp;
-                <span className="text-theme-complementary inline-block">&&nbsp;</span>Development
+            <h1 className="text-3xl xl:text-4xl 2xl:text-5xl mb-5 font-medium hidden sm:inline-block ">
+                <span className="text-theme-complementary">Web</span>
+                &nbsp;Design&nbsp;
+                <span className="text-theme-complementary">&&nbsp;</span>
+                Development
+            </h1>
+            <h1 className="text-3xl xl:text-4xl 2xl:text-5xl mb-5 font-medium sm:hidden inline-block ">
+                <span className="text-theme-complementary">Web </span>
+                Design
+                <span className="text-theme-complementary"> & </span>
+                Development
             </h1>
             <div className="w-full lg:w-[700px] text-base xl:text-base 2xl:text-lg text-theme-complementary">
                 <p>

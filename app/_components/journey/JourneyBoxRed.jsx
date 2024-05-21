@@ -80,7 +80,7 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                                     </span>{' '}
                                     Even with 'responsive' designs, many builders fall short in
                                     truly optimising for mobile, a critical flaw in today's
-                                    smartphone-centric world
+                                    phone-centric world
                                 </li>
                                 <li className="mb-5 ">
                                     <span className="font-bold text-theme-neutral block">
