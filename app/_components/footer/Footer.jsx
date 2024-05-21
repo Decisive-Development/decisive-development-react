@@ -28,7 +28,7 @@ const Footer = () => {
                                 </span>
                             </a>
                             <a href="tel:+447708754503" className="mb-5">
-                                <span className="font-bold">Phone:</span>&nbsp;
+                                <span className="font-bold">WhatsApp:</span>&nbsp;
                                 <span className="text-theme-complementary">
                                     +44 (0) 77 087 545 03
                                 </span>

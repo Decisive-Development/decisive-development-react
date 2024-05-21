@@ -5,7 +5,7 @@ import { ColouredLine } from '..';
 
 const Navbar = () => {
     return (
-        <div className="w-full flex flex-col md:flex-row justify-between bg-theme-secondary-background py-5 px-5 md:px-10 z-30 fixed left-0 top-0">
+        <div className="w-full flex flex-col md:flex-row justify-between bg-theme-secondary-background py-5 px-5 md:px-10 z-40 fixed left-0 top-0">
             <a href="/">
                 <Image
                     src={images.logoWhite}
