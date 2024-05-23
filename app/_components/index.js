@@ -11,6 +11,7 @@ import ServicesLarge from "./services/ServicesLarge";
 import ServicesSmall from "./services/ServicesSmall";
 import AboutInfo from "./about/AboutInfo";
 import AboutHero from "./about/AboutHero";
+import AboutMe from "./about/AboutMe";
 import TextLine from "./about/TextLine";
 import Dots from "./about/Dots";
 import Projects from "./projects/Projects";
@@ -36,6 +37,7 @@ export {
     ServicesSmall,
     AboutInfo,
     AboutHero,
+    AboutMe,
     TextLine,
     Dots,
     Projects,

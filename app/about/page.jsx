@@ -1,6 +1,7 @@
 import {
     Nav,
     AboutInfo,
+    AboutMe,
     AboutHero,
     Contact,
     Footer,
@@ -12,6 +13,7 @@ export default function About() {
         <main className="relative bg-theme-primary text-base">
             <Nav />
             <AboutHero />
+            <AboutMe />
             <AboutInfo />
             <Contact />
             <Footer />
