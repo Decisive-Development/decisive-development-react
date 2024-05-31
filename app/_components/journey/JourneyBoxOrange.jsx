@@ -16,11 +16,11 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                 ref={ref}
             >
                 <div className="sticky top-2/4 z-20 pl-5 lg:pl-0">
-                    <p className="relative z-20 text-theme-complementary">
+                    <p className="relative z-20 ">
                         <span className="text-theme-neutral font-medium">Here</span> to{' '}
                         <span className="text-theme-neutral font-medium">help.</span>
                     </p>
-                    <p className="mb-5 relative z-20 text-theme-complementary">
+                    <p className="mb-5 relative z-20 ">
                         Your{' '}
                         <span className="text-theme-neutral font-medium">personal</span> web
                         developer.
@@ -33,7 +33,7 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                     />
                 </div>
                 <div
-                    className={`bg-gradient-to-b from-transparent via-theme-orange to-transparent h-full absolute w-[2px] left-0 lg:left-[unset] right-0 top-0  ease-in-out duration-700 transform ${inView ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'
+                    className={`bg-gradient-to-b from-transparent via-theme-orange to-transparent h-full absolute w-[2px] left-0 lg:left-[unset] right-0 top-0 ease-in-out duration-700 transform ${inView ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'
                         } origin-top`}
                 ></div>
                 <Image
@@ -65,7 +65,7 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                             Our Process
                         </h3>
                         <p className="font-medium text-xl mb-10">Sustaining Your Success</p>
-                        <p className="mb-10 text-theme-complementary">
+                        <p className="mb-10 ">
                         Our ongoing support ensures your website continues to perform at its best long after launch. With 24/7 assistance, you're never left alone. We provide unlimited small edits and updates, keeping your site fresh and functional. Our team offers analytical feedback and practical advice to enhance your online presence continually. Plus, with bi-monthly SEO reviews and suggestions, we help you stay ahead of the curve. Consider your custom website not just a project, but a lasting investment in your business's future.
                         </p>
                         <ul className="list-outside">
@@ -73,7 +73,7 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                                 <span className="font-bold text-xl">
                                     <span className="text-theme-orange">5.</span> Ongoing Support
                                 </span>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-5 text-theme-complementary">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-5 ">
                                     <ul className="list-disc ml-10 mt-2 ">
                                         <li className="mb-1">
                                             24/7 Assistance

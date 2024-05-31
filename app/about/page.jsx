@@ -1,9 +1,10 @@
 import {
     Nav,
     AboutInfo,
-    AboutMe,
+    Photographs,
+    Help,
+    AboutCTA,
     AboutHero,
-    Contact,
     Footer,
     ParticlesComp
 } from '../_components';
@@ -13,9 +14,10 @@ export default function About() {
         <main className="relative bg-theme-primary text-base">
             <Nav />
             <AboutHero />
-            <AboutMe />
+            <Photographs />
+            <Help />
+            <AboutCTA />
             <AboutInfo />
-            <Contact />
             <Footer />
             <ParticlesComp />
         </main>

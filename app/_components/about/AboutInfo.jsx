@@ -1,10 +1,14 @@
 import React from "react";
-import { TextLine, Dots } from "..";
+import { TextLine, Dots, ColouredLine } from "..";
 
 const AboutInfo = () => {
     return (
-        <section className="bg-gradient bg-theme-primary-600 bg-opacity-25 font-code background overflow-hidden">
+        <section className="bg-gradient bg-theme-primary-600 bg-opacity-25 font-code background overflow-hidden relative pt-32">
+            <ColouredLine position="top-0" />
             <div className="container h-full">
+                <h3 className="font-bold text-3xl relative z-30">
+                    Available for hire; here's my CV:
+                </h3>
                <div className="w-3/4 relative m-auto">
                     <div className="bg-theme-complementary z-20 h-3/4 top-0 bottom-0 my-auto absolute w-[1px] -left-6 "></div>
                     <div className="bg-gradient-to-b from-theme-blue-600 via-white to-theme-blue-600 z-20 h-full absolute w-[1px] -left-3 "></div>
@@ -108,7 +112,7 @@ const AboutInfo = () => {
                         <TextLine>
                             <p>
                                 <span className="text-red-500">export default</span>{" "}
-                                <a href="#home">
+                                <a href="#">
                                     <span className="text-purple-400 err">ReturnToTop</span>
                                 </a>
                                 <span className="font-bold animate-pulse h-full -translate-y-1 cursor scale-125">|</span>

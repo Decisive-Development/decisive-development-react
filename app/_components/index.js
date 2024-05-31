@@ -9,10 +9,13 @@ import Pricing from "./pricing/Pricing";
 import Services from "./services/Services";
 import ServicesLarge from "./services/ServicesLarge";
 import ServicesSmall from "./services/ServicesSmall";
+import AboutCTA from "./about/AboutCTA";
 import AboutInfo from "./about/AboutInfo";
 import AboutHero from "./about/AboutHero";
-import AboutMe from "./about/AboutMe";
+import Photographs from "./about/Photographs";
+import Help from "./about/Help";
 import TextLine from "./about/TextLine";
+import SwiperBlock from "./about/Swiper";
 import Dots from "./about/Dots";
 import Projects from "./projects/Projects";
 import ProjectTile from "./projects/ProjectTile";
@@ -35,10 +38,13 @@ export {
     Services,
     ServicesLarge,
     ServicesSmall,
+    AboutCTA,
     AboutInfo,
     AboutHero,
-    AboutMe,
+    Photographs,
+    Help,
     TextLine,
+    SwiperBlock,
     Dots,
     Projects,
     ProjectTile,

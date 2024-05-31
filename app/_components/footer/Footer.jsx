@@ -17,19 +17,19 @@ const Footer = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 h-full gap-10">
                         <div className="flex flex-col col-span-1 sm:col-span-2 lg:col-span-1">
                             <Image
-                                src={images.logoWhite}
+                                src={images.logowhiteturq}
                                 alt="Decisive Development"
                                 className="w-52 mb-5 max-w-full pointer-events-auto"
                             />
                             <a className="mb-2" href="mailto:tom@decisive-development.com">
                                 <span className="font-bold">Email:</span>&nbsp;
-                                <span className="text-theme-complementary">
+                                <span className="">
                                     tom@decisive-development.com
                                 </span>
                             </a>
                             <a href="tel:+447708754503" className="mb-5">
                                 <span className="font-bold">WhatsApp:</span>&nbsp;
-                                <span className="text-theme-complementary">
+                                <span className="">
                                     +44 (0) 77 087 545 03
                                 </span>
                             </a>
@@ -83,15 +83,15 @@ const Footer = () => {
                 </div>
             </section>
             <section className="container relative">
-                <div className="bg-theme-primary text-theme-complementary font-light text-center py-10">
-                    <p className="mb-2">
+                <div className="bg-theme-primary font-light text-center py-10">
+                    <p className="mb-2 relative z-30">
                         © 2021 - 2024 Decisive Development Ltd. All rights reserved.
                     </p>
-                    <p className="mb-2">
+                    <p className="mb-2 relative z-30">
                         Global Freelance Web Design, Development, Management, Maintenance
                         and Support.
                     </p>
-                    <div>
+                    <div className='relative z-30'>
                         {/* add nav links */}
                         Copyright. Terms. Privacy.
                     </div>

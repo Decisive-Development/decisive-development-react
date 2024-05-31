@@ -16,10 +16,10 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                 ref={ref}
             >
                 <div className="sticky top-2/4 z-20 pl-5 lg:pl-0">
-                    <p className="relative z-20 text-theme-complementary">
+                    <p className="relative z-20 ">
                         Partner with us.
                     </p>
-                    <p className="mb-5 relative z-20 text-theme-complementary">
+                    <p className="mb-5 relative z-20 ">
                         <span className="text-theme-neutral font-medium">Your growth</span>{' '}
                         is{' '}
                         <span className="text-theme-neutral font-medium">our business</span>
@@ -33,7 +33,7 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                     />
                 </div>
                 <div
-                    className={`bg-gradient-to-b from-transparent via-theme-blue to-transparent h-full absolute w-[2px] left-0 lg:left-[unset] right-0 top-0  ease-in-out duration-700 transform ${inView ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'
+                    className={`bg-gradient-to-b from-transparent via-theme-blue to-transparent h-full absolute w-[2px] left-0 lg:left-[unset] right-0 top-0 ease-in-out duration-700 transform ${inView ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'
                         } origin-top`}
                 ></div>
                 <Image
@@ -61,7 +61,7 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                         <p className="font-medium text-xl mb-10">
                             Understanding Your Vision
                         </p>
-                        <p className="mb-10 text-theme-complementary">
+                        <p className="mb-10 ">
                             We begin every project with a deep dive into your world. We want
                             to understand every facet of your business, brand, and goals to
                             ensure the website we create resonates with your identity and
@@ -75,7 +75,7 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                                     <span className="text-theme-blue">1.</span> Initial
                                     Consultation
                                 </span>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10 text-theme-complementary">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10 ">
                                     <ul className="list-disc ml-10 mt-2 ">
                                         <li className="mb-1">
                                             Get to know one another and discuss your vision
@@ -107,7 +107,7 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                                     <span className="text-theme-blue">2.</span> Proposal &
                                     Contract
                                 </span>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10 text-theme-complementary">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-10 ">
                                     <ul className="list-disc ml-10 mt-2 ">
                                         <li className="mb-1">
                                             Breakdown of agreements and costs

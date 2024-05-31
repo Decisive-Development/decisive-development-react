@@ -33,7 +33,7 @@ const Contact = () => {
                                                 alt="email"
                                             />
                                         </div>
-                                        <p className="text-theme-complementary">
+                                        <p className="">
                                             <span className="font-bold text-theme-neutral">Email:</span> tom@decisive-development.com
                                         </p>
                                     </div>
@@ -47,7 +47,7 @@ const Contact = () => {
                                                 alt="phone"
                                             />
                                         </div>
-                                        <p className="text-theme-complementary">
+                                        <p className="">
                                             <span className="font-bold text-theme-neutral">WhatsApp:</span> +44 (0) 77 087 545 03
                                         </p>
                                     </div>

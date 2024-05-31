@@ -17,7 +17,7 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
             >
                 <div className="sticky top-2/4 z-20 pl-5 lg:pl-0">{leftHandJSX}</div>
                 <div
-                    className={`bg-gradient-to-b from-transparent via-theme-${themeClass} to-transparent h-full absolute w-[2px] left-0 lg:left-[unset] lg:right-0 top-0  ease-in-out duration-700 transform ${inView ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'
+                    className={`bg-gradient-to-b from-transparent via-theme-${themeClass} to-transparent h-full absolute w-[2px] left-0 lg:left-[unset] lg:right-0 top-0 ease-in-out duration-700 transform ${inView ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'
                         } origin-top`}
                 ></div>
                 <Image
@@ -45,10 +45,10 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                         <p className="font-medium text-xl mb-10">
                             Escape the Ordinary, Embrace the Exceptional
                         </p>
-                        <p className="mb-5 text-theme-complementary">
+                        <p className="mb-5 ">
                             The Problem with Website Builder Platforms:
                         </p>
-                        <div className="grid grid-cols-1 md:grid-cols-2 ml-5 gap-0 md:gap-10 text-theme-complementary">
+                        <div className="grid grid-cols-1 md:grid-cols-2 ml-5 gap-0 md:gap-10 ">
                             <ul className="list-disc list-outside ">
                                 <li className="mb-5 ">
                                     <span className="font-bold text-theme-neutral block">

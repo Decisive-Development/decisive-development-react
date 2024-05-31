@@ -1,27 +1,23 @@
 export const navLinks = [
     {
-        id: "",
         title: "Home",
+        link: "/"
     },
     {
-        id: "journey",
         title: "Services",
+        link: "/services"
     },
     {
-        id: "pricing",
         title: "Pricing",
+        link: "/pricing"
     },
-    // {
-    //     id: "555",
-    //     title: "Projects",
-    // },
-    // {
-    //     id: "partners",
-    //     title: "Partners",
-    // },
     {
-        id: "contact",
+        title: "About",
+        link: "/about"
+    },
+    {
         title: "Contact",
+        link: "/contact"
     },
 ];
 
@@ -90,55 +86,6 @@ export const servicesSmallContent = [
         themeText: "text-theme-green font-code font-light",
         themeBg: "bg-theme-green",
     },
-    //   {
-    //     id: "02",
-    //     title: "Website Maintenance",
-    //     subTitle: "Built to outperform and outlast your competitors",
-    //     copy: "Beauty is only skin deep and it’s important that your website performs as well as it looks. I build clean websites that perform brilliantly, are fast, smooth and fluid making for a better user experience and a greater ROI.",
-    //     subCopy:
-    //       "As a freelance web designer in London I pride myself in writing scalable and highly efficient code, and my websites are fast… really, really, fast. This is important as Google now takes site loading times into account when ranking your site so making sure it goes like the clappers should be a top priority.",
-    //     listOne: {
-    //       listTitle: "Including but not limited to",
-    //       listItems: [
-    //         "Full websites",
-    //         "Landing pages",
-    //         "Website maintenance",
-    //         "UX / UI upgrades",
-    //         "Animation and interactivity",
-    //       ],
-    //     },
-    //     listTwo: {
-    //       listTitle: "What you can expect",
-    //       listItems: [
-    //         "Responsive design",
-    //         "SEO optimised",
-    //         "Google Analytics",
-    //         "Lightning fast loading times",
-    //         "Scalable and future-proof",
-    //         "Highly secure",
-    //       ],
-    //     },
-    //     themeText: "text-theme-green font-code font-light",
-    //     themeBg: "bg-theme-green",
-    //   },
-    //   {
-    //     id: "03",
-    //     title: "Email Development",
-    //     subTitle: "Built to outperform and outlast your competitors",
-    //     copy: "Beauty is only skin deep and it’s important that your website performs as well as it looks. I build clean websites that perform brilliantly, are fast, smooth and fluid making for a better user experience and a greater ROI.",
-    //     listOne: {
-    //       listTitle: "Including but not limited to",
-    //       listItems: [
-    //         "Full websites",
-    //         "Landing pages",
-    //         "Website maintenance",
-    //         "UX / UI upgrades",
-    //         "Animation and interactivity",
-    //       ],
-    //     },
-    //     themeText: "text-theme-green font-code font-light",
-    //     themeBg: "bg-theme-green",
-    //   },
     {
         id: "04",
         title: "SEO",
@@ -157,42 +104,6 @@ export const servicesSmallContent = [
         themeText: "text-theme-blue",
         themeBg: "bg-theme-blue",
     },
-    //   {
-    //     id: "05",
-    //     title: "Hosting",
-    //     subTitle: "Built to outperform and outlast your competitors",
-    //     copy: "Beauty is only skin deep and it’s important that your website performs as well as it looks. I build clean websites that perform brilliantly, are fast, smooth and fluid making for a better user experience and a greater ROI.",
-    //     listOne: {
-    //       listTitle: "Including but not limited to",
-    //       listItems: [
-    //         "Full websites",
-    //         "Landing pages",
-    //         "Website maintenance",
-    //         "UX / UI upgrades",
-    //         "Animation and interactivity",
-    //       ],
-    //     },
-    //     themeText: "text-theme-blue",
-    //     themeBg: "bg-theme-blue",
-    //   },
-    //   {
-    //     id: "06",
-    //     title: "UX / UI Overhaul",
-    //     subTitle: "Built to outperform and outlast your competitors",
-    //     copy: "Beauty is only skin deep and it’s important that your website performs as well as it looks. I build clean websites that perform brilliantly, are fast, smooth and fluid making for a better user experience and a greater ROI.",
-    //     listOne: {
-    //       listTitle: "Including but not limited to",
-    //       listItems: [
-    //         "Full websites",
-    //         "Landing pages",
-    //         "Website maintenance",
-    //         "UX / UI upgrades",
-    //         "Animation and interactivity",
-    //       ],
-    //     },
-    //     themeText: "text-theme-blue",
-    //     themeBg: "bg-theme-blue",
-    //   },
     {
         id: "07",
         title: "Web / Email Design",

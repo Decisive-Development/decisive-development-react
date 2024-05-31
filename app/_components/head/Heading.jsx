@@ -5,22 +5,22 @@ import images from '../../../public/index';
 const Heading = () => {
     return (
         <div className="relative z-20 w-full">
-            <p className="text-3xl block uppercase text-theme-complementary font-medium">
+            <p className="text-3xl block uppercase font-medium">
                 Bespoke
             </p>
             <h1 className="text-3xl xl:text-4xl 2xl:text-5xl mb-5 font-medium hidden sm:inline-block ">
-                <span className="text-theme-complementary">Web</span>
+                <span className="">Web</span>
                 &nbsp;Design&nbsp;
-                <span className="text-theme-complementary">&&nbsp;</span>
+                <span className="">&&nbsp;</span>
                 Development
             </h1>
             <h1 className="text-3xl xl:text-4xl 2xl:text-5xl mb-5 font-medium sm:hidden inline-block ">
-                <span className="text-theme-complementary">Web </span>
+                <span className="">Web </span>
                 Design
-                <span className="text-theme-complementary"> & </span>
+                <span className=""> & </span>
                 Development
             </h1>
-            <div className="w-full lg:w-[700px] text-base xl:text-base 2xl:text-lg text-theme-complementary">
+            <div className="w-full lg:w-[700px] text-base xl:text-base 2xl:text-lg ">
                 <p>
                     Offering ground up, hand-coded websites with bespoke design and
                     development.

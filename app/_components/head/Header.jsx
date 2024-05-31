@@ -35,7 +35,7 @@ const Header = () => {
                 <Image
                     className="w-full logo-transform"
                     src={images.ddiconturquoise}
-                    alt="Decisive"  
+                    alt="Decisive" 
                 />
                 <Image
                     className="w-full logo-transform"

@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <GoogleAnalytics gaId="G-4F8JF72NNQ" />
             <body className='bg-theme-primary'>
-                {children}            
+                {children}
             </body>
         </html>
     )

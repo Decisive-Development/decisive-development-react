@@ -16,10 +16,10 @@ const JourneyBoxGreen = ({ themeClass, leftHandJSX }) => {
                 ref={ref}
             >
                 <div className="sticky top-2/4 z-20 pl-5 lg:pl-0">
-                    <p className="relative z-20 text-theme-complementary">
+                    <p className="relative z-20 ">
                         No stone left unturned.
                     </p>
-                    <p className="mb-5 relative z-20 text-theme-complementary">
+                    <p className="mb-5 relative z-20 ">
                         Bring{' '}
                         <span className="text-theme-neutral font-medium">your vision</span>{' '}
                         to <span className="text-theme-neutral font-medium">life</span>.
@@ -32,7 +32,7 @@ const JourneyBoxGreen = ({ themeClass, leftHandJSX }) => {
                     />
                 </div>
                 <div
-                    className={`bg-gradient-to-b from-transparent via-theme-green to-transparent h-full absolute left-0 lg:left-[unset] w-[2px] right-0 top-0  ease-in-out duration-700 transform ${inView ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'
+                    className={`bg-gradient-to-b from-transparent via-theme-green to-transparent h-full absolute left-0 lg:left-[unset] w-[2px] right-0 top-0 ease-in-out duration-700 transform ${inView ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'
                         } origin-top`}
                 ></div>
                 <Image
@@ -60,7 +60,7 @@ const JourneyBoxGreen = ({ themeClass, leftHandJSX }) => {
                         <p className="font-medium text-xl mb-10">
                             Bringing Your Vision To Life
                         </p>
-                        <p className="mb-10 text-theme-complementary">
+                        <p className="mb-10 ">
                             From planning to creation, our design and development phase is where your website starts to take shape. We focus on selecting the right graphics, media, and copy to match your brand. You'll see your site come to life through XD prototypes, which we refine based on your feedback. This step is collaborative, involving ongoing communication to ensure the site meets your needs and you are happy with the direction.
                         </p>
                         <ul className="list-outside">
@@ -69,7 +69,7 @@ const JourneyBoxGreen = ({ themeClass, leftHandJSX }) => {
                                     <span className="text-theme-green">3.</span> Design &
                                     Development
                                 </span>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-5 text-theme-complementary">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-5 ">
                                     <ul className="list-disc ml-10 mt-2 ">
                                         <li className="mb-1">
                                             Graphics, Media, and Copywriting agreed upon
@@ -100,7 +100,7 @@ const JourneyBoxGreen = ({ themeClass, leftHandJSX }) => {
                                 <span className="font-bold text-xl">
                                     <span className="text-theme-green">4.</span> Review & Launch
                                 </span>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-5 text-theme-complementary">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-5 ">
                                     <ul className="list-disc ml-10 mt-2 ">
                                         <li className="mb-1">
                                             Pre-launch checklist

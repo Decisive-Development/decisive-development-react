@@ -447,7 +447,7 @@ export default function Pricing() {
                                                 {tiers.map((tier) => (
                                                     <td key={tier.id} className="px-6 py-2 xl:px-8">
                                                         {typeof feature.tiers[tier.name] === 'string' ? (
-                                                            <div className="text-center text-sm leading-6 text-theme-complementary">
+                                                            <div className="text-center text-sm leading-6 ">
                                                                 {feature.tiers[tier.name]}
                                                             </div>
                                                         ) : (

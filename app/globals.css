@@ -28,9 +28,8 @@ html {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    /* cursor: url('images/cursor.png'), auto; */
-
     counter-reset: linenumber;
+    color: theme('colors.theme-complementary.DEFAULT');
 }
 
 img,
@@ -166,7 +165,6 @@ h6 {
 }
 
 @keyframes cursorFadeInOut {
-
     0%,
     100% {
         opacity: 0;
@@ -204,7 +202,6 @@ h6 {
 .err {
     display: inline-block;
     position: relative;
-
 }
 
 .err:after {
@@ -230,7 +227,6 @@ h6 {
     from {
         transform: translateX(0);
     }
-
     to {
         transform: translateX(-50%);
     }
@@ -280,34 +276,51 @@ h6 {
     animation-name: multiple-image-crossfade;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 21s; /* Adjusted for 7 types and 21 seconds total duration */
+    animation-duration: 21s;
 }
 
 .logo-transform:nth-of-type(1) {
-    animation-delay: 18s; /* Adjusted for 7 types and 21 seconds total duration */
+    animation-delay: 18s;
 }
 
 .logo-transform:nth-of-type(2) {
-    animation-delay: 15s; /* Adjusted for 7 types and 21 seconds total duration */
+    animation-delay: 15s;
 }
 
 .logo-transform:nth-of-type(3) {
-    animation-delay: 12s; /* Adjusted for 7 types and 21 seconds total duration */
+    animation-delay: 12s;
 }
 
 .logo-transform:nth-of-type(4) {
-    animation-delay: 9s; /* Adjusted for 7 types and 21 seconds total duration */
+    animation-delay: 9s;
 }
 
 .logo-transform:nth-of-type(5) {
-    animation-delay: 6s; /* Adjusted for 7 types and 21 seconds total duration */
+    animation-delay: 6s;
 }
 
 .logo-transform:nth-of-type(6) {
-    animation-delay: 3s; /* Adjusted for 7 types and 21 seconds total duration */
+    animation-delay: 3s;
 }
 
 .logo-transform:nth-of-type(7) {
     animation-delay: 0;
 }
 
+.swiper-button-prev {
+    color: #fff !important;
+}
+
+.swiper-button-next {
+    color: #fff !important;
+}
+
+.swiper-zoom-container{
+    max-width: 800px !important;
+}
+
+.white-shadow{
+    -webkit-box-shadow: 0px 0px 70px -10px rgba(255,255,255,0.3);
+    -moz-box-shadow: 0px 0px 70px -10px rgba(255,255,255,0.3);
+    box-shadow: 0px 0px 70px -10px rgba(255,255,255,0.3);
+}
