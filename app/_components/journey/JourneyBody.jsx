@@ -23,7 +23,7 @@ const JourneyBody = () => {
     });
 
     return (
-        <section className="pb-8 md:pb-64 journey-move">
+        <section className="pb-8 md:pb-32 journey-move">
             {/* red */}
             <JourneyBoxRed
                 themeClass="red"

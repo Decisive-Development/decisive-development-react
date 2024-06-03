@@ -235,7 +235,7 @@ const sections = [
 export default function Pricing() {
     return (
         <div
-            className="bg-theme-secondary bg-opacity-10 py-16 sm:py-64 relative overflow-x-hidden"
+            className="bg-theme-secondary bg-opacity-10 py-16 md:pb-36 md:pt-32 relative overflow-x-hidden"
             id="pricing"
         >
             <ColouredLine position="top-0" />

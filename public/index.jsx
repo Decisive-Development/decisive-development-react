@@ -17,6 +17,7 @@ import heart from './icons/heart-icon.svg';
 import chevron from './icons/chevron.svg';
 import phone from './icons/phone.svg';
 import email from './icons/email.svg';
+import hover from './icons/hover.png';
 import me from './photographs/me.jpg';
 
 const images = {
@@ -39,7 +40,8 @@ const images = {
     chevron,
     phone,
     email,
-    me
+    hover,
+    me,
 };
 
 export default images;

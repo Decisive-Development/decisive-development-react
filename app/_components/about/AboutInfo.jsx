@@ -9,7 +9,7 @@ const AboutInfo = () => {
                 <h3 className="font-bold text-3xl relative z-30">
                     Available for hire; here's my CV:
                 </h3>
-               <div className="w-3/4 relative m-auto">
+               <div className="w-[80%] lg:w-3/4 relative m-auto translate-x-5 md:translate-x-0">
                     <div className="bg-theme-complementary z-20 h-3/4 top-0 bottom-0 my-auto absolute w-[1px] -left-6 "></div>
                     <div className="bg-gradient-to-b from-theme-blue-600 via-white to-theme-blue-600 z-20 h-full absolute w-[1px] -left-3 "></div>
                     <div className="py-32">

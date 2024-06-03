@@ -23,6 +23,7 @@ import Partners from "./partners/Partners";
 import Contact from "./contact/Contact";
 import ParticlesComp from "./head/ParticlesComp";
 import ColouredLine from "./animations/ColouredLine";
+import VideoPlayer from "./animations/VideoPlayer";
 import Footer from "./footer/Footer";
 import ColouredLinks from "./colouredLinks/ColouredLinks";
 
@@ -52,6 +53,7 @@ export {
     Partners,
     ParticlesComp,
     ColouredLine,
+    VideoPlayer,
     Footer,
     ColouredLinks
 };

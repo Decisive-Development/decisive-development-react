@@ -2,12 +2,14 @@
 import Image from "next/image";
 import images from "../../../public/index";
 import Tilt from 'react-parallax-tilt';
+import React from 'react';
+import VideoPlayer from '../animations/VideoPlayer';
 
 const AboutHero = () => {
     return (
         <section className="pt-16">
             <div className="container h-full">
-                <div className="grid grid-cols-2 gap-10 h-[800px] my-auto py-32">
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 h-full 2xl:h-[800px] my-auto py-32">
                     <div className="flex flex-col justify-end">
                         <div className="z-20">
                             <p className="font-bold uppercase text-lg text-theme-purple">
@@ -37,17 +39,18 @@ const AboutHero = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[600px] h-[400px] z-20 rounded-tr-[50px] rounded-bl-[50px] overflow-hidden">
-                        <Image
-                            src={images.me}
-                            alt="me"
-                            className=""
+                    <div className="relative w-full lg:w-[600px] white-shadow h-fit z-20 rounded-tr-[50px] rounded-bl-[50px] overflow-hidden">
+                        <VideoPlayer />
+                        <Image 
+                            src={images.hover}
+                            className="right-0 bottom-0 z-40 w-8 absolute animate-pulse"
+                            alt="Sunset"
                         />
                     </div>
                 </div>
-                <div className="grid grid-cols-2 gap-10 mb-16">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16">
                     <Tilt
-                        className="relative z-20 bg-theme-secondary-background py-10 px-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30"
+                        className="relative z-20 bg-theme-secondary-background p-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30"
                         glareEnable={true}
                         glareMaxOpacity={0.2}
                         glareColor="#52BBF6"
@@ -61,7 +64,7 @@ const AboutHero = () => {
                         </p>
                     </Tilt>
                     <Tilt
-                        className="relative z-20 bg-theme-secondary-background py-10 px-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30"
+                        className="relative z-20 bg-theme-secondary-background p-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30"
                         glareEnable={true}
                         glareMaxOpacity={0.2}
                         glareColor="#52BBF6"
