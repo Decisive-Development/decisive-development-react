@@ -9,7 +9,9 @@ export default function Contact() {
     return (
         <main className="relative bg-theme-primary text-base">
             <Nav />
-            <ContactForm />
+            <div className='h-screen flex items-center justify-center relative z-30'>
+                <ContactForm />
+            </div>
             <Footer />
             <ParticlesComp />
         </main>
