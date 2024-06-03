@@ -9,7 +9,7 @@ const ContactForm = () => {
                     <form 
                         name="contact" 
                         method="POST" 
-                        netlify
+                        data-netlify="true"
                     >
                         <p>
                             <label>Your Name:
