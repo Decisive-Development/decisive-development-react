@@ -20,7 +20,8 @@ import Dots from "./about/Dots";
 import Projects from "./projects/Projects";
 import ProjectTile from "./projects/ProjectTile";
 import Partners from "./partners/Partners";
-import Contact from "./contact/Contact";
+import ContactBlock from "./contact/ContactBlock";
+import ContactForm from "./contact/ContactForm";
 import ParticlesComp from "./head/ParticlesComp";
 import ColouredLine from "./animations/ColouredLine";
 import VideoPlayer from "./animations/VideoPlayer";
@@ -49,7 +50,8 @@ export {
     Dots,
     Projects,
     ProjectTile,
-    Contact,
+    ContactBlock,
+    ContactForm,
     Partners,
     ParticlesComp,
     ColouredLine,

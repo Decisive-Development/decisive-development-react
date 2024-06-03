@@ -1,7 +1,7 @@
 import { ColouredLine } from "..";
 import Image from "next/image";
 import images from "../../../public/index";
-const Contact = () => {
+const ContactBlock = () => {
     return (
         <section className="py-16 md:py-32 relative overflow-x-hidden" id="contact">
             <ColouredLine position="top-0" />
@@ -61,4 +61,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default ContactBlock;

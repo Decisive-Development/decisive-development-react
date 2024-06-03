@@ -6,7 +6,7 @@ import {
   Services,
   Projects,
   Partners,
-  Contact,
+  ContactBlock,
   Footer,
   ParticlesComp
 } from './_components';
@@ -21,7 +21,7 @@ export default function Home() {
         {/* <Services /> */}
         {/* <Projects /> */}
         {/* <Partners /> */}
-        <Contact />
+        <ContactBlock />
         <Footer />
         <ParticlesComp />
     </main>
