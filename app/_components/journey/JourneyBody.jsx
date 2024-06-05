@@ -29,7 +29,7 @@ const JourneyBody = () => {
                 themeClass="red"
                 leftHandJSX={
                     <>
-                        <p className="mb-5 relative z-20 ">
+                        <p className="mb-5 relative z-20 -ml-5">
                             Your website reflects your business. Make a{' '}
                             <span className="text-theme-neutral font-medium">
                                 lasting impression

@@ -248,7 +248,7 @@ export default function Pricing() {
                         Plans for all projects
                     </h>
                 </div>
-                <p className="mx-auto mt-6 text-center text-lg leading-8 text-gray-300">
+                <p className="mx-auto mt-6 text-center text-lg leading-8 w-[800px]">
                     Our pricing is designed to be flexible, ensuring you get precisely what your business needs whilst meeting your budgets. We understand that every project is unique and you may want a specific application or advanced design; thus, prices may vary depending on your specific requirements. For those who prefer, a lump sum payment option is available, offering an alternative to our 6-month minimum term commitment.
                 </p>
                 {/* xs to lg */}
@@ -334,14 +334,13 @@ export default function Pricing() {
                         </section>
                     ))}
                 </div>
-
                 {/* lg+ */}
-                <div className="isolate mt-20 hidden lg:block relative z-20 bg-theme-secondary-background -m-5 p-10 rounded-3xl border border-theme-complementary border-opacity-30">
-                    <div className="relative -mx-8 ">
+                <div className="isolate mt-20 hidden lg:block relative z-20 bg-theme-secondary-background p-5 rounded-3xl border border-theme-complementary border-opacity-30">
+                    <div className="relative">
                         {tiers.some((tier) => tier.mostPopular) ? (
                             <div className="absolute inset-x-4 inset-y-0 -z-10 flex">
                                 <div
-                                    className="flex w-1/5 px-4"
+                                    className="flex w-1/5 px-2"
                                     aria-hidden="true"
                                     style={{
                                         marginLeft: `${(tiers.findIndex((tier) => tier.mostPopular) + 1) * 20
@@ -368,7 +367,7 @@ export default function Pricing() {
                                         <th
                                             key={tier.id}
                                             scope="col"
-                                            className="px-6 pt-6 xl:px-8 xl:pt-8"
+                                            className="px-4 pt-6"
                                         >
                                             <div className="text-sm font-code font-semibold leading-7 text-theme-purple text-th">
                                                 {tier.name}
@@ -383,13 +382,13 @@ export default function Pricing() {
                                         <span className="sr-only">Price</span>
                                     </th>
                                     {tiers.map((tier) => (
-                                        <td key={tier.id} className="px-6 pt-2 xl:px-8">
+                                        <td key={tier.id} className="px-4 pt-8">
                                             <span className="text-sm font-semibold leading-6">
                                                 From
                                             </span>
                                             {tier.priceMonthly && (
                                                 <div className="flex font-code items-baseline gap-x-1 text-theme-neutral">
-                                                    
+
                                                     <span className="text-3xl font-bold">
                                                         {tier.priceMonthly}
                                                     </span>
@@ -427,14 +426,14 @@ export default function Pricing() {
                                                 scope="colgroup"
                                                 colSpan={5}
                                                 className={cx(
-                                                    sectionIdx === 0 ? 'pt-8' : 'pt-16',
+                                                    sectionIdx === 0 ? 'pt-8' : 'pt-10',
                                                     'pb-4 text-sm font-code font-semibold leading-6 text-theme-purple'
                                                 )}
                                             >
                                                 {section.name}
                                                 <div className="absolute inset-x-8 mt-4 h-px bg-theme-complementary/10" />
                                             </th>
-                                        </tr>
+                                        </tr>                                        
                                         {section.features.map((feature) => (
                                             <tr key={feature.name}>
                                                 <th
@@ -463,7 +462,6 @@ export default function Pricing() {
                                                                         aria-hidden="true"
                                                                     />
                                                                 )}
-
                                                                 <span className="sr-only">
                                                                     {feature.tiers[tier.name] === true
                                                                         ? 'Included'
@@ -475,7 +473,7 @@ export default function Pricing() {
                                                     </td>
                                                 ))}
                                             </tr>
-                                        ))}
+                                        ))}                                        
                                     </Fragment>
                                 ))}
                             </tbody>
