@@ -15,16 +15,14 @@ import AboutHero from "./about/AboutHero";
 import Photographs from "./about/Photographs";
 import Help from "./about/Help";
 import TextLine from "./about/TextLine";
-import SwiperBlock from "./about/Swiper";
+import SwiperBlock from "./about/SwiperBlock";
 import Dots from "./about/Dots";
 import Projects from "./projects/Projects";
 import ProjectTile from "./projects/ProjectTile";
 import Partners from "./partners/Partners";
 import ContactBlock from "./contact/ContactBlock";
-import ContactForm from "./contact/ContactForm";
 import ParticlesComp from "./head/ParticlesComp";
 import ColouredLine from "./animations/ColouredLine";
-import VideoPlayer from "./animations/VideoPlayer";
 import Footer from "./footer/Footer";
 import ColouredLinks from "./colouredLinks/ColouredLinks";
 
@@ -51,11 +49,9 @@ export {
     Projects,
     ProjectTile,
     ContactBlock,
-    ContactForm,
     Partners,
     ParticlesComp,
     ColouredLine,
-    VideoPlayer,
     Footer,
     ColouredLinks
 };
