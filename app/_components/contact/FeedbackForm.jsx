@@ -45,7 +45,7 @@ export function FeedbackForm() {
             >
                 <Card title="Get In Touch">
                     <form
-                        name="contact"
+                        name="feeback"
                         onSubmit={handleFormSubmit}
                         className="grid grid-cols-2 gap-5 w-[500px]"
                     >
