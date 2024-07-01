@@ -1,7 +1,8 @@
 'use client';
 
+import Tilt from 'react-parallax-tilt';
 import { useState } from 'react';
-import { Card } from './card';
+import { Card } from './Card';
 
 export function FeedbackForm() {
     const [status, setStatus] = useState(null);
