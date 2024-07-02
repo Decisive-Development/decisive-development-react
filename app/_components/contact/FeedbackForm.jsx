@@ -33,34 +33,71 @@ export function FeedbackForm() {
     };
 
     return (
-        <div className="w-full md:max-w-md">
-            <Card title="Leave Feedback">
-                <form
-                    name="feedback"
-                    onSubmit={handleFormSubmit}
-                    className="text-black flex flex-col gap-3 align-center"
-                >
-                    <input type="hidden" name="form-name" value="feedback" />
-                    <input name="name" type="text" placeholder="Name" required className="input input-bordered" />
-                    <input name="email" type="text" placeholder="Email (optional)" className="input input-bordered" />
-                    <input name="message" type="text" placeholder="Message" required className="input input-bordered" />
-                    <button className="btn btn-primary" type="submit" disabled={status === 'pending'}>
-                        Submit
-                    </button>
-                    {status === 'ok' && (
-                        <div className="alert alert-success">
-                            <SuccessIcon />
-                            Submitted!
-                        </div>
-                    )}
-                    {status === 'error' && (
-                        <div className="alert alert-error">
-                            <ErrorIcon />
-                            {error}
-                        </div>
-                    )}
-                </form>
-            </Card>
+        <div>
+            <Tilt
+                className="relative z-20 bg-theme-secondary-background py-10 px-5 rounded-3xl border border-theme-complementary border-opacity-30"
+                glareEnable={true}
+                glareMaxOpacity={0.2}
+                glareColor="#e27868"
+                glarePosition="all"
+                glareBorderRadius="24px"
+                tiltMaxAngleX={1}
+                tiltMaxAngleY={1}
+            >
+                <Card title="Get In Touch">
+                    <form
+                        name="feedback"
+                        onSubmit={handleFormSubmit}
+                        className="grid grid-cols-2 gap-5 w-[500px]"
+                    >
+                        <input
+                            type="hidden"
+                            name="form-name"
+                            value="contact"
+                        />
+                        <input
+                            name="name"
+                            type="text"
+                            placeholder="Name"
+                            required
+                            className="text-theme-primary input-placeholder p-2 bg-theme-complementary col-span-1"
+                        />
+                        <input
+                            name="email"
+                            type="text"
+                            placeholder="Email"
+                            required
+                            className="text-theme-primary input-placeholder p-2 bg-theme-complementary col-span-1"
+                        />
+                        <input 
+                            name="message" 
+                            type="text" 
+                            placeholder="Message" 
+                            required 
+                            className="text-theme-primary input-placeholder p-2 h-40 col-span-2 bg-theme-complementary" 
+                        />
+                        <button
+                            className="bg-theme-primary text-white font-semibold py-2 px-4 border rounded transition ease-in-out duration-300 relative blue z-20 w-40 block text-center font-code uppercase tracking-wider reactive border-theme-blue ml-auto col-span-2"
+                            type="submit"
+                            disabled={status === 'pending'}
+                        >
+                            Submit
+                        </button>
+                        {status === 'ok' && (
+                            <div className="alert alert-success">
+                                <SuccessIcon />
+                                Submitted!
+                            </div>
+                        )}
+                        {status === 'error' && (
+                            <div className="alert alert-error">
+                                <ErrorIcon />
+                                {error}
+                            </div>
+                        )}
+                    </form>
+                </Card>
+            </Tilt>
         </div>
     );
 }
