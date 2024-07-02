@@ -70,11 +70,11 @@ export function FeedbackForm() {
                             className="text-theme-primary input-placeholder p-2 bg-theme-complementary col-span-1"
                         />
                         <input 
-                        name="message" 
-                        type="text" 
-                        placeholder="Message" 
-                        required 
-                        className="input input-bordered" 
+                            name="message" 
+                            type="text" 
+                            placeholder="Message" 
+                            required 
+                            className="text-theme-primary input-placeholder p-2 h-40 col-span-2 bg-theme-complementary"
                         />
                         <button
                             className="bg-theme-primary text-white font-semibold py-2 px-4 border rounded transition ease-in-out duration-300 relative blue z-20 w-40 block text-center font-code uppercase tracking-wider reactive border-theme-blue ml-auto col-span-2"
