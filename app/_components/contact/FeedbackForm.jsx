@@ -34,6 +34,16 @@ export function FeedbackForm() {
 
     return (
         <div className="w-full md:max-w-md">
+            <Tilt
+                className="relative z-20 bg-theme-secondary-background py-10 px-5 rounded-3xl border border-theme-complementary border-opacity-30"
+                glareEnable={true}
+                glareMaxOpacity={0.2}
+                glareColor="#e27868"
+                glarePosition="all"
+                glareBorderRadius="24px"
+                tiltMaxAngleX={1}
+                tiltMaxAngleY={1}
+            >
             <Card title="Leave Feedback">
                 <form
                     name="feedback"
@@ -65,6 +75,8 @@ export function FeedbackForm() {
                     )}
                 </form>
             </Card>
+            </Tilt>
+
         </div>
     );
 }
