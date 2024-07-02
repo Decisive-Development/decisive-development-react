@@ -1,6 +1,8 @@
 import { ColouredLine } from "..";
 import Image from "next/image";
 import images from "../../../public/index";
+import { FeedbackForm } from '../contact/FeedbackForm';
+
 const ContactBlock = () => {
     return (
         <section className="py-16 md:py-32 relative overflow-x-hidden" id="contact">
@@ -11,7 +13,7 @@ const ContactBlock = () => {
                         <h2 className="text-4xl font-bold text-theme-orange mb-10">
                             Contact
                         </h2>
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
                             <div>
                                 <p className="mb-3">
                                     Please get in touch for any enquiries, a simple question or a scheduled meeting! 
@@ -54,7 +56,10 @@ const ContactBlock = () => {
                                 </a>
                            </div>
                         </div>
-                       </div>
+                        <div className="w-fit m-auto">
+                            <FeedbackForm />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
