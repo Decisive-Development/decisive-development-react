@@ -53,7 +53,7 @@ export function FeedbackForm() {
                         <input
                             type="hidden"
                             name="form-name"
-                            value="contact"
+                            value="feeback"
                         />
                         <input
                             name="name"
