@@ -33,7 +33,7 @@ export function FeedbackForm() {
     };
 
     return (
-        <div className='w-full lg:w-[500px] m-auto'>
+        <div className='w-full'>
             <Tilt
                 className="relative z-20 bg-theme-secondary-background py-10 px-5 rounded-3xl border border-theme-orange border-opacity-30"
                 glareEnable={true}
@@ -74,7 +74,7 @@ export function FeedbackForm() {
                             placeholder="Message"
                             required
                             className="text-theme-primary input-placeholder p-2 h-40 col-span-2 bg-theme-complementary"
-                            rows="4" // You can adjust the number of rows to control the initial visible height
+                            rows="4" 
                         >    
                         </textarea>
                         <button
@@ -85,13 +85,13 @@ export function FeedbackForm() {
                             Submit
                         </button>
                         {status === 'ok' && (
-                            <div className="alert alert-success">
+                            <div className="alert alert-success text-4xl font-bold text-theme-turquoise gap-5 w-full flex col-span-2">
                                 <SuccessIcon />
                                 Submitted!
                             </div>
                         )}
                         {status === 'error' && (
-                            <div className="alert alert-error">
+                            <div className="alert alert-error font-bold text-theme-red gap-5 w-full flex col-span-2">
                                 <ErrorIcon />
                                 {error}
                             </div>

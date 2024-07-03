@@ -8,6 +8,7 @@ import ddiconwhite from './brand/dd-Icon-White.png';
 import ddiconturquoise from './brand/dd-Icon-Turquoise.png';
 import ddiconviolet from './brand/dd-Icon-Violet.png';
 import logowhiteturq from './brand/logo-white-turquoise.png';
+import ddsolidturq from './brand/dd-solid-turquoise.jpg';
 import circle from './icons/circle.svg';
 import avoid from './icons/avoid-icon.svg';
 import vision from './icons/vision-icon.svg';
@@ -30,6 +31,7 @@ const images = {
     ddiconwhite,
     ddiconturquoise,
     ddiconviolet,
+    ddsolidturq,
     logowhiteturq,
     circle,
     avoid,
