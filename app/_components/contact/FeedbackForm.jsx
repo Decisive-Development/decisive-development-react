@@ -33,9 +33,9 @@ export function FeedbackForm() {
     };
 
     return (
-        <div>
+        <div className='w-full lg:w-[500px] m-auto'>
             <Tilt
-                className="relative z-20 bg-theme-secondary-background py-10 px-5 rounded-3xl border border-theme-complementary border-opacity-30"
+                className="relative z-20 bg-theme-secondary-background py-10 px-5 rounded-3xl border border-theme-orange border-opacity-30"
                 glareEnable={true}
                 glareMaxOpacity={0.2}
                 glareColor="#e27868"
@@ -48,7 +48,7 @@ export function FeedbackForm() {
                     <form
                         name="feedback"
                         onSubmit={handleFormSubmit}
-                        className="grid grid-cols-2 gap-5 w-[500px]"
+                        className="grid grid-cols-2 gap-5 "
                     >
                         <input
                             type="hidden"
@@ -60,14 +60,14 @@ export function FeedbackForm() {
                             type="text"
                             placeholder="Name"
                             required
-                            className="text-theme-primary input-placeholder p-2 bg-theme-complementary col-span-1"
+                            className="text-theme-primary input-placeholder p-2 bg-theme-complementary col-span-2 md:col-span-1"
                         />
                         <input
                             name="email"
                             type="text"
                             placeholder="Email"
                             required
-                            className="text-theme-primary input-placeholder p-2 bg-theme-complementary col-span-1"
+                            className="text-theme-primary input-placeholder p-2 bg-theme-complementary col-span-2 md:col-span-1"
                         />
                         <textarea
                             name="message"

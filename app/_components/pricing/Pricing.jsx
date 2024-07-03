@@ -248,7 +248,7 @@ export default function Pricing() {
                         Plans for all projects
                     </h>
                 </div>
-                <p className="mx-auto mt-6 text-center text-lg leading-8 w-[800px]">
+                <p className="mx-auto mt-6 text-center text-lg leading-8 w-full lg:w-[800px]">
                     Our pricing is designed to be flexible, ensuring you get precisely what your business needs whilst meeting your budgets. We understand that every project is unique and you may want a specific application or advanced design; thus, prices may vary depending on your specific requirements. For those who prefer, a lump sum payment option is available, offering an alternative to our 6-month minimum term commitment.
                 </p>
                 {/* xs to lg */}

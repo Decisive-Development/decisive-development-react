@@ -8,7 +8,7 @@ const ContactBlock = () => {
         <section className="py-16 md:py-32 relative overflow-x-hidden" id="contact">
             <ColouredLine position="top-0" />
             <div className="container relative">
-                <div className="relative h-full z-20 bg-theme-secondary-background p-10 rounded-3xl border border-theme-complementary border-opacity-30">
+                <div className="relative h-full z-20 bg-theme-secondary-background px-5 py-10 md:p-10 rounded-3xl border border-theme-complementary border-opacity-30">
                     <div>
                         <h2 className="text-4xl font-bold text-theme-orange mb-10">
                             Contact
@@ -56,7 +56,7 @@ const ContactBlock = () => {
                                 </a>
                            </div>
                         </div>
-                        <div className="w-fit m-auto">
+                        <div className="w-full">
                             <FeedbackForm />
                         </div>
                     </div>

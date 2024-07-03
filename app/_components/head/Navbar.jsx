@@ -17,11 +17,11 @@ const Navbar = () => {
                 />
             </a>
             <nav className="flex items-center justify-normal md:justify-end w-full pointer-events-none">
-                <ul className="cursor-pointer text-lg pointer-events-auto flex flex-row w-full md:w-[650px] justify-between">
+                <ul className="text-lg pointer-events-auto flex flex-row w-full md:w-[650px] justify-between">
                 {navLinks.map((nav) => (
                     <li
                         key={nav.title}
-                        className={`md:hover:-translate-x-7 transform duration-150 w-fit md:w-[150%] text-center ${pathname === nav.link ? 'text-theme-green font-bold underline underline-offset-4' : ''}`}
+                        className={`md:hover:-translate-x-7 transform duration-150 w-fit md:w-[150%] text-center ${pathname === nav.link ? 'text-theme-green font-bold underline underline-offset-4 cursor-pointer' : ''}`}
                     >
                         <a className="w-full block" href={nav.link}>{nav.title}</a>
                     </li>
