@@ -26,7 +26,7 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                         developer.
                     </p>
                     <ButtonCTA
-                        href="/"
+                        href="#contact"
                         theme="orange"
                         className="mr-auto lg:mr-[unset] lg:ml-auto"
                         buttonText="Get Started"
@@ -65,9 +65,9 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                             Our Process
                         </h3>
                         <p className="font-medium text-xl mb-10">Sustaining Your Success</p>
-                        <p className="mb-10 ">
-                        Our ongoing support ensures your website continues to perform at its best long after launch. With 24/7 assistance, you're never left alone. We provide unlimited small edits and updates, keeping your site fresh and functional. Our team offers analytical feedback and practical advice to enhance your online presence continually. Plus, with bi-monthly SEO reviews and suggestions, we help you stay ahead of the curve. Consider your custom website not just a project, but a lasting investment in your business's future.
-                        </p>
+                        {/* <p className="mb-10 ">
+                            Our ongoing support ensures your website continues to perform at its best long after launch. With 24/7 assistance, you're never left alone. We provide unlimited small edits and updates, keeping your site fresh and functional. Our team offers analytical feedback and practical advice to enhance your online presence continually. Plus, with bi-monthly SEO reviews and suggestions, we help you stay ahead of the curve. Consider your custom website not just a project, but a lasting investment in your business's future.
+                        </p> */}
                         <ul className="list-outside">
                             <li className="mb-10 ml-0 sm:ml-5">
                                 <span className="font-bold text-xl">
@@ -80,14 +80,14 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                                         </li>
                                         <li className="mb-1">
                                             Unlimited small edits & updates
-                                        </li>
-                                        <li className="mb-1">
-                                            Analytical feedback and advice
-                                        </li>
+                                        </li>                                        
                                     </ul>
                                     <ul className="list-disc ml-10 mt-0 md:mt-2">
                                         <li className="mb-1">
                                             Bi-monthly SEO review and suggestions
+                                        </li>
+                                        <li className="mb-1">
+                                            Analytical feedback and advice
                                         </li>
                                     </ul>
                                 </div>

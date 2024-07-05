@@ -6,9 +6,6 @@ import Journey from "./journey/Journey";
 import JourneyCTA from "./journey/JourneyCTA";
 import JourneyBody from "./journey/JourneyBody";
 import Pricing from "./pricing/Pricing";
-import Services from "./services/Services";
-import ServicesLarge from "./services/ServicesLarge";
-import ServicesSmall from "./services/ServicesSmall";
 import AboutCTA from "./about/AboutCTA";
 import AboutInfo from "./about/AboutInfo";
 import AboutHero from "./about/AboutHero";
@@ -35,9 +32,6 @@ export {
     JourneyCTA,
     JourneyBody,
     Pricing,
-    Services,
-    ServicesLarge,
-    ServicesSmall,
     AboutCTA,
     AboutInfo,
     AboutHero,

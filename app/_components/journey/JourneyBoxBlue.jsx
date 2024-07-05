@@ -61,14 +61,14 @@ const JourneyBoxRed = ({ themeClass, leftHandJSX }) => {
                         <p className="font-medium text-xl mb-10">
                             Understanding Your Vision
                         </p>
-                        <p className="mb-10 ">
+                        {/* <p className="mb-10 ">
                             We begin every project with a deep dive into your world. We want
                             to understand every facet of your business, brand, and goals to
                             ensure the website we create resonates with your identity and
                             ambitions. This initial phase involves detailed discussions to
                             capture your vision, preferences, and expectations, ensuring our
                             design aligns perfectly with your business strategy.
-                        </p>
+                        </p> */}
                         <ul className="list-outside">
                             <li className="mb-10 ml-0 sm:ml-5">
                                 <span className="font-bold text-xl">

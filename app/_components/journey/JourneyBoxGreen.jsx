@@ -60,9 +60,9 @@ const JourneyBoxGreen = ({ themeClass, leftHandJSX }) => {
                         <p className="font-medium text-xl mb-10">
                             Bringing Your Vision To Life
                         </p>
-                        <p className="mb-10 ">
+                        {/* <p className="mb-10 ">
                             From planning to creation, our design and development phase is where your website starts to take shape. We focus on selecting the right graphics, media, and copy to match your brand. You'll see your site come to life through XD prototypes, which we refine based on your feedback. This step is collaborative, involving ongoing communication to ensure the site meets your needs and you are happy with the direction.
-                        </p>
+                        </p> */}
                         <ul className="list-outside">
                             <li className="mb-10 ml-0 sm:ml-5">
                                 <span className="font-bold text-xl">

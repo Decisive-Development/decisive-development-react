@@ -9,7 +9,7 @@ const themes = {
     purple: 'purple border-theme-purple'
 };
 
-const ButtonCTA = ({ href, buttonText, theme, className }) => {
+const ButtonCTA = ({ href, buttonText, theme, className, isExternal = false }) => {
     const baseClass =
         'bg-theme-primary text-white font-semibold py-2 px-4 border rounded transition ease-in-out relative z-20 w-40 block text-center font-code uppercase tracking-wider reactive duration-300';
 
@@ -21,6 +21,7 @@ const ButtonCTA = ({ href, buttonText, theme, className }) => {
                 themes[theme] ? themes[theme] : '',
                 className ? className : ''
             )}
+            {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
         >
             {buttonText}
         </a>

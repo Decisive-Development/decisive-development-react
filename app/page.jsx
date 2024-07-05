@@ -17,9 +17,8 @@ export default function Home() {
         <Nav />
         <Header />
         <Journey />
+        <Projects />
         <Pricing />
-        {/* <Services /> */}
-        {/* <Projects /> */}
         {/* <Partners /> */}
         <ContactBlock />
         <Footer />
