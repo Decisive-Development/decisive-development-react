@@ -244,12 +244,15 @@ export default function Pricing() {
                     <h2 className="text-base font-semibold leading-7 text-theme-purple">
                         Pricing
                     </h2>
-                    <h className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                    <h3 className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
                         Plans for all projects
-                    </h>
+                    </h3>
+                    <h4 className="mt-2 text-xl font-thin tracking-tight text-white sm:text-2xl">
+                        Subscription or upfront payment
+                    </h4>
                 </div>
                 <p className="mx-auto mt-6 text-center text-lg leading-8 w-full lg:w-[800px]">
-                    Our pricing is designed to be flexible, ensuring you get precisely what your business needs whilst meeting your budgets. We understand that every project is unique and you may want a specific application or advanced design; thus, prices may vary depending on your specific requirements. For those who prefer, a lump sum payment option is available, offering an alternative to our 6-month minimum term commitment.
+                    My pricing is designed to be flexible, ensuring you get precisely what your business needs whilst meeting your budgets. I understand that every project is unique and you may want a specific application or advanced design; thus, prices may vary depending on your specific requirements. For those who prefer, a lump sum payment option is available, offering an alternative to a 6-month minimum term commitment.
                 </p>
                 {/* xs to lg */}
                 <div className="mx-auto mt-12 max-w-md space-y-8 sm:mt-16 lg:hidden">

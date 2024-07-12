@@ -1,8 +1,5 @@
 'use client';
-import Tilt from 'react-parallax-tilt';
 import ButtonCTA from '../button/ButtonCTA';
-import Image from 'next/image';
-import images from '../../../public/index';
 import { useInView } from 'react-intersection-observer';
 import JourneyBoxRed from './JourneyBoxRed';
 import JourneyBoxBlue from './JourneyBoxBlue';

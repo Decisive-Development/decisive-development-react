@@ -68,7 +68,7 @@ const ContactBlock = () => {
                                         </div>
                                     </a>
                                 </div>
-                            </div>                        
+                            </div>
                         </div>
                     </div>
                 </Tilt>

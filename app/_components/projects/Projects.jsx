@@ -6,7 +6,7 @@ const Projects = () => {
     return (
         <section className="bg-theme-secondary bg-opacity-30 relative overflow-x-hidden">
             <ColouredLine position="top-0" />
-            <div className="container relative h-full py-32">                
+            <div className="container relative h-full py-32">
                 <div className="flex justify-center flex-col items-center text-center">
                     <h3 className="font-bold text-5xl mb-5 relative ws-15 z-20">
                         My <span className="text-theme-neutral">Clients</span>

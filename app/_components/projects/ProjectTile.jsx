@@ -46,7 +46,7 @@ const ProjectTile = () => {
                             {service.title}
                         </h4>
                         <p className='mb-5'>
-                            {service.copy}                            
+                            {service.copy}
                         </p>
                         <ButtonCTA
                             href={service.href}

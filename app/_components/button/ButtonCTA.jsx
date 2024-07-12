@@ -11,7 +11,7 @@ const themes = {
 
 const ButtonCTA = ({ href, buttonText, theme, className, isExternal = false }) => {
     const baseClass =
-        'bg-theme-primary text-white font-semibold py-2 px-4 border rounded transition ease-in-out relative z-20 w-40 block text-center font-code uppercase tracking-wider reactive duration-300';
+        'bg-theme-primary cursor-pointer text-white font-semibold py-2 px-4 border rounded transition ease-in-out relative z-20 w-40 block text-center font-code uppercase h-fit tracking-wider reactive duration-300';
 
     return (
         <a

@@ -28,7 +28,7 @@ const Help = () => {
                         description="Your website will cover all aspects of your brand, from the look and feel to the functionality and user experience. It doesn't stop there..." 
                         colour={"text-theme-orange"}
                     />
-                    <HelpTiles                         
+                    <HelpTiles
                         className="col-span-1 md:col-span-2 lg:col-span-1 self-center"
                         image={statistics} 
                         title="Grow Your Business" 

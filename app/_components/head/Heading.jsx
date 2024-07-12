@@ -26,7 +26,7 @@ const Heading = () => {
                     development.
                 </p>
                 <p>
-                    We tailor our services to your needs, ensuring your website is unique
+                    I tailor my services to your needs, ensuring your website is unique
                     and thriving above your competition. Perfect for small companies, sole
                     traders and start-ups.
                 </p>

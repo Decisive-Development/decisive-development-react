@@ -55,7 +55,7 @@ const JourneyBoxGreen = ({ themeClass, leftHandJSX }) => {
                 >
                     <div>
                         <h3 className="font-bold text-3xl text-theme-green mb-3">
-                            Our Process
+                            My Process
                         </h3>
                         <p className="font-medium text-xl mb-10">
                             Bringing Your Vision To Life

@@ -9,6 +9,10 @@ import Pricing from "./pricing/Pricing";
 import AboutCTA from "./about/AboutCTA";
 import AboutInfo from "./about/AboutInfo";
 import AboutHero from "./about/AboutHero";
+import ServicesHero from "./services/ServicesHero";
+import ServicesBody from "./services/ServicesBody";
+import ServiceTile from "./services/ServiceTile";
+import ServicesContact from "./services/ServicesContact";
 import Photographs from "./about/Photographs";
 import Help from "./about/Help";
 import TextLine from "./about/TextLine";
@@ -35,6 +39,10 @@ export {
     AboutCTA,
     AboutInfo,
     AboutHero,
+    ServicesHero,
+    ServicesBody,
+    ServiceTile,
+    ServicesContact,
     Photographs,
     Help,
     TextLine,

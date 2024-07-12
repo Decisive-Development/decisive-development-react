@@ -1,7 +1,21 @@
-import React from 'react'
+import {
+    Nav,
+    ServicesHero,
+    ServicesBody,
+    ServicesContact,
+    Footer,
+    ParticlesComp
+} from '../_components';
 
-export default function services() {
+export default function About() {
     return (
-        <div>services</div>
-    )
+        <main className="relative bg-theme-primary text-base">
+            <Nav />
+            <ServicesHero />
+            <ServicesBody />
+            <ServicesContact />
+            <Footer />
+            <ParticlesComp />
+        </main>
+    );
 }

@@ -19,7 +19,7 @@ class VideoPlayer extends React.Component {
                 onMouseLeave={this.handleMouseLeave}
                 muted
             >
-                <source src="video/sunsetbike.mp4" type="video/mp4"/>                
+                <source src="video/sunsetbike.mp4" type="video/mp4"/>
             </video>
         );
     }
