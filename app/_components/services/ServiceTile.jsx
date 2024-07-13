@@ -18,7 +18,7 @@ const ServiceTile = ({ image, title, description, colour, className, glareColor,
     return (
         <div className='flex flex-col'>
             <Tilt
-                className="relative z-20 bg-theme-secondary-background p-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30 flex-grow"
+                className="relative max-w-md m-auto md:max-w-full z-20 bg-theme-secondary-background p-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30 flex-grow"
                 glareEnable={true}
                 glareMaxOpacity={0.2}
                 glareColor={glareColor}
@@ -57,7 +57,7 @@ const ServiceTile = ({ image, title, description, colour, className, glareColor,
                     nested
                 >
                     {close => (
-                        <div className="relative z-20 bg-theme-primary p-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30 container w-[800px]">
+                        <div className="relative z-20 bg-theme-primary p-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30 w-4/5 m-auto md:w-[600px] lg:w-[800px]">
                             <button 
                                 className="ml-auto w-fit block text-theme-red text-2xl" 
                                 onClick={close}
@@ -75,7 +75,7 @@ const ServiceTile = ({ image, title, description, colour, className, glareColor,
                                 {' '}
                                 {modalTwo}
                             </div>
-                            <div className="flex flex-row justify-around">
+                            <div className="flex flex-row space-x-5 justify-around">
                                 <ButtonCTA 
                                     href="/contact" 
                                     theme={theme} 

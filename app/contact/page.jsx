@@ -1,6 +1,7 @@
 import {
     Nav,
     Footer,
+    ColouredLine,
     ParticlesComp
 } from '../_components';
 import { FeedbackForm } from '../_components/contact/FeedbackForm';
@@ -25,8 +26,9 @@ export default async function Contact() {
                     </p>
                 </div>
             </div>
-            <div className='bg-opacity-50 bg-theme-secondary-background py-16'>
-                <div className='container grid grid-cols-1 lg:grid-cols-2 gap-20 mb-32 '>
+            <div className='bg-opacity-50 bg-theme-secondary-background py-32 relative overflow-x-hidden'>
+            <ColouredLine position="top-0" />
+                <div className='container grid grid-cols-1 lg:grid-cols-2 gap-20 '>
                     <div className='text-2xl relative z-30 flex flex-col justify-center'>
                         <p>
                             If you have an upcoming project I can help you with I’d love to hear from you. 
@@ -69,6 +71,7 @@ export default async function Contact() {
                         <FeedbackForm />
                     </div>
                 </div>
+                <ColouredLine position="bottom-0" />
             </div>
             <div className='py-16 container'>
                 <div className="flex flex-row items-center z-30 relative">

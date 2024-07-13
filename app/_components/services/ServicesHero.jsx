@@ -6,7 +6,7 @@ const ServicesHero = () => {
     return (
         <section className="relative">
             <div className="container h-screen flex flex-col items-center justify-center text-center">
-                <h1 className="font-bold text-8xl mb-5 text-theme-blue z-30 relative">
+                <h1 className="font-bold text-6xl md:text-7xl lg:text-8xl mb-5 text-theme-blue z-30 relative">
                     SERVICES
                 </h1>
                 <div className="w-fit z-30 relative">
