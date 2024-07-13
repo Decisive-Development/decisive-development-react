@@ -29,10 +29,10 @@ const ProjectTile = () => {
         <section className="pt-16 container">
             {projectTileContent.map((service) => (
                 <div 
-                    className='grid grid-cols-1 lg:grid-cols-2 gap-20 w-full relative z-30 py-16'
+                    className='grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-20 w-full relative z-30 pb-16'
                     key={service.id}
                 >
-                    <div className='rounded-[50px] overflow-hidden white-shadow h-fit m-auto'>
+                    <div className='rounded-3xl overflow-hidden white-shadow h-fit m-auto'>
                         <a href={service.href} target="_blank" rel="noopener noreferrer">
                             <img
                                 className="w-full hover:scale-110 duration-500 ease-in-out"

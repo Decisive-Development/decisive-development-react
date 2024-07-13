@@ -9,7 +9,7 @@ const ServicesContact = () => {
     return (
         <section className="relative overflow-x-hidden">
             <ColouredLine position="top-0" />
-            <div className='py-32'>
+            <div className='py-16 md:py-32'>
                 <div className='container grid grid-cols-1 lg:grid-cols-2 gap-20 '>
                     <div className='text-2xl relative z-30 flex flex-col justify-center'>
                         <p>

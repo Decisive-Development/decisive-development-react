@@ -328,3 +328,11 @@ h6 {
 .input-placeholder::placeholder{
     color: #525B66;
 }
+
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}

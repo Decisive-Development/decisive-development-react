@@ -6,7 +6,7 @@ import { ColouredLine, ServiceTile } from "..";
 
 const ServicesBody = () => {
     return (
-        <section className="bg-theme-secondary bg-opacity-25 py-32 relative overflow-x-hidden">
+        <section className="bg-theme-secondary bg-opacity-25 pb-16 pt-32 md:py-32 relative overflow-x-hidden">
             <ColouredLine position="top-0" />
             <div className="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-12 gap-x-0 md:gap-10 xl:gap-20">
                 <ServiceTile 
