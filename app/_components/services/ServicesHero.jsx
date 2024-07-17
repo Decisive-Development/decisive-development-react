@@ -17,7 +17,7 @@ const ServicesHero = () => {
                         From HTML emails to UX/UI redesigns...
                     </h3>
                     <p className="font-bold text-4xl text-theme-complementary">
-                        I <span className="underline underline-offset-4 text-white">Can</span> Help
+                    <span className="text-white">Here</span> to <span className="text-white">Help</span> 
                     </p>
                 </div>
             </div>

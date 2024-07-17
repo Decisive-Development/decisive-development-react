@@ -20,6 +20,12 @@ import phone from './icons/phone.svg';
 import email from './icons/email.svg';
 import hover from './icons/hover.png';
 import me from './photographs/me.jpg';
+import emailIcon from './icons/email-icon.png';
+import hostingIcon from './icons/hosting-icon.png';
+import marketingIcon from './icons/marketing-icon.png';
+import projectIcon from './icons/project-icon.png';
+import seoIcon from './icons/seo-icon.png';
+import websiteIcon from './icons/website-icon.png';
 
 const images = {
     ddiconshuttle,
@@ -44,6 +50,12 @@ const images = {
     email,
     hover,
     me,
+    emailIcon,
+    hostingIcon,
+    marketingIcon,
+    projectIcon,
+    seoIcon,
+    websiteIcon,
 };
 
 export default images;

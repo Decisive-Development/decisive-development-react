@@ -14,7 +14,7 @@ const themes = {
     purple: 'purple border-theme-purple'
 };
 
-const ServiceTile = ({ image, title, description, colour, className, glareColor, theme, modalOne, modalTwo }) => {
+const ServiceTile = ({ image, title, description, colour, className, glareColor, theme, modalOne, modalTwo, modalThree }) => {
     return (
         <div className='flex flex-col'>
             <Tilt
@@ -71,13 +71,17 @@ const ServiceTile = ({ image, title, description, colour, className, glareColor,
                                 {' '}
                                 {modalOne}
                             </div>
-                            <div className="mb-10">
+                            <div className="mb-5">
                                 {' '}
                                 {modalTwo}
                             </div>
+                            <div className="mb-10">
+                                {' '}
+                                {modalThree ? modalThree : null}
+                            </div>
                             <div className="flex flex-row space-x-5 justify-around">
                                 <ButtonCTA 
-                                    href="/contact" 
+                                    href="#contact" 
                                     theme={theme} 
                                     buttonText="Contact" 
                                 />

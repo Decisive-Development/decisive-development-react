@@ -55,5 +55,5 @@ export {
     ParticlesComp,
     ColouredLine,
     Footer,
-    ColouredLinks
+    ColouredLinks,
 };

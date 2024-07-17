@@ -16,7 +16,7 @@ const ServicesContact = () => {
                             If you have an upcoming project I can help you with I’d love to hear from you. 
                         </p>
                         <p className='mb-10'>
-                            Give me a call or drop me an email and we can get started.
+                            Give me a call or drop me an email and we can get started today.
                         </p>
                         <div>
                             <a href="mailto:tom@decisive-development.com" className="w-fit block">
