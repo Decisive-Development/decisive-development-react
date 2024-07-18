@@ -83,7 +83,7 @@ export const legalLinks = [
         title: "Copyright",
     },
     {
-        id: "123444",
+        id: "https://www.decisive-development.com/sitemap.xml",
         title: "Sitemap",
     },
 

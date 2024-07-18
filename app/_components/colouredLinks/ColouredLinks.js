@@ -10,11 +10,9 @@ const colorClasses = [
 ];
 
 const ColouredLinks = ({ id, title, lastLinkColour, setLastLinkColour }) => {
-    // Initialize state with an empty string or a default value
     const [hoverColorClass, setHoverColorClass] = useState('');
     const [lastNoneBlankColour, setLastNoneBlankColour] = useState('');
 
-    // Function to get a random color class
     const getRandomColorClass = () => {
         const otherClasses = colorClasses.filter(
             (colorClass) =>
@@ -27,7 +25,6 @@ const ColouredLinks = ({ id, title, lastLinkColour, setLastLinkColour }) => {
         return newColorClass;
     };
 
-    // Enhanced onMouseEnter event handler
     const changeColor = () => {
         const newColorClass = getRandomColorClass();
         setHoverColorClass(newColorClass);
@@ -40,9 +37,14 @@ const ColouredLinks = ({ id, title, lastLinkColour, setLastLinkColour }) => {
             key={id}
             onMouseEnter={changeColor}
             onMouseLeave={() => setHoverColorClass('')}
-            className={`hover:-translate-x-7 transform duration-150 ${hoverColorClass}`}
+            className={`hover:-translate-x-7 transform duration-150 w-fit md:w-[150%] ${hoverColorClass}`}
         >
-            <a href={`${id}`}>{title}</a>
+            <a 
+                className='w-full block' 
+                href={`${id} `}
+            >
+                {title}
+            </a>
         </li>
     );
 };
