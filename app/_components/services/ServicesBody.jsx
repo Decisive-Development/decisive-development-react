@@ -41,8 +41,9 @@ const ServicesBody = () => {
                     description="Perhaps you already have a website, or a project in progress, but you need some extra help. I can provide support for your project, whether it's a one-off task or ongoing support. I can help with anything from website updates to project support."
                     colour={"text-theme-orange"}
                     theme={"orange"}
-                    modalOne="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    modalTwo="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    modalOne="If your site needs updating, I can manage everything from content refreshes to design enhancements, ensuring your site remains engaging and up-to-date. If you're looking to add new features, I can handle the development and integration of new tools, functionalities, and design elements to enhance user experience."
+                    modalTwo="For larger projects with tight deadlines, I can offer support to keep your project on track. Whether it's front-end development, implementing complex features, or ensuring everything runs smoothly, I’ll provide the necessary expertise to meet your deadlines without compromising on quality."
+                    modalThree="Additionally, I offer technical advice on front-end development. This includes best practices for coding, improving site performance, ensuring compatibility across different browsers and devices, and optimising user experience."
                 />
                 <ServiceTile
                     image={hostingIcon}
@@ -51,8 +52,9 @@ const ServicesBody = () => {
                     description="If you need hosting for your website, I can help you find the right solution for your needs. I can also provide ongoing maintenance and support for your website to make sure it's always up-to-date and running smoothly."
                     colour={"text-theme-purple"}
                     theme={"purple"}
-                    modalOne="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    modalTwo="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    modalOne="Choosing the right hosting service is crucial for the performance and reliability of your website. I can guide you through the options, considering factors like speed, security, and scalability to find a hosting solution that perfectly fits your requirements. Whether you need shared hosting, VPS, or dedicated servers, I’ve got you covered"
+                    modalTwo="Beyond just setting up hosting, I offer comprehensive maintenance services. This includes regular updates to your website’s software and plugins, monitoring for security vulnerabilities, and ensuring backups are routinely performed. I’ll make sure your site stays secure, fast, and reliable."
+                    modalThree="Ongoing support is also available to address any issues that arise. Whether it’s troubleshooting technical problems, implementing updates, or optimising performance, I’m here to help. My goal is to keep your website running smoothly so you can focus on your business without worrying about technical details."                
                 />
                 <ServiceTile
                     image={seoIcon}
@@ -61,8 +63,9 @@ const ServicesBody = () => {
                     description="I can help you improve your website's search engine ranking and drive more traffic to your site. I can help you with keyword research, on-page SEO, and analytics to make sure you're getting the best results from your website."
                     colour={"text-theme-turquoise"}
                     theme={"turquoise"}
-                    modalOne="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    modalTwo="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    modalOne="Optimising your website's performance is key to better rankings. I'll enhance your page speed, ensure your site meets Google's core metrics, and implement responsive design to provide an excellent user experience across all devices. These improvements are crucial for getting your site to the front page of Google, where it can attract more traffic and generate more business."
+                    modalTwo="Getting to the front page of Google requires a comprehensive approach. I'll work on on-page SEO elements, such as meta tags, headings, and image optimisation, to make your site more search engine friendly. By aligning your website with Google's best practices, we can improve your visibility and rankings."
+                    modalThree="I also offer comprehensive analytics to track your website's performance. By monitoring visitor behaviour and traffic sources, we can continually refine your SEO strategy to maximise results and achieve your business goals. Let's work together to enhance your online presence and turn your website into a powerful tool for driving traffic and growing your business."
                 />
                 <ServiceTile
                     image={marketingIcon}
@@ -71,8 +74,9 @@ const ServicesBody = () => {
                     description="If you're running a marketing campaign, you need a landing page that converts leads into sales. I can help you create beautiful, responsive landing pages that will engage your audience and drive conversions. "
                     colour={"text-theme-red"}
                     theme={"red"}
-                    modalOne="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    modalTwo="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    modalOne="A well-designed landing page is crucial for capturing your audience's attention and encouraging them to take action. I specialise in creating visually appealing pages with compelling copy and strong calls-to-action, ensuring your visitors are motivated to convert."
+                    modalTwo="In addition to aesthetics, I focus on functionality. Your landing pages will be optimised for speed and performance, providing a seamless user experience across all devices. This not only keeps your audience engaged but also improves your chances of ranking higher in search results."
+                    modalThree="With my expertise, you’ll have landing pages tailored to your specific campaign goals, whether it’s generating leads, boosting sales, or increasing sign-ups. Let’s work together to create landing pages that effectively turn your marketing efforts into tangible results."
                 />
             </div>
         </section>

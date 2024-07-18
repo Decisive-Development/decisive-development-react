@@ -57,7 +57,7 @@ const ServiceTile = ({ image, title, description, colour, className, glareColor,
                     nested
                 >
                     {close => (
-                        <div className="relative z-20 bg-theme-primary p-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30 w-4/5 m-auto md:w-[600px] lg:w-[800px]">
+                        <div className="relative z-20 bg-theme-primary p-5 sm:p-10 rounded-3xl border border-theme-complementary border-opacity-30 w-full m-auto md:w-[600px] lg:w-[800px]">
                             <button 
                                 className="ml-auto w-fit block text-theme-red text-2xl" 
                                 onClick={close}
@@ -67,23 +67,26 @@ const ServiceTile = ({ image, title, description, colour, className, glareColor,
                             <div className={`text-2xl ${colour} font-bold mb-5 flex-grow`}> 
                                 {title} 
                             </div>
-                            <div className="mb-5">
-                                {' '}
-                                {modalOne}
-                            </div>
-                            <div className="mb-5">
-                                {' '}
-                                {modalTwo}
-                            </div>
-                            <div className="mb-10">
-                                {' '}
-                                {modalThree ? modalThree : null}
+                            <div className='text-sm md:text-base'>
+                                <div className="mb-5">
+                                    {' '}
+                                    {modalOne}
+                                </div>
+                                <div className="mb-5">
+                                    {' '}
+                                    {modalTwo}
+                                </div>
+                                <div className="mb-10">
+                                    {' '}
+                                    {modalThree ? modalThree : null}
+                                </div>
                             </div>
                             <div className="flex flex-row space-x-5 justify-around">
                                 <ButtonCTA 
-                                    href="#contact" 
+                                    href="/contact" 
                                     theme={theme} 
                                     buttonText="Contact" 
+                                    
                                 />
                                 <button
                                     className={`${themes[theme]} bg-theme-primary cursor-pointer text-white font-semibold py-2 px-4 border rounded transition ease-in-out relative z-40 block text-center font-code uppercase tracking-wider reactive duration-300 w-40`} 
