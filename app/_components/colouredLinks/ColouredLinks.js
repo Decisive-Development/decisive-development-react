@@ -42,7 +42,7 @@ const ColouredLinks = ({ id, title, lastLinkColour, setLastLinkColour }) => {
             onMouseLeave={() => setHoverColorClass('')}
             className={`hover:-translate-x-7 transform duration-150 ${hoverColorClass}`}
         >
-            <a href={`#${id}`}>{title}</a>
+            <a href={`${id}`}>{title}</a>
         </li>
     );
 };

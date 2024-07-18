@@ -22,56 +22,56 @@ export const navLinks = [
 ];
 export const companyLinks = [
     {
-        id: "about",
+        id: "/about",
         title: "About",
     },
     {
-        id: "123",
-        title: "Projects",
+        id: "/services",
+        title: "Services",
     },
+    // {
+    //     id: "/pricing",
+    //     title: "Pricing",
+    // },
     {
-        id: "partners",
-        title: "Partners",
-    },
-    {
-        id: "11",
+        id: "/contact",
         title: "Contact",
     },
 ];
 export const footerLinks = [
     {
-        id: "services",
+        id: "/services",
         title: "Web Design",
     },
     {
-        id: "about",
+        id: "/services",
         title: "Web Development",
     },
     {
-        id: "1245",
+        id: "/services",
         title: "Web Hosting",
     },
     {
-        id: "partners",
+        id: "/services",
         title: "Web Management",
     },
     {
-        id: "22",
+        id: "/services",
         title: "Search Engine Optimisation (SEO)",
     },
     {
-        id: "33",
+        id: "/services",
         title: "Email Marketing",
     },
     {
-        id: "44",
+        id: "/services",
         title: "Project Support Services",
     },
 
 ];
 export const legalLinks = [
     {
-        id: "services",
+        id: "/privacy",
         title: "Privacy Policy",
     },
     {

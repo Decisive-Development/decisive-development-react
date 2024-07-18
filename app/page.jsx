@@ -3,9 +3,7 @@ import {
   Nav,
   Journey,
   Pricing,
-  Services,
   Projects,
-  Partners,
   ContactBlock,
   Footer,
   ParticlesComp
@@ -19,7 +17,6 @@ export default function Home() {
         <Journey />
         <Projects />
         <Pricing />
-        {/* <Partners /> */}
         <ContactBlock />
         <Footer />
         <ParticlesComp />
