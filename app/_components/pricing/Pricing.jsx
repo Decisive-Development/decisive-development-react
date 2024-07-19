@@ -8,7 +8,7 @@ const tiers = [
         name: 'Basic',
         id: 'tier-basic',
         href: '#contact',
-        priceMonthly: '£30',
+        priceMonthly: '£50',
         description: 'Quis suspendisse ut fermentum neque vivamus non tellus.',
         mostPopular: false
     },
@@ -16,7 +16,7 @@ const tiers = [
         name: 'Standard',
         id: 'tier-standard',
         href: '#contact',
-        priceMonthly: '£70',
+        priceMonthly: '£90',
         description: 'Quis eleifend a tincidunt pellentesque. A tempor in sed.',
         mostPopular: true
     },
@@ -24,7 +24,7 @@ const tiers = [
         name: 'Premium',
         id: 'tier-premium',
         href: '#contact',
-        priceMonthly: '£120',
+        priceMonthly: '£150',
         description:
             'Orci volutpat ut sed sed neque, dui eget. Quis tristique non.',
         mostPopular: false
