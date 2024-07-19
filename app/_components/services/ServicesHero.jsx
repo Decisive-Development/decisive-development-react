@@ -1,6 +1,5 @@
 import Image from "next/image";
 import images from "../../../public/index";
-import Tilt from 'react-parallax-tilt';
 
 const ServicesHero = () => {
     return (
@@ -17,25 +16,17 @@ const ServicesHero = () => {
                         From HTML emails to UX/UI redesigns...
                     </h3>
                     <p className="font-bold text-4xl text-theme-complementary">
-                    <span className="text-white">Here</span> to <span className="text-white">Help</span> 
+                        <span className="text-white">Here</span> to <span className="text-white">Help</span> 
                     </p>
                 </div>
             </div>
-            <div>
-                <Image
-                    className="hidden lg:block absolute bottom-0 right-1/2 w-11 left-1/2 z-0 cursor-none select-none duration-500 ease-in-out animate-bounce"
-                    src={images.chevron}
-                    alt="chevron"
-                />
-            </div>
+            <Image
+                className="hidden lg:block absolute bottom-0 right-1/2 w-11 left-[49%] z-0 cursor-none select-none duration-500 ease-in-out animate-bounce"
+                src={images.chevron}
+                alt="chevron"
+            />
         </section>
     );
 };
 
 export default ServicesHero;
-// explain website build services
-// lump sum option
-// project based contract work
-// HTML emails / landing pages
-// Show CWV scores
-// Show analytics screenshots

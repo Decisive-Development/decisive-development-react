@@ -31,18 +31,34 @@ const Heading = () => {
                         and thriving above your competition. Perfect for small companies, sole
                         traders and start-ups.
                     </p>
-                    <p className="mb-5">Starting at £50/mo.</p>
-                    <p className="font-light mb-5 italic">No page builders.</p>
+                    <p className="mb-5">
+                        Starting at £50/mo.
+                    </p>
+                    <p className="font-light mb-5 italic">
+                        No page builders.
+                    </p>
                 </div>
             </div>
             <div className="flex flex-col space-y-5 sm:flex-row items-end justify-between w-full md:w-[550px]">
-                <ButtonCTA href="#journey" theme="turquoise" buttonText="Journey" />
-                <ButtonCTA href="#pricing" theme="purple" buttonText="Pricing" />
-                <ButtonCTA href="#contact" theme="orange" buttonText="Contact" />
+                <ButtonCTA 
+                    href="#journey" 
+                    theme="turquoise" 
+                    buttonText="Journey" 
+                />
+                <ButtonCTA 
+                    href="#pricing" 
+                    theme="purple" 
+                    buttonText="Pricing" 
+                />
+                <ButtonCTA 
+                    href="#contact" 
+                    theme="orange" 
+                    buttonText="Contact" 
+                />
             </div>
             <div className='translate-y-5'>
                 <Image
-                    className="hidden lg:block absolute -bottom-5 right-1/2 w-11 left-1/2 z-0 cursor-none select-none duration-500 ease-in-out animate-bounce"
+                    className="hidden lg:block absolute -bottom-5 right-1/2 w-11 left-[48%] z-0 cursor-none select-none duration-500 ease-in-out animate-bounce"
                     src={images.chevron}
                     alt="chevron"
                 />

@@ -10,7 +10,11 @@ const AboutCTA = () => {
                     <h4 className="font-bold text-center text-3xl text-theme-purple mb-10">
                         Got a project in mind? Let's chat.
                     </h4>
-                    <ButtonCTA href="#contact" theme="orange" buttonText="Contact" />
+                    <ButtonCTA 
+                        href="#contact" 
+                        theme="orange" 
+                        buttonText="Contact" 
+                    />
                 </div>
             </div>
         </section>

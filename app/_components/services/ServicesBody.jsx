@@ -84,9 +84,3 @@ const ServicesBody = () => {
 };
 
 export default ServicesBody;
-//  explain website build services
-//  lump sum option
-//  project based contract work
-//  HTML emails / landing pages
-//  Show CWV scores
-//  Show analytics screenshots

@@ -83,7 +83,7 @@ export default async function Contact() {
                             src="https://giphy.com/embed/vTUs60YG8Cdgl3s0Ky" 
                             width="100" 
                             height="100" 
-                            className="giphy-embed animate-bounce duration-1000" 
+                            className="giphy-embed cursor-none select-none animate-bounce duration-1000" 
                             allowFullScreen
                         ></iframe>
                     </div>

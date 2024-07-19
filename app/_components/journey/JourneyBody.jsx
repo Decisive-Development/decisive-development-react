@@ -7,8 +7,7 @@ import JourneyBoxGreen from './JourneyBoxGreen';
 import JourneyBoxOrange from './JourneyBoxOrange';
 
 const JourneyBody = () => {
-    // cant apply the animation twice to different elements
-
+    
     const [ref2, inView2] = useInView({
         threshold: 0.6
     });
