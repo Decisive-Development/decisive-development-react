@@ -252,7 +252,7 @@ export default function Pricing() {
                     </h4>
                 </div>
                 <p className="mx-auto mt-6 text-center text-lg leading-8 w-full lg:w-[800px]">
-                    My pricing is designed to be flexible, ensuring you get precisely what your business needs whilst meeting your budgets. I understand that every project is unique and you may want specific applications or advanced design; thus, prices may vary depending on your specific requirements. For those who prefer, a lump sum payment option is available, offering an alternative to a 6-month minimum term commitment.
+                    My pricing is designed to be flexible, ensuring you get precisely what your business needs whilst meeting your budgets. I understand that every project is unique and you may want specific applications or advanced design; thus, prices may vary depending on your specific requirements. For those who prefer, a lump sum payment option is available, offering an alternative to a 12-month minimum term commitment.
                 </p>
                 {/* xs to lg */}
                 <div className="mx-auto mt-12 max-w-md space-y-8 sm:mt-16 lg:hidden">
