@@ -2,6 +2,7 @@ import './globals.css'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
+    metadataBase: new URL('https://www.decisive-development.com'),
     title: 'Decisive Development',
     description: 'Offering ground up, hand-coded websites with bespoke design and development. HTML Emails, Project Support, SEO services and more.',
     keywords: [
@@ -19,19 +20,27 @@ export const metadata = {
     url: 'https://www.decisive-development.com',
     category: 'Web Development',
     tags: [
-        'custom websites', 
-        'SEO optimization', 
-        'support', 
-        'bespoke design services', 
-        'hand-coded solutions', 
-        'UX design', 
-        'UI development', 
-        'HTML email design', 
-        'project management support', 
-        'user experience optimization', 
-        'user interface design', 
+        'custom websites',
+        'SEO optimization',
+        'support',
+        'bespoke design services',
+        'hand-coded solutions',
+        'UX design',
+        'UI development',
+        'HTML email design',
+        'project management support',
+        'user experience optimization',
+        'user interface design',
         'web development services'
-    ]
+    ],
+    openGraph: {
+        type: 'website',
+        locale: 'en_US',
+        url: 'https://www.decisive-development.com',
+        title: 'Decisive Development',
+        description: 'Offering ground up, hand-coded websites with bespoke design and development. HTML Emails, Project Support, SEO services and more.',
+        siteName: 'Decisive Development',
+    },
 }
 
 export default function RootLayout({ children }) {

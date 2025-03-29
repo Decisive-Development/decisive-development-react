@@ -85,22 +85,24 @@ const Footer = () => {
                     </div>
                 </div>
             </section>
-            <section className="container relative">
+            <section className=" relative">
             <ColouredLine position="top-0"/>
-                <div className="bg-theme-primary font-light text-center py-10">
-                    <p className="mb-2 relative z-30">
-                        © 2021 - 2024 Decisive Development Ltd. All rights reserved.
-                    </p>
-                    <p className="mb-2 relative z-30">
-                        Global Freelance Web Design, Development, Management, Maintenance
-                        and Support.
-                    </p>
-                    <div className='relative z-30'>
-                        {/* add nav links */}
-                        Copyright. Terms. Privacy.
-                    </div>
-                </div>                
-            </section>            
+                <div className='container'>
+                    <div className="bg-theme-primary font-light text-center py-10">
+                        <p className="mb-2 relative z-30">
+                            © 2021 - 2024 Decisive Development Ltd. All rights reserved.
+                        </p>
+                        <p className="mb-2 relative z-30">
+                            Global Freelance Web Design, Development, Management, Maintenance
+                            and Support.
+                        </p>
+                        <div className='relative z-30'>
+                            {/* add nav links */}
+                            Copyright. Terms. Privacy.
+                        </div>
+                    </div>          
+                </div>      
+            </section>
         </footer>
     );
 };

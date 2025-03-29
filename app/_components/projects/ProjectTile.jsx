@@ -1,6 +1,17 @@
 import ButtonCTA from '../button/ButtonCTA';
 const projectTileContent = [
     {
+        id: "chamberlain",
+        src: '/photographs/chamberlain-site.jpg',
+        alt: "Chamberlain Translations",
+        title: "Chamberlain Translations",
+        copy: "Jack Chamberlain is a professional German-to-English translator with over 10 years of experience living in Austria. He needed a website that would showcase his translation services and expertise to potential clients. I delivered a modern, responsive website that highlights his specialised services including creative content, business and marketing, academic, and technical translations. The site effectively communicates his unique value proposition as a native English speaker who combines human expertise with AI-enhanced translation processes.",
+        cta: "More Info",
+        themeText: "text-theme-green font-code font-light",
+        href: "https://chamberlaintranslation.com/",
+        theme: "green"
+    },
+    {
         id: "roger",
         src: '/photographs/rogers-roofing.jpg',
         alt: "Rogers Roofing",
